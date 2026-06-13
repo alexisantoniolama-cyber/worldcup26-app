@@ -28,12 +28,12 @@ jobs:
         run: python goal_watcher.py
       - name: Guardar estado si cambió
         run: |
-          if ! git diff --quiet -- live/_seen_scores.json; then
+          git add live/_seen_scores.json || true
+          if git diff --cached --quiet; then
+            echo "sin cambios"
+          else
             git config user.name "goal-watcher"
             git config user.email "actions@users.noreply.github.com"
-            git add live/_seen_scores.json
             git commit -m "goal-watcher: estado de marcadores [skip ci]"
             git push
-          else
-            echo "sin cambios"
           fi
