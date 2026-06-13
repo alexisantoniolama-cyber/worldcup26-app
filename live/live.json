@@ -1,27 +1,133 @@
 {
-  "_comment": "Feed EN VIVO del Mundial 2026. La app lo descarga a diario y superpone estos datos sobre la data empaquetada (resultados, goleadores y ranking FIFA). Editar este archivo actualiza TODAS las apps instaladas sin reinstalar. Mantener los ids de partido iguales a assets/data/matches.json (M001..M072, R32_xx, R16_xx, QF_xx, SF_xx, TP_01, FINAL).",
-  "updatedAt": "2026-06-12T21:00:00Z",
+  "_comment": "Feed EN VIVO del Mundial 2026. Generado por tool/update_feed_from_api.dart con API-Football.",
+  "updatedAt": "2026-06-13T03:24:56.275477Z",
   "rankings": {
-    "ARG": 1, "ESP": 2, "FRA": 3, "ENG": 4, "POR": 5, "BRA": 6, "MAR": 7,
-    "NED": 8, "BEL": 9, "GER": 10, "CRO": 11, "COL": 13, "MEX": 14, "SEN": 15,
-    "URU": 16, "USA": 17, "JPN": 18, "SUI": 19, "IRN": 20, "TUR": 22, "ECU": 23,
-    "AUT": 24, "KOR": 25, "AUS": 27, "ALG": 28, "EGY": 29, "CAN": 30, "NOR": 31,
-    "CIV": 33, "PAN": 34, "SWE": 38, "CZE": 40, "PAR": 41, "SCO": 42, "TUN": 45,
-    "COD": 46, "UZB": 50, "QAT": 56, "IRQ": 58, "RSA": 60, "KSA": 61, "JOR": 64,
-    "CPV": 70, "GHA": 73, "BIH": 74, "HAI": 84, "CUR": 85, "NZL": 86
+    "ARG": 1,
+    "ESP": 2,
+    "FRA": 3,
+    "ENG": 4,
+    "POR": 5,
+    "BRA": 6,
+    "MAR": 7,
+    "NED": 8,
+    "BEL": 9,
+    "GER": 10,
+    "CRO": 11,
+    "COL": 13,
+    "MEX": 14,
+    "SEN": 15,
+    "URU": 16,
+    "USA": 17,
+    "JPN": 18,
+    "SUI": 19,
+    "IRN": 20,
+    "TUR": 22,
+    "ECU": 23,
+    "AUT": 24,
+    "KOR": 25,
+    "AUS": 27,
+    "ALG": 28,
+    "EGY": 29,
+    "CAN": 30,
+    "NOR": 31,
+    "CIV": 33,
+    "PAN": 34,
+    "SWE": 38,
+    "CZE": 40,
+    "PAR": 41,
+    "SCO": 42,
+    "TUN": 45,
+    "COD": 46,
+    "UZB": 50,
+    "QAT": 56,
+    "IRQ": 58,
+    "RSA": 60,
+    "KSA": 61,
+    "JOR": 64,
+    "CPV": 70,
+    "GHA": 73,
+    "BIH": 74,
+    "HAI": 84,
+    "CUR": 85,
+    "NZL": 86
   },
   "results": {
-    "M001": { "homeGoals": 2, "awayGoals": 0, "finished": true },
-    "M002": { "homeGoals": 2, "awayGoals": 1, "finished": true },
-    "M003": { "homeGoals": 1, "awayGoals": 1, "finished": true }
+    "M001": {
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "finished": true
+    },
+    "M002": {
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "finished": true
+    },
+    "M003": {
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "finished": true
+    },
+    "M004": {
+      "homeGoals": 4,
+      "awayGoals": 1,
+      "finished": true
+    }
   },
   "topScorers": [
-    { "rank": 1, "name": "Julián Quiñones", "teamCode": "MEX", "club": "", "league": "", "position": "Delantero", "goals": 1, "assists": 0, "matches": 1 },
-    { "rank": 2, "name": "Raúl Jiménez", "teamCode": "MEX", "club": "Fulham", "league": "Premier League", "position": "Delantero", "goals": 1, "assists": 0, "matches": 1 },
-    { "rank": 3, "name": "Hwang In-beom", "teamCode": "KOR", "club": "", "league": "", "position": "Mediocampista", "goals": 1, "assists": 0, "matches": 1 },
-    { "rank": 4, "name": "Oh Hyeon-gyu", "teamCode": "KOR", "club": "", "league": "", "position": "Delantero", "goals": 1, "assists": 0, "matches": 1 },
-    { "rank": 5, "name": "Ladislav Krejčí", "teamCode": "CZE", "club": "", "league": "", "position": "Defensa", "goals": 1, "assists": 0, "matches": 1 },
-    { "rank": 6, "name": "Cyle Larin", "teamCode": "CAN", "club": "", "league": "", "position": "Delantero", "goals": 1, "assists": 0, "matches": 1 },
-    { "rank": 7, "name": "Jovo Lukić", "teamCode": "BIH", "club": "", "league": "", "position": "", "goals": 1, "assists": 0, "matches": 1 }
+    {
+      "rank": 1,
+      "name": "Hwang In-Beom",
+      "teamCode": "KOR",
+      "club": "",
+      "league": "",
+      "position": "Mediocampista",
+      "goals": 1,
+      "assists": 1,
+      "matches": 1
+    },
+    {
+      "rank": 2,
+      "name": "Oh Hyeon-Gyu",
+      "teamCode": "KOR",
+      "club": "",
+      "league": "",
+      "position": "Delantero",
+      "goals": 1,
+      "assists": 0,
+      "matches": 1
+    },
+    {
+      "rank": 3,
+      "name": "R. Jiménez",
+      "teamCode": "MEX",
+      "club": "",
+      "league": "",
+      "position": "Delantero",
+      "goals": 1,
+      "assists": 0,
+      "matches": 1
+    },
+    {
+      "rank": 4,
+      "name": "J. Quiñones",
+      "teamCode": "MEX",
+      "club": "",
+      "league": "",
+      "position": "Mediocampista",
+      "goals": 1,
+      "assists": 0,
+      "matches": 1
+    },
+    {
+      "rank": 5,
+      "name": "L. Krejčí",
+      "teamCode": "CZE",
+      "club": "",
+      "league": "",
+      "position": "Defensa",
+      "goals": 1,
+      "assists": 0,
+      "matches": 1
+    }
   ]
 }
