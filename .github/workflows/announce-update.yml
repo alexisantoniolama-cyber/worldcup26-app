@@ -1,0 +1,32 @@
+name: Announce update (FCM)
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: Titulo de la notificacion
+        required: true
+        default: "📲 Actualiza tu app del Mundial 2026"
+      body:
+        description: Cuerpo de la notificacion
+        required: true
+        default: "Corregimos los horarios de varios partidos. Baja gratis la nueva versión en dralchemist.cl para verlos exactos ⚽"
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet google-auth requests
+      - name: Enviar push al topic goals
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          TITLE: ${{ inputs.title }}
+          BODY: ${{ inputs.body }}
+        run: python announce_update.py
