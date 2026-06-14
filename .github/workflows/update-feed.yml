@@ -1,0 +1,41 @@
+name: Update feed (marcadores)
+
+# Reescribe live/live.json con los marcadores de partidos TERMINADOS y EN VIVO,
+# para que la app muestre los resultados sin reinstalarla. Distinto del
+# goal-watcher (que solo manda el push de gol y no toca el feed).
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # cada 5 min (GitHub puede atrasarlo algunos min)
+  workflow_dispatch: {}       # permite correrlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerar live/live.json desde API-Football
+        env:
+          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+        run: python update_feed.py
+      - name: Subir el feed si cambio
+        run: |
+          git add live/live.json
+          if git diff --cached --quiet; then
+            echo "sin cambios"
+          else
+            git config user.name "update-feed"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "Update live feed (auto) [skip ci]"
+            git push
+          fi

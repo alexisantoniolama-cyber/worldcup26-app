@@ -1,6 +1,6 @@
 {
-  "_comment": "Feed EN VIVO del Mundial 2026. Generado por tool/update_feed_from_api.dart con API-Football.",
-  "updatedAt": "2026-06-13T04:19:48.061557Z",
+  "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
+  "updatedAt": "2026-06-13T23:36:17.716617Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,6 +52,14 @@
     "NZL": 86
   },
   "results": {
+    "M006": {
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "finished": false,
+      "live": true,
+      "statusShort": "2H",
+      "minute": 71
+    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -71,12 +79,17 @@
       "homeGoals": 4,
       "awayGoals": 1,
       "finished": true
+    },
+    "M005": {
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "finished": true
     }
   },
   "topScorers": [
     {
       "rank": 1,
-      "name": "Folarin Balogun",
+      "name": "F. Balogun",
       "teamCode": "USA",
       "club": "",
       "league": "",
@@ -87,29 +100,7 @@
     },
     {
       "rank": 2,
-      "name": "Julián Quiñones",
-      "teamCode": "MEX",
-      "club": "",
-      "league": "",
-      "position": "Delantero",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 3,
-      "name": "Raúl Jiménez",
-      "teamCode": "MEX",
-      "club": "",
-      "league": "",
-      "position": "Delantero",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 4,
-      "name": "Hwang In-beom",
+      "name": "Hwang In-Beom",
       "teamCode": "KOR",
       "club": "",
       "league": "",
@@ -119,8 +110,30 @@
       "matches": 1
     },
     {
+      "rank": 3,
+      "name": "C. Larin",
+      "teamCode": "CAN",
+      "club": "",
+      "league": "",
+      "position": "Delantero",
+      "goals": 1,
+      "assists": 0,
+      "matches": 1
+    },
+    {
+      "rank": 4,
+      "name": "G. Reyna",
+      "teamCode": "USA",
+      "club": "",
+      "league": "",
+      "position": "Mediocampista",
+      "goals": 1,
+      "assists": 0,
+      "matches": 1
+    },
+    {
       "rank": 5,
-      "name": "Oh Hyeon-gyu",
+      "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
       "league": "",
@@ -131,19 +144,19 @@
     },
     {
       "rank": 6,
-      "name": "Ladislav Krejčí",
-      "teamCode": "CZE",
+      "name": "Maurício",
+      "teamCode": "PAR",
       "club": "",
       "league": "",
-      "position": "Defensa",
+      "position": "Mediocampista",
       "goals": 1,
       "assists": 0,
       "matches": 1
     },
     {
       "rank": 7,
-      "name": "Cyle Larin",
-      "teamCode": "CAN",
+      "name": "J. Lukić",
+      "teamCode": "BIH",
       "club": "",
       "league": "",
       "position": "Delantero",
@@ -153,33 +166,33 @@
     },
     {
       "rank": 8,
-      "name": "Gio Reyna",
-      "teamCode": "USA",
+      "name": "R. Jiménez",
+      "teamCode": "MEX",
       "club": "",
       "league": "",
-      "position": "Mediocampista",
+      "position": "Delantero",
       "goals": 1,
       "assists": 0,
       "matches": 1
     },
     {
       "rank": 9,
-      "name": "Jovo Lukić",
-      "teamCode": "BIH",
+      "name": "J. Quiñones",
+      "teamCode": "MEX",
       "club": "",
       "league": "",
-      "position": "",
+      "position": "Mediocampista",
       "goals": 1,
       "assists": 0,
       "matches": 1
     },
     {
       "rank": 10,
-      "name": "Maurício",
-      "teamCode": "PAR",
+      "name": "L. Krejčí",
+      "teamCode": "CZE",
       "club": "",
       "league": "",
-      "position": "Mediocampista",
+      "position": "Defensa",
       "goals": 1,
       "assists": 0,
       "matches": 1
