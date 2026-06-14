@@ -225,12 +225,26 @@ def main():
 
     top = build_top_scorers(key)
 
+    payload = {"rankings": RANKINGS, "results": results, "topScorers": top}
+
+    # Solo reescribir si cambio algo relevante (marcador, minuto, goleadores).
+    # Asi el updatedAt y los commits reflejan cambios reales, no cada corrida.
+    if os.path.exists(OUT_PATH):
+        try:
+            with open(OUT_PATH, encoding="utf-8") as f:
+                old = json.load(f)
+            if {"rankings": old.get("rankings"), "results": old.get("results"),
+                    "topScorers": old.get("topScorers")} == payload:
+                print("sin cambios relevantes (%d resultados, %d en vivo); no se reescribe."
+                      % (len(results), live_count))
+                return
+        except Exception:
+            pass  # archivo ilegible -> reescribir
+
     out = {
         "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
         "updatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
-        "rankings": RANKINGS,
-        "results": results,
-        "topScorers": top,
+        **payload,
     }
     os.makedirs("live", exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:

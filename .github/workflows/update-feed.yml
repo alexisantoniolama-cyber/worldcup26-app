@@ -1,41 +1,55 @@
 name: Update feed (marcadores)
 
-# Reescribe live/live.json con los marcadores de partidos TERMINADOS y EN VIVO,
-# para que la app muestre los resultados sin reinstalarla. Distinto del
-# goal-watcher (que solo manda el push de gol y no toca el feed).
+# Mantiene live/live.json al dia con los marcadores de partidos TERMINADOS y EN
+# VIVO, para que la app muestre los resultados sin reinstalarla.
+#
+# El cron de GitHub Actions es poco fiable (puede atrasarse horas), asi que en
+# vez de depender de el, cada corrida actualiza EN BUCLE cada ~90 s durante ~50
+# min y al terminar se reprograma sola (cadena continua). El cron queda solo
+# como respaldo por si la cadena se corta. Repo publico => Actions gratis.
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # cada 5 min (GitHub puede atrasarlo algunos min)
-  workflow_dispatch: {}       # permite correrlo a mano
+    - cron: '*/15 * * * *'   # respaldo: revive la cadena si se corta
+  workflow_dispatch: {}
 
 permissions:
   contents: write
+  actions: write             # para reprogramarse (gh workflow run)
 
 concurrency:
   group: update-feed
-  cancel-in-progress: false
+  cancel-in-progress: false  # 1 corriendo + 1 en cola como mucho; sin solapes
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Regenerar live/live.json desde API-Football
+      - name: Reprogramar la proxima corrida (cadena continua)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run update-feed.yml || echo "no se pudo reprogramar; el cron lo revive"
+      - name: Actualizar el feed en bucle (cada ~90 s por ~50 min)
         env:
           APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
-        run: python update_feed.py
-      - name: Subir el feed si cambio
         run: |
-          git add live/live.json
-          if git diff --cached --quiet; then
-            echo "sin cambios"
-          else
-            git config user.name "update-feed"
-            git config user.email "actions@users.noreply.github.com"
-            git commit -m "Update live feed (auto) [skip ci]"
-            git push
-          fi
+          git config user.name "update-feed"
+          git config user.email "actions@users.noreply.github.com"
+          end=$((SECONDS + 3000))   # ~50 min
+          while [ $SECONDS -lt $end ]; do
+            python update_feed.py || echo "fallo una iteracion, sigo"
+            if ! git diff --quiet -- live/live.json; then
+              git add live/live.json
+              git commit -m "Update live feed (auto) [skip ci]" || true
+              for i in 1 2 3; do
+                git pull --rebase --autostash && git push && break
+                echo "reintento push $i"; sleep 3
+              done
+            fi
+            sleep 90
+          done
