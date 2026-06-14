@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-14T04:22:21.758973Z",
+  "updatedAt": "2026-06-14T04:23:53.493117Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,7 +58,7 @@
       "finished": false,
       "live": true,
       "statusShort": "1H",
-      "minute": 21,
+      "minute": 24,
       "homeYellow": 0,
       "homeRed": 0,
       "awayYellow": 0,
