@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-14T00:12:30.803625Z",
+  "updatedAt": "2026-06-14T00:49:33.989590Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -193,6 +193,134 @@
       "goals": 1,
       "assists": 0,
       "matches": 1
+    }
+  ],
+  "bookings": [
+    {
+      "name": "T. Zwane",
+      "teamCode": "RSA",
+      "yellow": 0,
+      "red": 1,
+      "rank": 1
+    },
+    {
+      "name": "S. Sithole",
+      "teamCode": "RSA",
+      "yellow": 0,
+      "red": 1,
+      "rank": 2
+    },
+    {
+      "name": "C. Montes",
+      "teamCode": "MEX",
+      "yellow": 0,
+      "red": 1,
+      "rank": 3
+    },
+    {
+      "name": "A. Arce",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0,
+      "rank": 4
+    },
+    {
+      "name": "J. Lukić",
+      "teamCode": "BIH",
+      "yellow": 1,
+      "red": 0,
+      "rank": 5
+    },
+    {
+      "name": "B. Gutiérrez",
+      "teamCode": "MEX",
+      "yellow": 1,
+      "red": 0,
+      "rank": 6
+    },
+    {
+      "name": "J. Cáceres",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0,
+      "rank": 7
+    },
+    {
+      "name": "M. Almirón",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0,
+      "rank": 8
+    },
+    {
+      "name": "D. Gómez",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0,
+      "rank": 9
+    },
+    {
+      "name": "N. Katić",
+      "teamCode": "BIH",
+      "yellow": 1,
+      "red": 0,
+      "rank": 10
+    },
+    {
+      "name": "L. De Fougerolles",
+      "teamCode": "CAN",
+      "yellow": 1,
+      "red": 0,
+      "rank": 11
+    },
+    {
+      "name": "N. Sibisi",
+      "teamCode": "RSA",
+      "yellow": 1,
+      "red": 0,
+      "rank": 12
+    },
+    {
+      "name": "A. Johnston",
+      "teamCode": "CAN",
+      "yellow": 1,
+      "red": 0,
+      "rank": 13
+    },
+    {
+      "name": "E. Demirović",
+      "teamCode": "BIH",
+      "yellow": 1,
+      "red": 0,
+      "rank": 14
+    },
+    {
+      "name": "T. Mokoena",
+      "teamCode": "RSA",
+      "yellow": 1,
+      "red": 0,
+      "rank": 15
+    },
+    {
+      "name": "Lee Gi-Hyuk",
+      "teamCode": "KOR",
+      "yellow": 1,
+      "red": 0,
+      "rank": 16
+    },
+    {
+      "name": "T. Adams",
+      "teamCode": "USA",
+      "yellow": 1,
+      "red": 0,
+      "rank": 17
+    },
+    {
+      "name": "J. Alonso",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0,
+      "rank": 18
     }
   ]
 }

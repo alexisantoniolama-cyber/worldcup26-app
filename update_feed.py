@@ -1,21 +1,21 @@
 """Actualizador del feed EN VIVO del Mundial 2026 (live/live.json).
 
-Corre en GitHub Actions cada ~5 min. Consulta API-Football y reescribe
-live/live.json con:
-  - results:    marcadores de partidos TERMINADOS y EN VIVO, mapeados al id del
-                fixture propio (M001, ...). Los en vivo llevan finished:false y
-                ademas live/statusShort/minute para que la app pueda mostrar
-                "EN VIVO 60'". (La app vieja ignora esos campos extra y muestra
-                solo el marcador; la nueva los usa.)
+Corre en GitHub Actions en bucle (ver update-feed.yml). Consulta API-Football y
+reescribe live/live.json con:
+  - results:    marcador de partidos TERMINADOS y EN VIVO, mapeados al id del
+                fixture propio (M001, ...). Los en vivo llevan finished:false,
+                live:true, statusShort, minute, y tarjetas por equipo
+                (homeYellow/homeRed/awayYellow/awayRed).
   - rankings:   ranking FIFA (fijo; la API no da el ranking mundial).
-  - topScorers: goleadores del torneo (de live/scorers.json si existe; si no, API).
+  - topScorers: goleadores del torneo.
+  - bookings:   amonestados del torneo (amarillas/rojas por jugador).
 
-La app descarga este JSON y superpone los marcadores sobre el fixture
-empaquetado (que queda como respaldo offline).
+Para no gastar cuota: el marcador se pide siempre (1 request); goleadores,
+amonestados y eventos (tarjetas) solo se piden si hay algun partido EN VIVO o si
+cambio algun resultado; si no, se reusan los del feed anterior.
 
-La API key NO va en la app: vive como secret APIFOOTBALL_KEY en GitHub Actions
-(o tool/api_key.txt para correrlo a mano), asi nadie la extrae del APK.
-Sin dependencias externas: usa solo la libreria estandar de Python.
+La API key vive como secret APIFOOTBALL_KEY (o tool/api_key.txt en local), nunca
+en el APK. Sin dependencias externas: solo la libreria estandar de Python.
 """
 import datetime
 import json
@@ -30,12 +30,11 @@ MATCHES_PATH = "live/matches.json"
 SCORERS_PATH = "live/scorers.json"
 OUT_PATH = "live/live.json"
 
-# Estados de API-Football: en curso vs. terminado.
 LIVE_STATUSES = {"1H", "2H", "HT", "ET", "BT", "P", "LIVE", "INT", "SUSP"}
 DONE_STATUSES = {"FT", "AET", "PEN"}
 
-# Ranking FIFA (11 jun 2026). La API no da el ranking mundial, lo mantiene este
-# script. Proxima actualizacion FIFA: ~20 jul 2026 -> editar aqui.
+# Ranking FIFA (11 jun 2026). La API no da el ranking mundial. Proxima
+# actualizacion FIFA: ~20 jul 2026 -> editar aqui.
 RANKINGS = {
     "ARG": 1, "ESP": 2, "FRA": 3, "ENG": 4, "POR": 5, "BRA": 6, "MAR": 7,
     "NED": 8, "BEL": 9, "GER": 10, "CRO": 11, "COL": 13, "MEX": 14, "SEN": 15,
@@ -46,7 +45,6 @@ RANKINGS = {
     "CPV": 70, "GHA": 73, "BIH": 74, "HAI": 84, "CUR": 85, "NZL": 86,
 }
 
-# Nombre de la seleccion en la API (normalizado) -> codigo FIFA del proyecto.
 NAME_TO_CODE = {
     "mexico": "MEX", "southafrica": "RSA", "southkorea": "KOR", "korearepublic": "KOR",
     "czechrepublic": "CZE", "czechia": "CZE", "canada": "CAN", "switzerland": "SUI",
@@ -109,48 +107,98 @@ def read_key():
     return ""
 
 
-def build_results(key, pair_to_match):
-    """Marcadores de partidos terminados y en vivo, mapeados a nuestros ids."""
+def read_old():
+    if os.path.exists(OUT_PATH):
+        try:
+            with open(OUT_PATH, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+
+def count_cards(events, home_api, away_api):
+    """Cuenta amarillas/rojas por equipo en los eventos de un partido.
+    Doble amarilla ('Second Yellow card') cuenta como roja."""
+    hy = hr = ay = ar = 0
+    hn, an = norm(home_api), norm(away_api)
+    for e in events:
+        if e.get("type") != "Card":
+            continue
+        detail = (e.get("detail") or "")
+        team = norm((e.get("team") or {}).get("name") or "")
+        is_red = "Red" in detail or "Second Yellow" in detail
+        is_yellow = detail == "Yellow Card"
+        if team == hn:
+            hr += 1 if is_red else 0
+            hy += 1 if is_yellow else 0
+        elif team == an:
+            ar += 1 if is_red else 0
+            ay += 1 if is_yellow else 0
+    return hy, hr, ay, ar
+
+
+def build_results(key):
+    """Marcador (y tarjetas de los partidos en vivo) mapeado a nuestros ids."""
+    with open(MATCHES_PATH, encoding="utf-8") as f:
+        my_matches = json.load(f)["matches"]
+    pair_to_match = {}
+    for m in my_matches:
+        h, a = m.get("homeCode"), m.get("awayCode")
+        if isinstance(h, str) and isinstance(a, str):
+            pair_to_match[pair_key(h, a)] = m
+
     results = {}
     mapped = unmapped = live_count = 0
     data = api_get(key, "/fixtures?league=%s&season=%s" % (LEAGUE, SEASON))
     for f in data.get("response", []):
-        status = (((f.get("fixture") or {}).get("status") or {}).get("short") or "")
+        fx = f.get("fixture") or {}
+        status = ((fx.get("status") or {}).get("short") or "")
         is_done = status in DONE_STATUSES
         is_live = status in LIVE_STATUSES
         if not (is_done or is_live):
-            continue  # programado / pospuesto / cancelado -> no es marcador
+            continue
         teams = f.get("teams") or {}
         goals = f.get("goals") or {}
-        hc = code_for((teams.get("home") or {}).get("name") or "")
-        ac = code_for((teams.get("away") or {}).get("name") or "")
+        hname = (teams.get("home") or {}).get("name") or ""
+        aname = (teams.get("away") or {}).get("name") or ""
+        hc, ac = code_for(hname), code_for(aname)
         hg, ag = goals.get("home"), goals.get("away")
         if hc is None or ac is None or not isinstance(hg, int) or not isinstance(ag, int):
             unmapped += 1
             continue
         m = pair_to_match.get(pair_key(hc, ac))
         if m is None:
-            unmapped += 1  # probablemente eliminatoria (codigos nulos), se afina luego
+            unmapped += 1
             continue
-        # Orientar los goles segun quien es local en NUESTRO fixture.
-        home_goals = hg if m["homeCode"] == hc else ag
-        away_goals = ag if m["homeCode"] == hc else hg
-        entry = {"homeGoals": home_goals, "awayGoals": away_goals, "finished": is_done}
+        home_is_api_home = (m["homeCode"] == hc)
+        entry = {
+            "homeGoals": hg if home_is_api_home else ag,
+            "awayGoals": ag if home_is_api_home else hg,
+            "finished": is_done,
+        }
         if is_live:
             entry["live"] = True
             entry["statusShort"] = status
-            elapsed = ((f.get("fixture") or {}).get("status") or {}).get("elapsed")
+            elapsed = (fx.get("status") or {}).get("elapsed")
             if isinstance(elapsed, int):
                 entry["minute"] = elapsed
+            # Tarjetas: solo para los partidos en vivo (pocos => pocas requests).
+            try:
+                evs = api_get(key, "/fixtures/events?fixture=%s" % fx.get("id")).get("response", [])
+                hy, hr, ay, ar = count_cards(evs, hname, aname)
+                entry["homeYellow"] = hy if home_is_api_home else ay
+                entry["homeRed"] = hr if home_is_api_home else ar
+                entry["awayYellow"] = ay if home_is_api_home else hy
+                entry["awayRed"] = ar if home_is_api_home else hr
+            except Exception as e:
+                print("AVISO eventos %s: %s" % (fx.get("id"), e))
             live_count += 1
         results[m["id"]] = entry
-        mapped += 1
     return results, mapped, unmapped, live_count
 
 
 def build_top_scorers(key):
-    """Goleadores: preferir live/scorers.json (fuente gratis mas completa); si
-    no existe, la API (que tarda horas en agregar los goles por jugador)."""
     top = []
     if os.path.exists(SCORERS_PATH):
         try:
@@ -159,20 +207,15 @@ def build_top_scorers(key):
             lst.sort(key=lambda s: (s.get("goals") or 0), reverse=True)
             for rank, s in enumerate(lst, 1):
                 top.append({
-                    "rank": rank,
-                    "name": str(s.get("name", "")),
-                    "teamCode": str(s.get("teamCode", "")),
-                    "club": str(s.get("club", "")),
-                    "league": str(s.get("league", "")),
-                    "position": str(s.get("position", "")),
-                    "goals": int(s.get("goals") or 0),
-                    "assists": int(s.get("assists") or 0),
+                    "rank": rank, "name": str(s.get("name", "")),
+                    "teamCode": str(s.get("teamCode", "")), "club": str(s.get("club", "")),
+                    "league": str(s.get("league", "")), "position": str(s.get("position", "")),
+                    "goals": int(s.get("goals") or 0), "assists": int(s.get("assists") or 0),
                     "matches": int(s.get("matches") or 0),
                 })
-            print("Goleadores desde live/scorers.json (fuente gratis): %d" % len(top))
             return top
         except Exception as e:
-            print("AVISO: live/scorers.json invalido (%s); intento la API." % e)
+            print("AVISO scorers.json:", e)
     try:
         data = api_get(key, "/players/topscorers?league=%s&season=%s" % (LEAGUE, SEASON))
         rank = 0
@@ -189,19 +232,58 @@ def build_top_scorers(key):
             assists = (st.get("goals") or {}).get("assists")
             apps = (st.get("games") or {}).get("appearences")
             top.append({
-                "rank": rank,
-                "name": str(player.get("name", "")),
+                "rank": rank, "name": str(player.get("name", "")),
                 "teamCode": code_for((st.get("team") or {}).get("name") or "") or "",
-                "club": "",
-                "league": "",
+                "club": "", "league": "",
                 "position": pos_es((st.get("games") or {}).get("position")),
                 "goals": goals_total,
                 "assists": assists if isinstance(assists, int) else 0,
                 "matches": apps if isinstance(apps, int) else 0,
             })
     except Exception as e:
-        print("AVISO: no se pudieron leer goleadores de la API:", e)
+        print("AVISO topscorers API:", e)
     return top
+
+
+def build_bookings(key):
+    """Amonestados del torneo: une topyellowcards + topredcards por jugador."""
+    agg = {}  # (name, code) -> {yellow, red}
+    for path in ("/players/topyellowcards", "/players/topredcards"):
+        try:
+            data = api_get(key, "%s?league=%s&season=%s" % (path, LEAGUE, SEASON))
+        except Exception as e:
+            print("AVISO %s: %s" % (path, e))
+            continue
+        for p in data.get("response", []):
+            player = p.get("player") or {}
+            stats = p.get("statistics") or []
+            if not stats:
+                continue
+            st = stats[0]
+            cards = st.get("cards") or {}
+            yellow = int(cards.get("yellow") or 0)
+            yellowred = int(cards.get("yellowred") or 0)
+            red = int(cards.get("red") or 0) + yellowred  # doble amarilla = roja
+            name = str(player.get("name", ""))
+            code = code_for((st.get("team") or {}).get("name") or "") or ""
+            if not name or (yellow == 0 and red == 0):
+                continue
+            agg[(name, code)] = {"yellow": yellow, "red": red}
+    items = [
+        {"name": n, "teamCode": c, "yellow": v["yellow"], "red": v["red"]}
+        for (n, c), v in agg.items()
+    ]
+    # Mas rojas primero, luego mas amarillas.
+    items.sort(key=lambda x: (x["red"], x["yellow"]), reverse=True)
+    for rank, it in enumerate(items, 1):
+        it["rank"] = rank
+    return items
+
+
+def core_results(results):
+    """Solo marcador/fin (sin minuto ni tarjetas) para detectar cambios reales."""
+    return {k: (v.get("homeGoals"), v.get("awayGoals"), v.get("finished"))
+            for k, v in results.items()}
 
 
 def main():
@@ -209,37 +291,32 @@ def main():
     if not key:
         raise SystemExit("ERROR: falta la API key (env APIFOOTBALL_KEY o tool/api_key.txt).")
 
-    with open(MATCHES_PATH, encoding="utf-8") as f:
-        my_matches = json.load(f)["matches"]
-    pair_to_match = {}
-    for m in my_matches:
-        h, a = m.get("homeCode"), m.get("awayCode")
-        if isinstance(h, str) and isinstance(a, str):
-            pair_to_match[pair_key(h, a)] = m
-
+    old = read_old()
     try:
-        results, mapped, unmapped, live_count = build_results(key, pair_to_match)
+        results, mapped, unmapped, live_count = build_results(key)
     except Exception as e:
         print("AVISO: no se pudieron leer fixtures de la API:", e)
         results, mapped, unmapped, live_count = {}, 0, 0, 0
 
-    top = build_top_scorers(key)
+    # Goleadores/amonestados: pedirlos solo si hay algo en vivo, cambio un
+    # resultado, o el feed viejo aun no los trae; si no, reusar (ahorra cuota).
+    changed = core_results(results) != core_results(old.get("results") or {})
+    if live_count > 0 or changed or "topScorers" not in old or "bookings" not in old:
+        top = build_top_scorers(key)
+        bookings = build_bookings(key)
+    else:
+        top = old.get("topScorers") or []
+        bookings = old.get("bookings") or []
 
-    payload = {"rankings": RANKINGS, "results": results, "topScorers": top}
+    payload = {"rankings": RANKINGS, "results": results,
+               "topScorers": top, "bookings": bookings}
 
-    # Solo reescribir si cambio algo relevante (marcador, minuto, goleadores).
-    # Asi el updatedAt y los commits reflejan cambios reales, no cada corrida.
-    if os.path.exists(OUT_PATH):
-        try:
-            with open(OUT_PATH, encoding="utf-8") as f:
-                old = json.load(f)
-            if {"rankings": old.get("rankings"), "results": old.get("results"),
-                    "topScorers": old.get("topScorers")} == payload:
-                print("sin cambios relevantes (%d resultados, %d en vivo); no se reescribe."
-                      % (len(results), live_count))
-                return
-        except Exception:
-            pass  # archivo ilegible -> reescribir
+    if {"rankings": old.get("rankings"), "results": old.get("results"),
+            "topScorers": old.get("topScorers"),
+            "bookings": old.get("bookings")} == payload:
+        print("sin cambios relevantes (%d resultados, %d en vivo); no se reescribe."
+              % (len(results), live_count))
+        return
 
     out = {
         "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
@@ -250,8 +327,8 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("live/live.json escrito: %d resultados (%d en vivo), %d goleadores "
-          "(mapeados %d, sin mapear %d)." % (len(results), live_count, len(top), mapped, unmapped))
+    print("live/live.json escrito: %d resultados (%d en vivo), %d goleadores, %d amonestados "
+          "(mapeados %d, sin mapear %d)." % (len(results), live_count, len(top), len(bookings), mapped, unmapped))
 
 
 if __name__ == "__main__":
