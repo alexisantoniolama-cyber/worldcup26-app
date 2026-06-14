@@ -1,12 +1,18 @@
 name: Goal watcher (FCM)
 
+# Detecta goles y manda push FCM al tema "goals" (llega aunque la app esté
+# cerrada). Igual que update-feed: corre EN BUCLE cada ~90 s durante ~50 min y
+# se reprograma sola, porque el cron de GitHub Actions se atrasa horas. El cron
+# queda solo como respaldo.
+
 on:
   schedule:
-    - cron: '*/5 * * * *'   # cada 5 min (GitHub puede atrasarlo algunos min)
-  workflow_dispatch: {}       # permite correrlo a mano
+    - cron: '*/15 * * * *'   # respaldo: revive la cadena si se corta
+  workflow_dispatch: {}
 
 permissions:
   contents: write
+  actions: write             # para reprogramarse (gh workflow run)
 
 concurrency:
   group: goal-watcher
@@ -15,25 +21,34 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Reprogramar la proxima corrida (cadena continua)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run goal-watcher.yml || echo "no se pudo reprogramar; el cron lo revive"
       - run: pip install --quiet google-auth requests
-      - name: Detectar goles y enviar push
+      - name: Vigilar goles en bucle (cada ~90 s por ~50 min)
         env:
           APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        run: python goal_watcher.py
-      - name: Guardar estado si cambió
         run: |
-          git add live/_seen_scores.json || true
-          if git diff --cached --quiet; then
-            echo "sin cambios"
-          else
-            git config user.name "goal-watcher"
-            git config user.email "actions@users.noreply.github.com"
-            git commit -m "goal-watcher: estado de marcadores [skip ci]"
-            git push
-          fi
+          git config user.name "goal-watcher"
+          git config user.email "actions@users.noreply.github.com"
+          end=$((SECONDS + 3000))   # ~50 min
+          while [ $SECONDS -lt $end ]; do
+            python goal_watcher.py || echo "fallo una iteracion, sigo"
+            if ! git diff --quiet -- live/_seen_scores.json; then
+              git add live/_seen_scores.json
+              git commit -m "goal-watcher: estado de marcadores [skip ci]" || true
+              for i in 1 2 3; do
+                git pull --rebase --autostash && git push && break
+                echo "reintento push $i"; sleep 3
+              done
+            fi
+            sleep 90
+          done
