@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-15T16:15:42.073562Z",
+  "updatedAt": "2026-06-15T16:17:13.991567Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,11 +58,11 @@
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
-      "awayYellow": 0,
+      "awayYellow": 1,
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 15
+      "minute": 16
     },
     "M001": {
       "homeGoals": 2,
@@ -783,20 +783,27 @@
     },
     {
       "rank": 34,
+      "name": "S. Lopes Cabral",
+      "teamCode": "CPV",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 35,
       "name": "Teboho Mokoena",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 35,
+      "rank": 36,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 36,
+      "rank": 37,
       "name": "Y. Akgun",
       "teamCode": "TUR",
       "yellow": 1,
