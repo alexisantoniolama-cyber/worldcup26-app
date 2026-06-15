@@ -43,8 +43,8 @@ jobs:
           end=$((SECONDS + 3000))   # ~50 min
           while [ $SECONDS -lt $end ]; do
             python update_feed.py || echo "fallo una iteracion, sigo"
-            if ! git diff --quiet -- live/live.json; then
-              git add live/live.json
+            git add live/live.json live/events_cache.json 2>/dev/null || true
+            if ! git diff --cached --quiet; then
               git commit -m "Update live feed (auto) [skip ci]" || true
               for i in 1 2 3; do
                 git pull --rebase --autostash && git push && break

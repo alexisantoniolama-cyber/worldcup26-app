@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-15T03:58:54.783474Z",
+  "updatedAt": "2026-06-15T04:33:08.730717Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -55,62 +55,110 @@
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
-      "finished": true
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 1,
+      "awayYellow": 2,
+      "awayRed": 2
     },
     "M002": {
       "homeGoals": 2,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0
     },
     "M003": {
       "homeGoals": 1,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 3,
+      "awayRed": 0
     },
     "M004": {
       "homeGoals": 4,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 5,
+      "awayRed": 0
     },
     "M005": {
       "homeGoals": 1,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0
     },
     "M006": {
       "homeGoals": 1,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0
     },
     "M007": {
       "homeGoals": 0,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 3,
+      "awayRed": 0
     },
     "M008": {
       "homeGoals": 2,
       "awayGoals": 0,
-      "finished": true
+      "finished": true,
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0
     },
     "M009": {
       "homeGoals": 7,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0
     },
     "M010": {
       "homeGoals": 2,
       "awayGoals": 2,
-      "finished": true
+      "finished": true,
+      "homeYellow": 3,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0
     },
     "M011": {
       "homeGoals": 1,
       "awayGoals": 0,
-      "finished": true
+      "finished": true,
+      "homeYellow": 3,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0
     },
     "M012": {
       "homeGoals": 5,
       "awayGoals": 1,
-      "finished": true
+      "finished": true,
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0
     }
   },
   "topScorers": [
@@ -120,349 +168,627 @@
       "teamCode": "USA",
       "club": "",
       "league": "",
-      "position": "Delantero",
+      "position": "",
       "goals": 2,
       "assists": 0,
-      "matches": 1
+      "matches": 0
     },
     {
       "rank": 2,
+      "name": "Kai Havertz",
+      "teamCode": "GER",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 2,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 3,
+      "name": "Y. Ayari",
+      "teamCode": "SWE",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 2,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 4,
+      "name": "A. Isak",
+      "teamCode": "SWE",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 2,
+      "matches": 0
+    },
+    {
+      "rank": 5,
+      "name": "Deniz Undav",
+      "teamCode": "GER",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 2,
+      "matches": 0
+    },
+    {
+      "rank": 6,
       "name": "Hwang In-Beom",
       "teamCode": "KOR",
       "club": "",
       "league": "",
-      "position": "Mediocampista",
+      "position": "",
       "goals": 1,
       "assists": 1,
-      "matches": 1
-    },
-    {
-      "rank": 3,
-      "name": "C. Larin",
-      "teamCode": "CAN",
-      "club": "",
-      "league": "",
-      "position": "Delantero",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 4,
-      "name": "G. Reyna",
-      "teamCode": "USA",
-      "club": "",
-      "league": "",
-      "position": "Mediocampista",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 5,
-      "name": "Oh Hyeon-Gyu",
-      "teamCode": "KOR",
-      "club": "",
-      "league": "",
-      "position": "Delantero",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 6,
-      "name": "Maurício",
-      "teamCode": "PAR",
-      "club": "",
-      "league": "",
-      "position": "Mediocampista",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
+      "matches": 0
     },
     {
       "rank": 7,
-      "name": "N. Irankunda",
-      "teamCode": "AUS",
+      "name": "Nathaniel Brown",
+      "teamCode": "GER",
       "club": "",
       "league": "",
-      "position": "Mediocampista",
+      "position": "",
       "goals": 1,
-      "assists": 0,
-      "matches": 1
+      "assists": 1,
+      "matches": 0
     },
     {
       "rank": 8,
-      "name": "J. Lukić",
-      "teamCode": "BIH",
+      "name": "V. Gyokeres",
+      "teamCode": "SWE",
       "club": "",
       "league": "",
-      "position": "Delantero",
+      "position": "",
       "goals": 1,
-      "assists": 0,
-      "matches": 1
+      "assists": 1,
+      "matches": 0
     },
     {
       "rank": 9,
-      "name": "R. Jiménez",
-      "teamCode": "MEX",
+      "name": "A. Diallo",
+      "teamCode": "CIV",
       "club": "",
       "league": "",
-      "position": "Delantero",
+      "position": "",
       "goals": 1,
       "assists": 0,
-      "matches": 1
+      "matches": 0
     },
     {
       "rank": 10,
-      "name": "J. Quiñones",
-      "teamCode": "MEX",
-      "club": "",
-      "league": "",
-      "position": "Mediocampista",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 11,
-      "name": "J.  McGinn",
-      "teamCode": "SCO",
-      "club": "",
-      "league": "",
-      "position": "Mediocampista",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 12,
-      "name": "I. Saibari",
-      "teamCode": "MAR",
-      "club": "",
-      "league": "",
-      "position": "Delantero",
-      "goals": 1,
-      "assists": 0,
-      "matches": 1
-    },
-    {
-      "rank": 13,
       "name": "Boualem Khoukhi",
       "teamCode": "QAT",
       "club": "",
       "league": "",
-      "position": "Defensa",
+      "position": "",
       "goals": 1,
       "assists": 0,
-      "matches": 1
+      "matches": 0
     },
     {
-      "rank": 14,
-      "name": "L. Krejčí",
-      "teamCode": "CZE",
+      "rank": 11,
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
       "club": "",
       "league": "",
-      "position": "Defensa",
+      "position": "",
       "goals": 1,
       "assists": 0,
-      "matches": 1
+      "matches": 0
     },
     {
-      "rank": 15,
-      "name": "Vinícius Júnior",
-      "teamCode": "BRA",
+      "rank": 12,
+      "name": "C. Larin",
+      "teamCode": "CAN",
       "club": "",
       "league": "",
-      "position": "Mediocampista",
+      "position": "",
       "goals": 1,
       "assists": 0,
-      "matches": 1
+      "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 13,
       "name": "C. Metcalfe",
       "teamCode": "AUS",
       "club": "",
       "league": "",
-      "position": "Mediocampista",
+      "position": "",
       "goals": 1,
       "assists": 0,
-      "matches": 1
+      "matches": 0
+    },
+    {
+      "rank": 14,
+      "name": "Crysencio Summerville",
+      "teamCode": "NED",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 15,
+      "name": "Daichi Kamada",
+      "teamCode": "JPN",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 16,
+      "name": "Felix Nmecha",
+      "teamCode": "GER",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
     },
     {
       "rank": 17,
-      "name": "B. Embolo",
-      "teamCode": "SUI",
+      "name": "G. Reyna",
+      "teamCode": "USA",
       "club": "",
       "league": "",
-      "position": "Delantero",
+      "position": "",
       "goals": 1,
       "assists": 0,
-      "matches": 1
+      "matches": 0
+    },
+    {
+      "rank": 18,
+      "name": "Ismael Saibari",
+      "teamCode": "MAR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 19,
+      "name": "J. Lukic",
+      "teamCode": "BIH",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 20,
+      "name": "J. McGinn",
+      "teamCode": "SCO",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 21,
+      "name": "J. Quinones",
+      "teamCode": "MEX",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 22,
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 23,
+      "name": "Keito Nakamura",
+      "teamCode": "JPN",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 24,
+      "name": "L. Krejci",
+      "teamCode": "CZE",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 25,
+      "name": "Livano Comenencia",
+      "teamCode": "CUR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 26,
+      "name": "M. Svanberg",
+      "teamCode": "SWE",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 27,
+      "name": "Mauricio",
+      "teamCode": "PAR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 28,
+      "name": "N. Irankunda",
+      "teamCode": "AUS",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 29,
+      "name": "Nico Schlotterbeck",
+      "teamCode": "GER",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 30,
+      "name": "O. Rekik",
+      "teamCode": "TUN",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 31,
+      "name": "Oh Hyeon-Gyu",
+      "teamCode": "KOR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 32,
+      "name": "R. Jimenez",
+      "teamCode": "MEX",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 33,
+      "name": "Vinícius Júnior",
+      "teamCode": "BRA",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 34,
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
     }
   ],
   "bookings": [
     {
-      "name": "T. Zwane",
-      "teamCode": "RSA",
-      "yellow": 0,
-      "red": 1,
-      "rank": 1
-    },
-    {
-      "name": "S. Sithole",
-      "teamCode": "RSA",
-      "yellow": 0,
-      "red": 1,
-      "rank": 2
-    },
-    {
-      "name": "C. Montes",
+      "rank": 1,
+      "name": "César Montes",
       "teamCode": "MEX",
       "yellow": 0,
-      "red": 1,
-      "rank": 3
+      "red": 1
     },
     {
-      "name": "K. McLean",
-      "teamCode": "SCO",
-      "yellow": 1,
-      "red": 0,
-      "rank": 4
+      "rank": 2,
+      "name": "Siphephelo Sithole",
+      "teamCode": "RSA",
+      "yellow": 0,
+      "red": 1
     },
     {
-      "name": "Findlay Curtis",
-      "teamCode": "SCO",
-      "yellow": 1,
-      "red": 0,
-      "rank": 5
+      "rank": 3,
+      "name": "Themba Zwane",
+      "teamCode": "RSA",
+      "yellow": 0,
+      "red": 1
     },
     {
-      "name": "Y. Akgün",
-      "teamCode": "TUR",
-      "yellow": 1,
-      "red": 0,
-      "rank": 6
-    },
-    {
-      "name": "A. Arce",
-      "teamCode": "PAR",
-      "yellow": 1,
-      "red": 0,
-      "rank": 7
-    },
-    {
-      "name": "Ibañez",
-      "teamCode": "BRA",
-      "yellow": 1,
-      "red": 0,
-      "rank": 8
-    },
-    {
-      "name": "Casemiro",
-      "teamCode": "BRA",
-      "yellow": 1,
-      "red": 0,
-      "rank": 9
-    },
-    {
-      "name": "Jassem Gaber",
-      "teamCode": "QAT",
-      "yellow": 1,
-      "red": 0,
-      "rank": 10
-    },
-    {
-      "name": "J. Lukić",
-      "teamCode": "BIH",
-      "yellow": 1,
-      "red": 0,
-      "rank": 11
-    },
-    {
-      "name": "B. Gutiérrez",
-      "teamCode": "MEX",
-      "yellow": 1,
-      "red": 0,
-      "rank": 12
-    },
-    {
+      "rank": 4,
       "name": "A. Hickey",
       "teamCode": "SCO",
       "yellow": 1,
-      "red": 0,
-      "rank": 13
+      "red": 0
     },
     {
-      "name": "J. Cáceres",
+      "rank": 5,
+      "name": "Alex Arce",
       "teamCode": "PAR",
       "yellow": 1,
-      "red": 0,
-      "rank": 14
+      "red": 0
     },
     {
-      "name": "M. Almirón",
-      "teamCode": "PAR",
+      "rank": 6,
+      "name": "Alistair Johnston",
+      "teamCode": "CAN",
       "yellow": 1,
-      "red": 0,
-      "rank": 15
+      "red": 0
     },
     {
-      "name": "Mahmud Abunada",
-      "teamCode": "QAT",
+      "rank": 7,
+      "name": "Brian Gutiérrez",
+      "teamCode": "MEX",
       "yellow": 1,
-      "red": 0,
-      "rank": 16
+      "red": 0
     },
     {
-      "name": "Lee Gi-Hyuk",
-      "teamCode": "KOR",
+      "rank": 8,
+      "name": "Casemiro",
+      "teamCode": "BRA",
       "yellow": 1,
-      "red": 0,
-      "rank": 17
+      "red": 0
     },
     {
-      "name": "D. Zakaria",
+      "rank": 9,
+      "name": "Crysencio Summerville",
+      "teamCode": "NED",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 10,
+      "name": "Denis Zakaria",
       "teamCode": "SUI",
       "yellow": 1,
-      "red": 0,
-      "rank": 18
+      "red": 0
     },
     {
-      "name": "A. Johnston",
-      "teamCode": "CAN",
-      "yellow": 1,
-      "red": 0,
-      "rank": 19
-    },
-    {
-      "name": "L. De Fougerolles",
-      "teamCode": "CAN",
-      "yellow": 1,
-      "red": 0,
-      "rank": 20
-    },
-    {
-      "name": "N. Katić",
+      "rank": 11,
+      "name": "Ermedin Demirović",
       "teamCode": "BIH",
       "yellow": 1,
-      "red": 0,
-      "rank": 21
+      "red": 0
     },
     {
-      "name": "E. Demirović",
-      "teamCode": "BIH",
+      "rank": 12,
+      "name": "F. Curtis",
+      "teamCode": "SCO",
       "yellow": 1,
-      "red": 0,
-      "rank": 22
+      "red": 0
     },
     {
+      "rank": 13,
+      "name": "F. Kessie",
+      "teamCode": "CIV",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 14,
+      "name": "G. Doue",
+      "teamCode": "CIV",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 15,
+      "name": "Gi-Hyuk Lee",
+      "teamCode": "KOR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 16,
+      "name": "Gustavo Gómez",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 17,
       "name": "J. Bellegarde",
       "teamCode": "HAI",
       "yellow": 1,
-      "red": 0,
-      "rank": 23
+      "red": 0
+    },
+    {
+      "rank": 18,
+      "name": "J. Porozo",
+      "teamCode": "ECU",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 19,
+      "name": "Jassem Gaber Abdulsallam",
+      "teamCode": "QAT",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 20,
+      "name": "Jovo Lukić",
+      "teamCode": "BIH",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 21,
+      "name": "Juan Cáceres",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 22,
+      "name": "Junior Alonso",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 23,
+      "name": "K. McLean",
+      "teamCode": "SCO",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 24,
+      "name": "Luc De Fougerolles",
+      "teamCode": "CAN",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 25,
+      "name": "Mahmud Abunad",
+      "teamCode": "QAT",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 26,
+      "name": "Memphis Depay",
+      "teamCode": "NED",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 27,
+      "name": "Micky van de Ven",
+      "teamCode": "NED",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 28,
+      "name": "Miguel Almirón",
+      "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 29,
+      "name": "Nikola Katić",
+      "teamCode": "BIH",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 30,
+      "name": "Nkosinathi Sibisi",
+      "teamCode": "RSA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 31,
+      "name": "R. Khedira",
+      "teamCode": "TUN",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 32,
+      "name": "Roger Ibañez",
+      "teamCode": "BRA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 33,
+      "name": "S. Fofana",
+      "teamCode": "CIV",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 34,
+      "name": "Teboho Mokoena",
+      "teamCode": "RSA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 35,
+      "name": "Tyler Adams",
+      "teamCode": "USA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 36,
+      "name": "Y. Akgun",
+      "teamCode": "TUR",
+      "yellow": 1,
+      "red": 0
     }
   ]
 }
