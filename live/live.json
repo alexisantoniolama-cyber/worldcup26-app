@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-15T17:51:47.042595Z",
+  "updatedAt": "2026-06-15T17:54:49.568125Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -56,7 +56,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "finished": false,
-      "homeYellow": 0,
+      "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 1,
       "awayRed": 0,
@@ -762,48 +762,55 @@
     },
     {
       "rank": 31,
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 32,
       "name": "R. Khedira",
       "teamCode": "TUN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 32,
+      "rank": 33,
       "name": "Roger Ibañez",
       "teamCode": "BRA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 33,
+      "rank": 34,
       "name": "S. Fofana",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 34,
+      "rank": 35,
       "name": "S. Lopes Cabral",
       "teamCode": "CPV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 35,
+      "rank": 36,
       "name": "Teboho Mokoena",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 36,
+      "rank": 37,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 37,
+      "rank": 38,
       "name": "Y. Akgun",
       "teamCode": "TUR",
       "yellow": 1,
