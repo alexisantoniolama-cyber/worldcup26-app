@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-16T02:29:42.157451Z",
+  "updatedAt": "2026-06-16T02:31:13.509413Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M016": {
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 2,
       "finished": false,
       "homeYellow": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 62
+      "minute": 64
     },
     "M001": {
       "homeGoals": 2,
@@ -522,6 +522,17 @@
     },
     {
       "rank": 30,
+      "name": "M. Mohebi",
+      "teamCode": "IRN",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 31,
       "name": "M. Svanberg",
       "teamCode": "SWE",
       "club": "",
@@ -532,7 +543,7 @@
       "matches": 0
     },
     {
-      "rank": 31,
+      "rank": 32,
       "name": "Mauricio",
       "teamCode": "PAR",
       "club": "",
@@ -543,7 +554,7 @@
       "matches": 0
     },
     {
-      "rank": 32,
+      "rank": 33,
       "name": "N. Irankunda",
       "teamCode": "AUS",
       "club": "",
@@ -554,7 +565,7 @@
       "matches": 0
     },
     {
-      "rank": 33,
+      "rank": 34,
       "name": "Nico Schlotterbeck",
       "teamCode": "GER",
       "club": "",
@@ -565,7 +576,7 @@
       "matches": 0
     },
     {
-      "rank": 34,
+      "rank": 35,
       "name": "O. Rekik",
       "teamCode": "TUN",
       "club": "",
@@ -576,7 +587,7 @@
       "matches": 0
     },
     {
-      "rank": 35,
+      "rank": 36,
       "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
@@ -587,7 +598,7 @@
       "matches": 0
     },
     {
-      "rank": 36,
+      "rank": 37,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -598,7 +609,7 @@
       "matches": 0
     },
     {
-      "rank": 37,
+      "rank": 38,
       "name": "R. Rezaeian",
       "teamCode": "IRN",
       "club": "",
@@ -609,7 +620,7 @@
       "matches": 0
     },
     {
-      "rank": 38,
+      "rank": 39,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -620,7 +631,7 @@
       "matches": 0
     },
     {
-      "rank": 39,
+      "rank": 40,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
