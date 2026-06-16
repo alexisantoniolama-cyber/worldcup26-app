@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-16T23:48:21.039219Z",
+  "updatedAt": "2026-06-16T23:49:52.414931Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -56,13 +56,13 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "finished": false,
-      "homeYellow": 0,
+      "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 0,
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 85
+      "minute": 87
     },
     "M001": {
       "homeGoals": 2,
@@ -1032,6 +1032,13 @@
       "rank": 44,
       "name": "Y. Akgun",
       "teamCode": "TUR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 45,
+      "name": "Z. Tahseen",
+      "teamCode": "IRQ",
       "yellow": 1,
       "red": 0
     }
