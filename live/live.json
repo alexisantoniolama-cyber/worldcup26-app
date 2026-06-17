@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-17T21:49:22.410958Z",
+  "updatedAt": "2026-06-17T21:50:54.091039Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M022": {
-      "homeGoals": 3,
+      "homeGoals": 4,
       "awayGoals": 2,
       "finished": false,
       "homeYellow": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 85
+      "minute": 87
     },
     "M001": {
       "homeGoals": 2,
@@ -741,6 +741,17 @@
     },
     {
       "rank": 45,
+      "name": "M. Rashford",
+      "teamCode": "ENG",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 46,
       "name": "M. Svanberg",
       "teamCode": "SWE",
       "club": "",
@@ -751,7 +762,7 @@
       "matches": 0
     },
     {
-      "rank": 46,
+      "rank": 47,
       "name": "Mauricio",
       "teamCode": "PAR",
       "club": "",
@@ -762,7 +773,7 @@
       "matches": 0
     },
     {
-      "rank": 47,
+      "rank": 48,
       "name": "N. Irankunda",
       "teamCode": "AUS",
       "club": "",
@@ -773,7 +784,7 @@
       "matches": 0
     },
     {
-      "rank": 48,
+      "rank": 49,
       "name": "Nico Schlotterbeck",
       "teamCode": "GER",
       "club": "",
@@ -784,7 +795,7 @@
       "matches": 0
     },
     {
-      "rank": 49,
+      "rank": 50,
       "name": "O. Rekik",
       "teamCode": "TUN",
       "club": "",
@@ -795,7 +806,7 @@
       "matches": 0
     },
     {
-      "rank": 50,
+      "rank": 51,
       "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
@@ -806,7 +817,7 @@
       "matches": 0
     },
     {
-      "rank": 51,
+      "rank": 52,
       "name": "P. Musa",
       "teamCode": "CRO",
       "club": "",
@@ -817,7 +828,7 @@
       "matches": 0
     },
     {
-      "rank": 52,
+      "rank": 53,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -828,7 +839,7 @@
       "matches": 0
     },
     {
-      "rank": 53,
+      "rank": 54,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -839,7 +850,7 @@
       "matches": 0
     },
     {
-      "rank": 54,
+      "rank": 55,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -850,7 +861,7 @@
       "matches": 0
     },
     {
-      "rank": 55,
+      "rank": 56,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -861,7 +872,7 @@
       "matches": 0
     },
     {
-      "rank": 56,
+      "rank": 57,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
