@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-17T20:10:40.776504Z",
+  "updatedAt": "2026-06-17T20:12:12.328142Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M022": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "finished": false,
       "homeYellow": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 11
+      "minute": 12
     },
     "M001": {
       "homeGoals": 2,
@@ -356,17 +356,6 @@
     },
     {
       "rank": 10,
-      "name": "H. Kane",
-      "teamCode": "ENG",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 1,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 11,
       "name": "Hwang In-Beom",
       "teamCode": "KOR",
       "club": "",
@@ -377,7 +366,7 @@
       "matches": 0
     },
     {
-      "rank": 12,
+      "rank": 11,
       "name": "Nathaniel Brown",
       "teamCode": "GER",
       "club": "",
@@ -388,7 +377,7 @@
       "matches": 0
     },
     {
-      "rank": 13,
+      "rank": 12,
       "name": "R. Rezaeian",
       "teamCode": "IRN",
       "club": "",
@@ -399,7 +388,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 13,
       "name": "V. Gyokeres",
       "teamCode": "SWE",
       "club": "",
@@ -410,7 +399,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 14,
       "name": "A. Al Amri",
       "teamCode": "KSA",
       "club": "",
@@ -421,7 +410,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 15,
       "name": "A. Diallo",
       "teamCode": "CIV",
       "club": "",
@@ -432,7 +421,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 16,
       "name": "A. Hussein",
       "teamCode": "IRQ",
       "club": "",
@@ -443,7 +432,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 17,
       "name": "A. Olwan",
       "teamCode": "JOR",
       "club": "",
@@ -454,7 +443,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 18,
       "name": "B. Barcola",
       "teamCode": "FRA",
       "club": "",
@@ -465,7 +454,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 19,
       "name": "Boualem Khoukhi",
       "teamCode": "QAT",
       "club": "",
@@ -476,7 +465,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 20,
       "name": "Breel Embolo",
       "teamCode": "SUI",
       "club": "",
@@ -487,7 +476,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 21,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -498,7 +487,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 22,
       "name": "C. Metcalfe",
       "teamCode": "AUS",
       "club": "",
@@ -509,7 +498,7 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 23,
       "name": "Crysencio Summerville",
       "teamCode": "NED",
       "club": "",
@@ -520,7 +509,7 @@
       "matches": 0
     },
     {
-      "rank": 25,
+      "rank": 24,
       "name": "Daichi Kamada",
       "teamCode": "JPN",
       "club": "",
@@ -531,7 +520,7 @@
       "matches": 0
     },
     {
-      "rank": 26,
+      "rank": 25,
       "name": "E. Ashour",
       "teamCode": "EGY",
       "club": "",
@@ -542,7 +531,7 @@
       "matches": 0
     },
     {
-      "rank": 27,
+      "rank": 26,
       "name": "Felix Nmecha",
       "teamCode": "GER",
       "club": "",
@@ -553,9 +542,20 @@
       "matches": 0
     },
     {
-      "rank": 28,
+      "rank": 27,
       "name": "G. Reyna",
       "teamCode": "USA",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 28,
+      "name": "H. Kane",
+      "teamCode": "ENG",
       "club": "",
       "league": "",
       "position": "",
