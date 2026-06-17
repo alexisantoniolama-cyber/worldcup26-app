@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-17T03:01:00.970957Z",
+  "updatedAt": "2026-06-17T04:29:20.889488Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,6 +52,18 @@
     "NZL": 86
   },
   "results": {
+    "M020": {
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "finished": false,
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "live": true,
+      "statusShort": "1H",
+      "minute": 27
+    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -722,6 +734,17 @@
     },
     {
       "rank": 46,
+      "name": "Romano Schmid",
+      "teamCode": "AUT",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 47,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -732,7 +755,7 @@
       "matches": 0
     },
     {
-      "rank": 47,
+      "rank": 48,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
