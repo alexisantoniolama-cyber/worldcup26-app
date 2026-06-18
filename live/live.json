@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-18T17:45:42.569477Z",
+  "updatedAt": "2026-06-18T17:47:14.151184Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 85
+      "minute": 86
     },
     "M001": {
       "homeGoals": 2,
@@ -944,6 +944,17 @@
     },
     {
       "rank": 61,
+      "name": "T. Mokoena",
+      "teamCode": "RSA",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 62,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -954,7 +965,7 @@
       "matches": 0
     },
     {
-      "rank": 62,
+      "rank": 63,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -965,7 +976,7 @@
       "matches": 0
     },
     {
-      "rank": 63,
+      "rank": 64,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
