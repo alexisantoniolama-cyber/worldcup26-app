@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-18T22:34:20.288392Z",
+  "updatedAt": "2026-06-18T22:35:52.073373Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,11 +58,11 @@
       "finished": false,
       "homeYellow": 1,
       "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
+      "awayYellow": 0,
+      "awayRed": 1,
       "live": true,
       "statusShort": "1H",
-      "minute": 33
+      "minute": 35
     },
     "M001": {
       "homeGoals": 2,
@@ -1070,204 +1070,204 @@
     },
     {
       "rank": 2,
+      "name": "H. Al Amin",
+      "teamCode": "QAT",
+      "yellow": 0,
+      "red": 1
+    },
+    {
+      "rank": 3,
       "name": "Siphephelo Sithole",
       "teamCode": "RSA",
       "yellow": 0,
       "red": 1
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "T. Muharemovic",
       "teamCode": "BIH",
       "yellow": 0,
       "red": 1
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Themba Zwane",
       "teamCode": "RSA",
       "yellow": 0,
       "red": 1
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "A. Al Amri",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "A. Dedic",
       "teamCode": "BIH",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "A. Fatouh",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "A. Hickey",
       "teamCode": "SCO",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "A. Khusanov",
       "teamCode": "UZB",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Alex Arce",
       "teamCode": "PAR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Alistair Johnston",
       "teamCode": "CAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "B. Silva",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Brian Gutiérrez",
       "teamCode": "MEX",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "C. Blackman",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "C. Harvey",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "C. Mbemba",
       "teamCode": "COD",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "C. Yirenkyi",
       "teamCode": "GHA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "Casemiro",
       "teamCode": "BRA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "Crysencio Summerville",
       "teamCode": "NED",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "D. Cornelius",
       "teamCode": "CAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "Denis Zakaria",
       "teamCode": "SUI",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "E. Dzeko",
       "teamCode": "BIH",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "E. Hajsafi",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "Ermedin Demirović",
       "teamCode": "BIH",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "F. Curtis",
       "teamCode": "SCO",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "F. Kessie",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "G. Doue",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "Gi-Hyuk Lee",
       "teamCode": "KOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "Gustavo Gómez",
       "teamCode": "PAR",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "rank": 30,
-      "name": "H. Al Amin",
-      "teamCode": "QAT",
       "yellow": 1,
       "red": 0
     },
