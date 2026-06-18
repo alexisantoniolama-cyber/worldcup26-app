@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-18T01:01:50.311310Z",
+  "updatedAt": "2026-06-18T01:03:21.660184Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,18 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M023": {
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 2,
-      "awayRed": 0,
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -260,6 +248,15 @@
       "homeYellow": 0,
       "homeRed": 0,
       "awayYellow": 0,
+      "awayRed": 0
+    },
+    "M023": {
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 2,
       "awayRed": 0
     }
   },
