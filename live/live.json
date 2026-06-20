@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-20T18:35:01.257976Z",
+  "updatedAt": "2026-06-20T18:36:32.983796Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,11 +58,11 @@
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
-      "awayYellow": 1,
+      "awayYellow": 2,
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 74
+      "minute": 75
     },
     "M001": {
       "homeGoals": 2,
@@ -1822,6 +1822,13 @@
     },
     {
       "rank": 86,
+      "name": "Y. Ayari",
+      "teamCode": "SWE",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 87,
       "name": "Z. Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
