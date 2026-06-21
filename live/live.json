@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-21T16:30:45.010967Z",
+  "updatedAt": "2026-06-21T16:32:16.949067Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,11 +58,11 @@
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
-      "awayYellow": 0,
+      "awayYellow": 1,
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 30
+      "minute": 31
     },
     "M001": {
       "homeGoals": 2,
@@ -1925,83 +1925,90 @@
     },
     {
       "rank": 83,
+      "name": "S. Al Dawsari",
+      "teamCode": "KSA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 84,
       "name": "S. Fofana",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 84,
+      "rank": 85,
       "name": "S. Lopes Cabral",
       "teamCode": "CPV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 85,
+      "rank": 86,
       "name": "T. Araujo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 86,
+      "rank": 87,
       "name": "T. Castagne",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 87,
+      "rank": 88,
       "name": "T. Mbatha",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 88,
+      "rank": 89,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 89,
+      "rank": 90,
       "name": "Teboho Mokoena",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 90,
+      "rank": 91,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 91,
+      "rank": 92,
       "name": "V. Montella",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 92,
+      "rank": 93,
       "name": "Y. Akgun",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 93,
+      "rank": 94,
       "name": "Y. Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 94,
+      "rank": 95,
       "name": "Z. Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
