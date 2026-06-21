@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-21T05:42:26.094559Z",
+  "updatedAt": "2026-06-21T05:43:57.824540Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "M036": {
       "homeGoals": 0,
-      "awayGoals": 3,
+      "awayGoals": 4,
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 82
+      "minute": 84
     },
     "M001": {
       "homeGoals": 2,
@@ -405,6 +405,17 @@
     },
     {
       "rank": 3,
+      "name": "A. Ueda",
+      "teamCode": "JPN",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 2,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 4,
       "name": "C. Gakpo",
       "teamCode": "NED",
       "club": "",
@@ -415,7 +426,7 @@
       "matches": 0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "B. Brobbey",
       "teamCode": "NED",
       "club": "",
@@ -426,7 +437,7 @@
       "matches": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -437,7 +448,7 @@
       "matches": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "D. Undav",
       "teamCode": "GER",
       "club": "",
@@ -448,7 +459,7 @@
       "matches": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "E. Haaland",
       "teamCode": "NOR",
       "club": "",
@@ -459,7 +470,7 @@
       "matches": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "E. Just",
       "teamCode": "NZL",
       "club": "",
@@ -470,7 +481,7 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "F. Balogun",
       "teamCode": "USA",
       "club": "",
@@ -481,7 +492,7 @@
       "matches": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "H. Kane",
       "teamCode": "ENG",
       "club": "",
@@ -492,7 +503,7 @@
       "matches": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "J. Manzambi",
       "teamCode": "SUI",
       "club": "",
@@ -503,7 +514,7 @@
       "matches": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "K. Mbappe",
       "teamCode": "FRA",
       "club": "",
@@ -514,7 +525,7 @@
       "matches": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Kai Havertz",
       "teamCode": "GER",
       "club": "",
@@ -525,7 +536,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "M. Cunha",
       "teamCode": "BRA",
       "club": "",
@@ -536,7 +547,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "Y. Ayari",
       "teamCode": "SWE",
       "club": "",
@@ -547,7 +558,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "A. Isak",
       "teamCode": "SWE",
       "club": "",
@@ -558,7 +569,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "Deniz Undav",
       "teamCode": "GER",
       "club": "",
@@ -569,20 +580,9 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "A. Freeman",
       "teamCode": "USA",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 1,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 19,
-      "name": "A. Ueda",
-      "teamCode": "JPN",
       "club": "",
       "league": "",
       "position": "",
