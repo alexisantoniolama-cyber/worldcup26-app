@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-21T16:10:49.025958Z",
+  "updatedAt": "2026-06-21T16:12:20.876429Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M038": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "finished": false,
       "homeYellow": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 10
+      "minute": 11
     },
     "M001": {
       "homeGoals": 2,
@@ -1096,6 +1096,17 @@
     },
     {
       "rank": 65,
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 66,
       "name": "Livano Comenencia",
       "teamCode": "CUR",
       "club": "",
@@ -1106,7 +1117,7 @@
       "matches": 0
     },
     {
-      "rank": 66,
+      "rank": 67,
       "name": "M. Araujo",
       "teamCode": "URU",
       "club": "",
@@ -1117,7 +1128,7 @@
       "matches": 0
     },
     {
-      "rank": 67,
+      "rank": 68,
       "name": "M. Arnautovic",
       "teamCode": "AUT",
       "club": "",
@@ -1128,7 +1139,7 @@
       "matches": 0
     },
     {
-      "rank": 68,
+      "rank": 69,
       "name": "M. Baturina",
       "teamCode": "CRO",
       "club": "",
@@ -1139,7 +1150,7 @@
       "matches": 0
     },
     {
-      "rank": 69,
+      "rank": 70,
       "name": "M. Galarza",
       "teamCode": "PAR",
       "club": "",
@@ -1150,7 +1161,7 @@
       "matches": 0
     },
     {
-      "rank": 70,
+      "rank": 71,
       "name": "M. Mohebi",
       "teamCode": "IRN",
       "club": "",
@@ -1161,7 +1172,7 @@
       "matches": 0
     },
     {
-      "rank": 71,
+      "rank": 72,
       "name": "M. Rashford",
       "teamCode": "ENG",
       "club": "",
@@ -1172,7 +1183,7 @@
       "matches": 0
     },
     {
-      "rank": 72,
+      "rank": 73,
       "name": "M. Sadilek",
       "teamCode": "CZE",
       "club": "",
@@ -1183,7 +1194,7 @@
       "matches": 0
     },
     {
-      "rank": 73,
+      "rank": 74,
       "name": "M. Svanberg",
       "teamCode": "SWE",
       "club": "",
@@ -1194,7 +1205,7 @@
       "matches": 0
     },
     {
-      "rank": 74,
+      "rank": 75,
       "name": "Mauricio",
       "teamCode": "PAR",
       "club": "",
@@ -1205,7 +1216,7 @@
       "matches": 0
     },
     {
-      "rank": 75,
+      "rank": 76,
       "name": "N. Irankunda",
       "teamCode": "AUS",
       "club": "",
@@ -1216,7 +1227,7 @@
       "matches": 0
     },
     {
-      "rank": 76,
+      "rank": 77,
       "name": "Nico Schlotterbeck",
       "teamCode": "GER",
       "club": "",
@@ -1227,7 +1238,7 @@
       "matches": 0
     },
     {
-      "rank": 77,
+      "rank": 78,
       "name": "O. Rekik",
       "teamCode": "TUN",
       "club": "",
@@ -1238,7 +1249,7 @@
       "matches": 0
     },
     {
-      "rank": 78,
+      "rank": 79,
       "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
@@ -1249,7 +1260,7 @@
       "matches": 0
     },
     {
-      "rank": 79,
+      "rank": 80,
       "name": "P. Musa",
       "teamCode": "CRO",
       "club": "",
@@ -1260,7 +1271,7 @@
       "matches": 0
     },
     {
-      "rank": 80,
+      "rank": 81,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -1271,7 +1282,7 @@
       "matches": 0
     },
     {
-      "rank": 81,
+      "rank": 82,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -1282,7 +1293,7 @@
       "matches": 0
     },
     {
-      "rank": 82,
+      "rank": 83,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -1293,7 +1304,7 @@
       "matches": 0
     },
     {
-      "rank": 83,
+      "rank": 84,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -1304,7 +1315,7 @@
       "matches": 0
     },
     {
-      "rank": 84,
+      "rank": 85,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -1315,7 +1326,7 @@
       "matches": 0
     },
     {
-      "rank": 85,
+      "rank": 86,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
