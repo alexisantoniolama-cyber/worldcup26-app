@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-21T16:23:05.069566Z",
+  "updatedAt": "2026-06-21T16:24:36.946406Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M038": {
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 0,
       "finished": false,
       "homeYellow": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 22
+      "minute": 24
     },
     "M001": {
       "homeGoals": 2,
@@ -436,6 +436,17 @@
     },
     {
       "rank": 5,
+      "name": "M. Oyarzabal",
+      "teamCode": "ESP",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 2,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 6,
       "name": "B. Brobbey",
       "teamCode": "NED",
       "club": "",
@@ -446,7 +457,7 @@
       "matches": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -457,7 +468,7 @@
       "matches": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "D. Undav",
       "teamCode": "GER",
       "club": "",
@@ -468,7 +479,7 @@
       "matches": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "E. Haaland",
       "teamCode": "NOR",
       "club": "",
@@ -479,7 +490,7 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "E. Just",
       "teamCode": "NZL",
       "club": "",
@@ -490,7 +501,7 @@
       "matches": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "F. Balogun",
       "teamCode": "USA",
       "club": "",
@@ -501,7 +512,7 @@
       "matches": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "H. Kane",
       "teamCode": "ENG",
       "club": "",
@@ -512,7 +523,7 @@
       "matches": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "J. Manzambi",
       "teamCode": "SUI",
       "club": "",
@@ -523,7 +534,7 @@
       "matches": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "K. Mbappe",
       "teamCode": "FRA",
       "club": "",
@@ -534,7 +545,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "Kai Havertz",
       "teamCode": "GER",
       "club": "",
@@ -545,7 +556,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "M. Cunha",
       "teamCode": "BRA",
       "club": "",
@@ -556,7 +567,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Y. Ayari",
       "teamCode": "SWE",
       "club": "",
@@ -567,7 +578,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "A. Isak",
       "teamCode": "SWE",
       "club": "",
@@ -578,7 +589,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "Deniz Undav",
       "teamCode": "GER",
       "club": "",
@@ -589,7 +600,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "A. Freeman",
       "teamCode": "USA",
       "club": "",
@@ -600,7 +611,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -611,7 +622,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "Hwang In-Beom",
       "teamCode": "KOR",
       "club": "",
@@ -622,20 +633,9 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "L. Diaz",
       "teamCode": "COL",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 1,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 23,
-      "name": "M. Oyarzabal",
-      "teamCode": "ESP",
       "club": "",
       "league": "",
       "position": "",
