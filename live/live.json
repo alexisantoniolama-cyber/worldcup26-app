@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-22T02:43:57.585780Z",
+  "updatedAt": "2026-06-22T02:45:29.297763Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 84
+      "minute": 85
     },
     "M001": {
       "homeGoals": 2,
@@ -639,6 +639,17 @@
     },
     {
       "rank": 21,
+      "name": "M. Salah",
+      "teamCode": "EGY",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 2,
+      "matches": 0
+    },
+    {
+      "rank": 22,
       "name": "A. Freeman",
       "teamCode": "USA",
       "club": "",
@@ -649,7 +660,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -660,7 +671,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "Hwang In-Beom",
       "teamCode": "KOR",
       "club": "",
@@ -671,20 +682,9 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "L. Diaz",
       "teamCode": "COL",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 1,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 25,
-      "name": "M. Salah",
-      "teamCode": "EGY",
       "club": "",
       "league": "",
       "position": "",
