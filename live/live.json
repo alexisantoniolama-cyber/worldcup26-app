@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-22T02:40:54.500552Z",
+  "updatedAt": "2026-06-22T02:42:26.037736Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "M039": {
       "homeGoals": 1,
-      "awayGoals": 2,
+      "awayGoals": 3,
       "finished": false,
       "homeYellow": 2,
       "homeRed": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 81
+      "minute": 82
     },
     "M001": {
       "homeGoals": 2,
@@ -1409,6 +1409,17 @@
     },
     {
       "rank": 91,
+      "name": "Trezeguet",
+      "teamCode": "EGY",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 92,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -1419,7 +1430,7 @@
       "matches": 0
     },
     {
-      "rank": 92,
+      "rank": 93,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -1430,7 +1441,7 @@
       "matches": 0
     },
     {
-      "rank": 93,
+      "rank": 94,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
