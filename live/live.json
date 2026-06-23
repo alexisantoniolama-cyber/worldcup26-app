@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-23T18:51:19.453355Z",
+  "updatedAt": "2026-06-23T18:52:51.626954Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M045": {
-      "homeGoals": 4,
+      "homeGoals": 5,
       "awayGoals": 0,
       "finished": false,
       "homeYellow": 1,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 87
+      "minute": 89
     },
     "M001": {
       "homeGoals": 2,
@@ -1531,6 +1531,17 @@
     },
     {
       "rank": 98,
+      "name": "R. Leao",
+      "teamCode": "POR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 99,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -1541,7 +1552,7 @@
       "matches": 0
     },
     {
-      "rank": 99,
+      "rank": 100,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -1552,7 +1563,7 @@
       "matches": 0
     },
     {
-      "rank": 100,
+      "rank": 101,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -1563,7 +1574,7 @@
       "matches": 0
     },
     {
-      "rank": 101,
+      "rank": 102,
       "name": "Vinícius Júnior",
       "teamCode": "BRA",
       "club": "",
@@ -1574,7 +1585,7 @@
       "matches": 0
     },
     {
-      "rank": 102,
+      "rank": 103,
       "name": "Virgil van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -1585,7 +1596,7 @@
       "matches": 0
     },
     {
-      "rank": 103,
+      "rank": 104,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
