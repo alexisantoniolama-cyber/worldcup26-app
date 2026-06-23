@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-23T01:05:54.940644Z",
+  "updatedAt": "2026-06-23T01:07:26.909158Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M043": {
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
       "finished": false,
       "homeYellow": 0,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 47
+      "minute": 48
     },
     "M001": {
       "homeGoals": 2,
@@ -457,6 +457,17 @@
     },
     {
       "rank": 2,
+      "name": "E. Haaland",
+      "teamCode": "NOR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 3,
       "name": "J. David",
       "teamCode": "CAN",
       "club": "",
@@ -467,7 +478,7 @@
       "matches": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "A. Ueda",
       "teamCode": "JPN",
       "club": "",
@@ -478,7 +489,7 @@
       "matches": 0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "C. Gakpo",
       "teamCode": "NED",
       "club": "",
@@ -489,7 +500,7 @@
       "matches": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "M. Araujo",
       "teamCode": "URU",
       "club": "",
@@ -500,7 +511,7 @@
       "matches": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "M. Oyarzabal",
       "teamCode": "ESP",
       "club": "",
@@ -511,7 +522,7 @@
       "matches": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "B. Brobbey",
       "teamCode": "NED",
       "club": "",
@@ -522,7 +533,7 @@
       "matches": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -533,20 +544,9 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "D. Undav",
       "teamCode": "GER",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 10,
-      "name": "E. Haaland",
-      "teamCode": "NOR",
       "club": "",
       "league": "",
       "position": "",
