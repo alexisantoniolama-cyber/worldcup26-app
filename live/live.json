@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-23T18:31:22.057884Z",
+  "updatedAt": "2026-06-23T18:32:54.133172Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -56,13 +56,13 @@
       "homeGoals": 4,
       "awayGoals": 0,
       "finished": false,
-      "homeYellow": 0,
+      "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 1,
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 67
+      "minute": 69
     },
     "M001": {
       "homeGoals": 2,
@@ -2271,118 +2271,125 @@
     },
     {
       "rank": 97,
+      "name": "R. Veiga",
+      "teamCode": "POR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 98,
       "name": "R. Zerrouki",
       "teamCode": "ALG",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 98,
+      "rank": 99,
       "name": "Roger Ibañez",
       "teamCode": "BRA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 99,
+      "rank": 100,
       "name": "S. Al Dawsari",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 100,
+      "rank": 101,
       "name": "S. Ezatolahi",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 101,
+      "rank": 102,
       "name": "S. Fofana",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 102,
+      "rank": 103,
       "name": "S. Posch",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 103,
+      "rank": 104,
       "name": "S. Singh",
       "teamCode": "NZL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 104,
+      "rank": 105,
       "name": "T. Araujo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 105,
+      "rank": 106,
       "name": "T. Castagne",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 106,
+      "rank": 107,
       "name": "T. Mbatha",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 107,
+      "rank": 108,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 108,
+      "rank": 109,
       "name": "Teboho Mokoena",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 109,
+      "rank": 110,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 110,
+      "rank": 111,
       "name": "V. Montella",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 111,
+      "rank": 112,
       "name": "Y. Akgun",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 112,
+      "rank": 113,
       "name": "Y. Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 113,
+      "rank": 114,
       "name": "Z. Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
