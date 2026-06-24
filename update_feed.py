@@ -171,6 +171,66 @@ def read_json(path):
     return None
 
 
+GROUP_LABEL_RE = re.compile(r"([12])\D*Grupo\s*([A-L])", re.IGNORECASE)
+
+
+def build_group_qualifiers(standings_resp):
+    """{'A': {1:'MEX', 2:'KOR'}, ...} SOLO para grupos YA TERMINADOS (cada equipo
+    jugó sus 3 partidos). Usa el `rank` de la API, que aplica los desempates
+    oficiales (puntos, dif. de gol, etc.). Si un grupo no terminó, no se incluye:
+    las posiciones aún pueden cambiar y no hay que arriesgar un cruce falso."""
+    out = {}
+    if not standings_resp:
+        return out
+    tables = ((standings_resp[0] or {}).get("league") or {}).get("standings") or []
+    for table in tables:
+        if not table:
+            continue
+        gm = re.search(r"Group\s*([A-L])\b", table[0].get("group", "") or "", re.IGNORECASE)
+        if not gm:
+            continue  # pseudo-grupos (ranking de terceros, etc.) -> ignorar
+        if not all(((row.get("all") or {}).get("played") or 0) >= 3 for row in table):
+            continue  # grupo sin terminar -> posiciones no son finales
+        ranks = {}
+        for row in table:
+            code = code_for((row.get("team") or {}).get("name", ""))
+            r = row.get("rank")
+            if code and isinstance(r, int):
+                ranks[r] = code
+        if ranks:
+            out[gm.group(1).upper()] = ranks
+    return out
+
+
+def resolve_group_label(label, group_qual):
+    """'1° Grupo E' -> código del 1° del grupo E (si ese grupo ya terminó)."""
+    m = GROUP_LABEL_RE.search(label or "")
+    if not m:
+        return None
+    return (group_qual.get(m.group(2).upper()) or {}).get(int(m.group(1)))
+
+
+def build_bracket(my_matches, group_qual):
+    """Cupos de llave resueltos desde la tabla: id -> {homeCode, awayCode} para
+    los lados '1°/2° Grupo X' de grupos ya terminados. Los cupos de mejores
+    terceros ('3° (...)') quedan sin resolver hasta que la API publique el
+    sorteo (ahí los llena build_ko_fixture_to_slot con los equipos reales)."""
+    out = {}
+    for m in my_matches:
+        if isinstance(m.get("homeCode"), str) and isinstance(m.get("awayCode"), str):
+            continue  # partido de grupos (ya tiene equipos)
+        slot = {}
+        hc = resolve_group_label(m.get("homeLabel"), group_qual)
+        ac = resolve_group_label(m.get("awayLabel"), group_qual)
+        if hc:
+            slot["homeCode"] = hc
+        if ac:
+            slot["awayCode"] = ac
+        if slot:
+            out[m["id"]] = slot
+    return out
+
+
 def filter_events(raw):
     """Quedarse solo con goles y tarjetas, con los campos mínimos."""
     out = []
@@ -403,14 +463,27 @@ def main():
 
     top, bookings = build_scorers_and_bookings(events_by_fid)
 
-    payload = {"rankings": RANKINGS, "results": results,
+    # Cuadro de eliminatorias: 1° y 2° de cada grupo YA TERMINADO, desde la tabla
+    # oficial de la API. Vacío hasta que cierren los grupos (se llena solo).
+    try:
+        standings = api_get(key, "/standings?league=%s&season=%s" % (LEAGUE, SEASON)).get("response", [])
+    except Exception as e:
+        print("AVISO standings:", e)
+        standings = []
+    group_qual = build_group_qualifiers(standings)
+    bracket = build_bracket(my_matches, group_qual)
+
+    payload = {"rankings": RANKINGS, "results": results, "bracket": bracket,
                "topScorers": top, "bookings": bookings}
     old = read_json(OUT_PATH) or {}
-    if {"rankings": old.get("rankings"), "results": old.get("results"),
-            "topScorers": old.get("topScorers"),
-            "bookings": old.get("bookings")} == payload:
-        print("sin cambios relevantes (%d resultados, %d en vivo, %d req eventos); no se reescribe."
-              % (len(results), live_count, reqs))
+    same = (old.get("rankings") == payload["rankings"]
+            and old.get("results") == payload["results"]
+            and (old.get("bracket") or {}) == payload["bracket"]
+            and old.get("topScorers") == payload["topScorers"]
+            and old.get("bookings") == payload["bookings"])
+    if same:
+        print("sin cambios relevantes (%d resultados, %d en vivo, %d cupos llave, %d req); no se reescribe."
+              % (len(results), live_count, len(bracket), reqs))
         return
 
     out = {
@@ -422,9 +495,9 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("live/live.json: %d resultados (%d en vivo), %d goleadores, %d amonestados "
-          "(%d req eventos, mapeados %d, sin mapear %d)."
-          % (len(results), live_count, len(top), len(bookings), reqs, mapped, unmapped))
+    print("live/live.json: %d resultados (%d en vivo), %d cupos de llave, %d goleadores, "
+          "%d amonestados (%d req eventos, mapeados %d, sin mapear %d)."
+          % (len(results), live_count, len(bracket), len(top), len(bookings), reqs, mapped, unmapped))
 
 
 if __name__ == "__main__":
