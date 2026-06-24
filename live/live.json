@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-24T22:25:52.413238Z",
+  "updatedAt": "2026-06-24T22:27:24.783254Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -70,11 +70,11 @@
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 25
+      "minute": 27
     },
     "M053": {
       "homeGoals": 0,
-      "awayGoals": 2,
+      "awayGoals": 1,
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
@@ -86,17 +86,11 @@
           "teamCode": "BRA",
           "detail": "Normal Goal",
           "minute": 7
-        },
-        {
-          "name": "Vinicius Junior",
-          "teamCode": "BRA",
-          "detail": "Normal Goal",
-          "minute": 22
         }
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 25
+      "minute": 26
     },
     "M001": {
       "homeGoals": 2,
@@ -2450,17 +2444,6 @@
     },
     {
       "rank": 2,
-      "name": "Vinicius Junior",
-      "teamCode": "BRA",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 4,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 3,
       "name": "E. Haaland",
       "teamCode": "NOR",
       "club": "",
@@ -2471,7 +2454,7 @@
       "matches": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "D. Undav",
       "teamCode": "GER",
       "club": "",
@@ -2482,9 +2465,20 @@
       "matches": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "J. Manzambi",
       "teamCode": "SUI",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 5,
+      "name": "Vinicius Junior",
+      "teamCode": "BRA",
       "club": "",
       "league": "",
       "position": "",
