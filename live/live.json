@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-24T00:18:30.183938Z",
+  "updatedAt": "2026-06-24T00:20:01.757163Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -56,13 +56,13 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "finished": false,
-      "homeYellow": 0,
+      "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 0,
       "awayRed": 0,
       "live": true,
       "statusShort": "2H",
-      "minute": 60
+      "minute": 61
     },
     "M001": {
       "homeGoals": 2,
@@ -2444,6 +2444,13 @@
     },
     {
       "rank": 116,
+      "name": "Y. Barcenas",
+      "teamCode": "PAN",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 117,
       "name": "Z. Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
