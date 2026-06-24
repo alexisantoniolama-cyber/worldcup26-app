@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-24T03:56:41.335574Z",
+  "updatedAt": "2026-06-24T04:40:55.558636Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,46 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M048": {
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 2,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "D. Munoz",
-          "teamCode": "COL",
-          "detail": "Normal Goal",
-          "minute": 76
-        }
-      ],
-      "bookings": [
-        {
-          "name": "J. Lucumi",
-          "teamCode": "COL",
-          "detail": "Yellow Card",
-          "minute": 56
-        },
-        {
-          "name": "C. Pickel",
-          "teamCode": "COD",
-          "detail": "Yellow Card",
-          "minute": 90
-        },
-        {
-          "name": "J. Lerma",
-          "teamCode": "COL",
-          "detail": "Yellow Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2234,8 +2194,46 @@
           "minute": 90
         }
       ]
+    },
+    "M048": {
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "finished": true,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "D. Munoz",
+          "teamCode": "COL",
+          "detail": "Normal Goal",
+          "minute": 76
+        }
+      ],
+      "bookings": [
+        {
+          "name": "J. Lucumi",
+          "teamCode": "COL",
+          "detail": "Yellow Card",
+          "minute": 56
+        },
+        {
+          "name": "C. Pickel",
+          "teamCode": "COD",
+          "detail": "Yellow Card",
+          "minute": 90
+        },
+        {
+          "name": "J. Lerma",
+          "teamCode": "COL",
+          "detail": "Yellow Card",
+          "minute": 90
+        }
+      ]
     }
   },
+  "bracket": {},
   "topScorers": [
     {
       "rank": 1,
