@@ -36,6 +36,66 @@ EVENTS_CACHE = "live/events_cache.json"
 LIVE_STATUSES = {"1H", "2H", "HT", "ET", "BT", "P", "LIVE", "INT", "SUSP"}
 DONE_STATUSES = {"FT", "AET", "PEN"}
 
+# Ronda de la API (substring del campo league.round) -> etapa en mi matches.json.
+# Se usa para mapear los partidos de ELIMINATORIA (que en el fixture propio vienen
+# con homeCode/awayCode en null) a su cupo de llave, y así llenar quién avanzó.
+# La API recién agrega estos partidos cuando se definen las llaves; hasta entonces
+# este mapeo no encuentra nada y el cuadro queda con sus etiquetas ("2° Grupo A").
+KO_ROUND_TO_STAGE = [
+    ("round of 32", "Ronda de 32"),
+    ("round of 16", "Octavos"),
+    ("quarter", "Cuartos"),
+    ("semi", "Semifinales"),
+    ("3rd place", "Tercer Puesto"),
+    ("third place", "Tercer Puesto"),
+    ("final", "Final"),  # debe ir último: "semi-final" ya matcheó arriba
+]
+
+
+def ko_stage_for_round(api_round):
+    r = (api_round or "").lower()
+    for needle, stage in KO_ROUND_TO_STAGE:
+        if needle in r:
+            return stage
+    return None
+
+
+def build_ko_fixture_to_slot(fixtures, my_matches):
+    """Mapa fixture-id (API) -> id de cupo de llave (R32_01, ...).
+
+    Empareja por etapa y ORDEN cronológico: los partidos de cada ronda en la API,
+    ordenados por fecha, se zipean con mis cupos de esa etapa ordenados por hora.
+    Ambos vienen del calendario oficial, así que el orden coincide. Si la cantidad
+    no calza, se omite esa etapa (mejor dejar la etiqueta que adivinar mal).
+    """
+    my_by_stage = defaultdict(list)
+    for m in my_matches:
+        if not (isinstance(m.get("homeCode"), str) and isinstance(m.get("awayCode"), str)):
+            my_by_stage[m.get("stage")].append(m)
+    for v in my_by_stage.values():
+        v.sort(key=lambda m: m.get("kickoff", ""))
+
+    api_by_stage = defaultdict(list)
+    for f in fixtures:
+        stage = ko_stage_for_round((f.get("league") or {}).get("round"))
+        if stage:
+            api_by_stage[stage].append(f)
+    for v in api_by_stage.values():
+        v.sort(key=lambda f: (f.get("fixture") or {}).get("timestamp") or 0)
+
+    out = {}
+    for stage, slots in my_by_stage.items():
+        apis = api_by_stage.get(stage, [])
+        if not apis:
+            continue
+        if len(apis) != len(slots):
+            print("AVISO llaves %s: API trae %d, espero %d; no mapeo esta etapa."
+                  % (stage, len(apis), len(slots)))
+            continue
+        for f, slot in zip(apis, slots):
+            out[str((f.get("fixture") or {}).get("id"))] = slot["id"]
+    return out
+
 RANKINGS = {
     "ARG": 1, "ESP": 2, "FRA": 3, "ENG": 4, "POR": 5, "BRA": 6, "MAR": 7,
     "NED": 8, "BEL": 9, "GER": 10, "CRO": 11, "COL": 13, "MEX": 14, "SEN": 15,
@@ -124,6 +184,7 @@ def filter_events(raw):
             "team": (e.get("team") or {}).get("name") or "",
             "player": (e.get("player") or {}).get("name") or "",
             "assist": (e.get("assist") or {}).get("name") or "",
+            "minute": (e.get("time") or {}).get("elapsed"),
         })
     return out
 
@@ -179,6 +240,33 @@ def cards_by_team(evs, home_api, away_api):
     return hy, hr, ay, ar
 
 
+def match_events(evs):
+    """Goleadores y amonestados de UN partido, con nombre y minuto, en el
+    formato que consume la app (scorers[]/bookings[] dentro del result).
+
+    Los goles incluyen autogoles y penales (con su `detail` para que la app los
+    marque); el `teamCode` es el del equipo al que se le acredita el evento, así
+    la app lo ubica del lado correcto. Se ordenan por minuto.
+    """
+    scorers, bookings = [], []
+    for e in evs:
+        name = e.get("player") or ""
+        if not name:
+            continue
+        item = {"name": name, "teamCode": code_for(e.get("team", "")) or "",
+                "detail": e.get("detail", "")}
+        minute = e.get("minute")
+        if isinstance(minute, int):
+            item["minute"] = minute
+        if e.get("type") == "Goal":
+            scorers.append(item)
+        elif e.get("type") == "Card":
+            bookings.append(item)
+    scorers.sort(key=lambda x: x.get("minute", 999))
+    bookings.sort(key=lambda x: x.get("minute", 999))
+    return scorers, bookings
+
+
 def build_scorers_and_bookings(events_by_fid):
     goals = defaultdict(int)
     assists = defaultdict(int)
@@ -231,6 +319,7 @@ def main():
         raise SystemExit("ERROR: falta la API key (env APIFOOTBALL_KEY o tool/api_key.txt).")
 
     my_matches = (read_json(MATCHES_PATH) or {}).get("matches", [])
+    my_by_id = {m.get("id"): m for m in my_matches}
     pair_to_match = {}
     for m in my_matches:
         h, a = m.get("homeCode"), m.get("awayCode")
@@ -242,6 +331,9 @@ def main():
     except Exception as e:
         print("AVISO: no se pudieron leer fixtures:", e)
         fixtures = []
+
+    # Mapa de los partidos de eliminatoria de la API a mis cupos de llave.
+    ko_fixture_to_slot = build_ko_fixture_to_slot(fixtures, my_matches)
 
     played = [f for f in fixtures
               if (((f.get("fixture") or {}).get("status") or {}).get("short") or "")
@@ -267,21 +359,38 @@ def main():
             unmapped += 1
             continue
         m = pair_to_match.get(pair_key(hc, ac))
+        is_ko = False
         if m is None:
-            unmapped += 1
-            continue
-        home_is_api_home = (m["homeCode"] == hc)
+            # ¿Es un partido de eliminatoria? Lo ubicamos por su cupo de llave.
+            slot_id = ko_fixture_to_slot.get(str(fx.get("id")))
+            m = my_by_id.get(slot_id) if slot_id else None
+            if m is None:
+                unmapped += 1
+                continue
+            is_ko = True
+        # En eliminatoria mi cupo no tiene local fijo: uso el orden de la API.
+        home_is_api_home = True if is_ko else (m["homeCode"] == hc)
         entry = {
             "homeGoals": hg if home_is_api_home else ag,
             "awayGoals": ag if home_is_api_home else hg,
             "finished": is_done,
         }
+        if is_ko:
+            # Equipos reales que avanzaron (la app los pinta en el cuadro).
+            entry["homeCode"] = hc if home_is_api_home else ac
+            entry["awayCode"] = ac if home_is_api_home else hc
         evs = events_by_fid.get(str(fx.get("id")), [])
         hy, hr, ay, ar = cards_by_team(evs, hname, aname)
         if not home_is_api_home:
             hy, hr, ay, ar = ay, ar, hy, hr
         entry["homeYellow"], entry["homeRed"] = hy, hr
         entry["awayYellow"], entry["awayRed"] = ay, ar
+        # Goleadores y amonestados con NOMBRE de este partido.
+        sc, bk = match_events(evs)
+        if sc:
+            entry["scorers"] = sc
+        if bk:
+            entry["bookings"] = bk
         if is_live:
             entry["live"] = True
             entry["statusShort"] = status
