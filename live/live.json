@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-24T04:40:55.558636Z",
+  "updatedAt": "2026-06-24T05:03:24.701333Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -2233,7 +2233,65 @@
       ]
     }
   },
-  "bracket": {},
+  "bracket": {
+    "R32_01": {
+      "homeCode": "KOR",
+      "awayCode": "SUI"
+    },
+    "R32_02": {
+      "homeCode": "GER"
+    },
+    "R32_03": {
+      "homeCode": "NED",
+      "awayCode": "MAR"
+    },
+    "R32_04": {
+      "homeCode": "BRA",
+      "awayCode": "JPN"
+    },
+    "R32_05": {
+      "homeCode": "FRA"
+    },
+    "R32_06": {
+      "homeCode": "CIV",
+      "awayCode": "NOR"
+    },
+    "R32_07": {
+      "homeCode": "MEX"
+    },
+    "R32_08": {
+      "homeCode": "ENG"
+    },
+    "R32_09": {
+      "homeCode": "USA"
+    },
+    "R32_10": {
+      "homeCode": "EGY"
+    },
+    "R32_11": {
+      "homeCode": "POR",
+      "awayCode": "GHA"
+    },
+    "R32_12": {
+      "homeCode": "ESP",
+      "awayCode": "AUT"
+    },
+    "R32_13": {
+      "homeCode": "CAN"
+    },
+    "R32_14": {
+      "homeCode": "ARG",
+      "awayCode": "URU"
+    },
+    "R32_15": {
+      "homeCode": "COL"
+    },
+    "R32_16": {
+      "homeCode": "AUS",
+      "awayCode": "IRN"
+    }
+  },
+  "bracketProvisional": true,
   "topScorers": [
     {
       "rank": 1,

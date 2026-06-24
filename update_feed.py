@@ -175,13 +175,17 @@ GROUP_LABEL_RE = re.compile(r"([12])\D*Grupo\s*([A-L])", re.IGNORECASE)
 
 
 def build_group_qualifiers(standings_resp):
-    """{'A': {1:'MEX', 2:'KOR'}, ...} SOLO para grupos YA TERMINADOS (cada equipo
-    jugó sus 3 partidos). Usa el `rank` de la API, que aplica los desempates
-    oficiales (puntos, dif. de gol, etc.). Si un grupo no terminó, no se incluye:
-    las posiciones aún pueden cambiar y no hay que arriesgar un cruce falso."""
+    """Devuelve (qualifiers, incompletos):
+      - qualifiers: {'A': {1:'MEX', 2:'KOR', 3:..., 4:...}, ...} con el `rank`
+        ACTUAL de la API (aplica los desempates oficiales). Incluye grupos en
+        curso para poder PROYECTAR quién va 1°/2° según la tabla de hoy.
+      - incompletos: set de letras de grupos que aún no terminaron (sus
+        posiciones pueden cambiar -> la proyección es provisional).
+    """
     out = {}
+    incompletos = set()
     if not standings_resp:
-        return out
+        return out, incompletos
     tables = ((standings_resp[0] or {}).get("league") or {}).get("standings") or []
     for table in tables:
         if not table:
@@ -189,8 +193,9 @@ def build_group_qualifiers(standings_resp):
         gm = re.search(r"Group\s*([A-L])\b", table[0].get("group", "") or "", re.IGNORECASE)
         if not gm:
             continue  # pseudo-grupos (ranking de terceros, etc.) -> ignorar
+        letter = gm.group(1).upper()
         if not all(((row.get("all") or {}).get("played") or 0) >= 3 for row in table):
-            continue  # grupo sin terminar -> posiciones no son finales
+            incompletos.add(letter)  # en curso -> proyección provisional
         ranks = {}
         for row in table:
             code = code_for((row.get("team") or {}).get("name", ""))
@@ -198,8 +203,8 @@ def build_group_qualifiers(standings_resp):
             if code and isinstance(r, int):
                 ranks[r] = code
         if ranks:
-            out[gm.group(1).upper()] = ranks
-    return out
+            out[letter] = ranks
+    return out, incompletos
 
 
 def resolve_group_label(label, group_qual):
@@ -470,15 +475,21 @@ def main():
     except Exception as e:
         print("AVISO standings:", e)
         standings = []
-    group_qual = build_group_qualifiers(standings)
+    group_qual, incompletos = build_group_qualifiers(standings)
     bracket = build_bracket(my_matches, group_qual)
+    # La proyección es PROVISIONAL si algún grupo que aporta al cuadro sigue en
+    # curso (sus posiciones pueden cambiar en la última fecha). Cuando todos los
+    # grupos terminan, queda confirmada (la app saca la etiqueta "proyección").
+    bracket_provisional = bool(bracket) and len(incompletos) > 0
 
     payload = {"rankings": RANKINGS, "results": results, "bracket": bracket,
+               "bracketProvisional": bracket_provisional,
                "topScorers": top, "bookings": bookings}
     old = read_json(OUT_PATH) or {}
     same = (old.get("rankings") == payload["rankings"]
             and old.get("results") == payload["results"]
             and (old.get("bracket") or {}) == payload["bracket"]
+            and bool(old.get("bracketProvisional")) == bracket_provisional
             and old.get("topScorers") == payload["topScorers"]
             and old.get("bookings") == payload["bookings"])
     if same:
@@ -495,9 +506,11 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("live/live.json: %d resultados (%d en vivo), %d cupos de llave, %d goleadores, "
+    print("live/live.json: %d resultados (%d en vivo), %d cupos de llave%s, %d goleadores, "
           "%d amonestados (%d req eventos, mapeados %d, sin mapear %d)."
-          % (len(results), live_count, len(bracket), len(top), len(bookings), reqs, mapped, unmapped))
+          % (len(results), live_count, len(bracket),
+             " (proyección)" if bracket_provisional else "",
+             len(top), len(bookings), reqs, mapped, unmapped))
 
 
 if __name__ == "__main__":
