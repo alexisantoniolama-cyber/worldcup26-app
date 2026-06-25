@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-25T20:06:25.439200Z",
+  "updatedAt": "2026-06-25T20:07:57.750556Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -62,7 +62,7 @@
       "awayRed": 0,
       "scorers": [
         {
-          "name": "L. Sane",
+          "name": "Leroy Sané",
           "teamCode": "GER",
           "detail": "Normal Goal",
           "minute": 2
@@ -70,11 +70,11 @@
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 6
+      "minute": 8
     },
     "M057": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
@@ -82,7 +82,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 6
+      "minute": 7
     },
     "M001": {
       "homeGoals": 2,
@@ -3500,8 +3500,8 @@
     },
     {
       "rank": 82,
-      "name": "L. Sane",
-      "teamCode": "GER",
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
       "club": "",
       "league": "",
       "position": "",
@@ -3511,8 +3511,8 @@
     },
     {
       "rank": 83,
-      "name": "Lamine Yamal",
-      "teamCode": "ESP",
+      "name": "Leroy Sané",
+      "teamCode": "GER",
       "club": "",
       "league": "",
       "position": "",
