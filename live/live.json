@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-25T20:07:57.750556Z",
+  "updatedAt": "2026-06-25T20:09:29.968527Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M058": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "finished": false,
       "homeYellow": 0,
@@ -66,11 +66,17 @@
           "teamCode": "GER",
           "detail": "Normal Goal",
           "minute": 2
+        },
+        {
+          "name": "Nilson Angulo",
+          "teamCode": "ECU",
+          "detail": "Normal Goal",
+          "minute": 9
         }
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 8
+      "minute": 9
     },
     "M057": {
       "homeGoals": 0,
@@ -80,9 +86,17 @@
       "homeRed": 0,
       "awayYellow": 0,
       "awayRed": 0,
+      "scorers": [
+        {
+          "name": "Nicolas Pépé",
+          "teamCode": "CIV",
+          "detail": "Normal Goal",
+          "minute": 7
+        }
+      ],
       "live": true,
       "statusShort": "1H",
-      "minute": 7
+      "minute": 9
     },
     "M001": {
       "homeGoals": 2,
@@ -3687,6 +3701,28 @@
     },
     {
       "rank": 99,
+      "name": "Nicolas Pépé",
+      "teamCode": "CIV",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 100,
+      "name": "Nilson Angulo",
+      "teamCode": "ECU",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 101,
       "name": "O. Rekik",
       "teamCode": "TUN",
       "club": "",
@@ -3697,7 +3733,7 @@
       "matches": 0
     },
     {
-      "rank": 100,
+      "rank": 102,
       "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
@@ -3708,7 +3744,7 @@
       "matches": 0
     },
     {
-      "rank": 101,
+      "rank": 103,
       "name": "P. Musa",
       "teamCode": "CRO",
       "club": "",
@@ -3719,7 +3755,7 @@
       "matches": 0
     },
     {
-      "rank": 102,
+      "rank": 104,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -3730,7 +3766,7 @@
       "matches": 0
     },
     {
-      "rank": 103,
+      "rank": 105,
       "name": "R. Leao",
       "teamCode": "POR",
       "club": "",
@@ -3741,7 +3777,7 @@
       "matches": 0
     },
     {
-      "rank": 104,
+      "rank": 106,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -3752,7 +3788,7 @@
       "matches": 0
     },
     {
-      "rank": 105,
+      "rank": 107,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -3763,7 +3799,7 @@
       "matches": 0
     },
     {
-      "rank": 106,
+      "rank": 108,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -3774,7 +3810,7 @@
       "matches": 0
     },
     {
-      "rank": 107,
+      "rank": 109,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -3785,7 +3821,7 @@
       "matches": 0
     },
     {
-      "rank": 108,
+      "rank": 110,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -3796,7 +3832,7 @@
       "matches": 0
     },
     {
-      "rank": 109,
+      "rank": 111,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
@@ -3807,7 +3843,7 @@
       "matches": 0
     },
     {
-      "rank": 110,
+      "rank": 112,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
