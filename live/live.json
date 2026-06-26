@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T02:30:16.802788Z",
+  "updatedAt": "2026-06-26T02:31:49.005075Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "M055": {
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "finished": false,
       "homeYellow": 0,
@@ -72,6 +72,12 @@
           "teamCode": "TUR",
           "detail": "Normal Goal",
           "minute": 10
+        },
+        {
+          "name": "Orkun Kökçü",
+          "teamCode": "TUR",
+          "detail": "Normal Goal",
+          "minute": 31
         }
       ],
       "bookings": [
@@ -84,7 +90,7 @@
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 30
+      "minute": 32
     },
     "M056": {
       "homeGoals": 0,
@@ -96,7 +102,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 30
+      "minute": 32
     },
     "M001": {
       "homeGoals": 2,
@@ -4009,6 +4015,17 @@
     },
     {
       "rank": 111,
+      "name": "Orkun Kökçü",
+      "teamCode": "TUR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 112,
       "name": "P. Musa",
       "teamCode": "CRO",
       "club": "",
@@ -4019,7 +4036,7 @@
       "matches": 0
     },
     {
-      "rank": 112,
+      "rank": 113,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -4030,7 +4047,7 @@
       "matches": 0
     },
     {
-      "rank": 113,
+      "rank": 114,
       "name": "R. Leao",
       "teamCode": "POR",
       "club": "",
@@ -4041,7 +4058,7 @@
       "matches": 0
     },
     {
-      "rank": 114,
+      "rank": 115,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -4052,7 +4069,7 @@
       "matches": 0
     },
     {
-      "rank": 115,
+      "rank": 116,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -4063,7 +4080,7 @@
       "matches": 0
     },
     {
-      "rank": 116,
+      "rank": 117,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -4074,7 +4091,7 @@
       "matches": 0
     },
     {
-      "rank": 117,
+      "rank": 118,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -4085,7 +4102,7 @@
       "matches": 0
     },
     {
-      "rank": 118,
+      "rank": 119,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -4096,7 +4113,7 @@
       "matches": 0
     },
     {
-      "rank": 119,
+      "rank": 120,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
@@ -4107,7 +4124,7 @@
       "matches": 0
     },
     {
-      "rank": 120,
+      "rank": 121,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
