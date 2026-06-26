@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T00:44:47.045044Z",
+  "updatedAt": "2026-06-26T00:46:19.292947Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -2618,7 +2618,7 @@
       "finished": false,
       "homeYellow": 1,
       "homeRed": 0,
-      "awayYellow": 1,
+      "awayYellow": 2,
       "awayRed": 0,
       "scorers": [
         {
@@ -2646,11 +2646,17 @@
           "teamCode": "JPN",
           "detail": "Yellow Card",
           "minute": 77
+        },
+        {
+          "name": "Viktor Gyökeres",
+          "teamCode": "SWE",
+          "detail": "Yellow Card",
+          "minute": 85
         }
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 84
+      "minute": 85
     },
     "M060": {
       "homeGoals": 1,
@@ -2688,7 +2694,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 86
+      "minute": 87
     }
   },
   "bracket": {
@@ -4998,27 +5004,34 @@
     },
     {
       "rank": 136,
+      "name": "Viktor Gyökeres",
+      "teamCode": "SWE",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 137,
       "name": "Y. Barcenas",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 137,
+      "rank": 138,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 138,
+      "rank": 139,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 139,
+      "rank": 140,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
