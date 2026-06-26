@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T03:57:32.062203Z",
+  "updatedAt": "2026-06-26T03:59:04.449534Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -2690,6 +2690,29 @@
         }
       ]
     },
+    "M056": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "bookings": [
+        {
+          "name": "Jackson Irvine",
+          "teamCode": "AUS",
+          "detail": "Yellow Card",
+          "minute": 46
+        },
+        {
+          "name": "Diego Gomez",
+          "teamCode": "PAR",
+          "detail": "Yellow Card",
+          "minute": 77
+        }
+      ]
+    },
     "M055": {
       "homeGoals": 2,
       "awayGoals": 2,
@@ -2730,32 +2753,6 @@
           "teamCode": "USA",
           "detail": "Yellow Card",
           "minute": 19
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
-    "M056": {
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "bookings": [
-        {
-          "name": "Jackson Irvine",
-          "teamCode": "AUS",
-          "detail": "Yellow Card",
-          "minute": 46
-        },
-        {
-          "name": "Diego Gomez",
-          "teamCode": "PAR",
-          "detail": "Yellow Card",
-          "minute": 77
         }
       ],
       "live": true,
