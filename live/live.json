@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T00:37:05.636275Z",
+  "updatedAt": "2026-06-26T00:38:37.843146Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -2616,7 +2616,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "finished": false,
-      "homeYellow": 0,
+      "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 1,
       "awayRed": 0,
@@ -2640,11 +2640,17 @@
           "teamCode": "SWE",
           "detail": "Yellow Card",
           "minute": 32
+        },
+        {
+          "name": "Shogo Taniguchi",
+          "teamCode": "JPN",
+          "detail": "Yellow Card",
+          "minute": 77
         }
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 76
+      "minute": 78
     },
     "M060": {
       "homeGoals": 1,
@@ -2682,7 +2688,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 78
+      "minute": 79
     }
   },
   "bracket": {
@@ -4957,55 +4963,62 @@
     },
     {
       "rank": 131,
+      "name": "Shogo Taniguchi",
+      "teamCode": "JPN",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 132,
       "name": "Thalente Mbatha",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 132,
+      "rank": 133,
       "name": "Timothy Castagne",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 133,
+      "rank": 134,
       "name": "Tomás Araújo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "Y. Barcenas",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 136,
+      "rank": 137,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 137,
+      "rank": 138,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 138,
+      "rank": 139,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
