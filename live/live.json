@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T02:17:59.204173Z",
+  "updatedAt": "2026-06-26T02:19:31.376634Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,7 +58,7 @@
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
-      "awayYellow": 0,
+      "awayYellow": 1,
       "awayRed": 0,
       "scorers": [
         {
@@ -74,9 +74,17 @@
           "minute": 10
         }
       ],
+      "bookings": [
+        {
+          "name": "Sebastian Berhalter",
+          "teamCode": "USA",
+          "detail": "Yellow Card",
+          "minute": 19
+        }
+      ],
       "live": true,
       "statusShort": "1H",
-      "minute": 18
+      "minute": 19
     },
     "M056": {
       "homeGoals": 0,
@@ -88,7 +96,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 18
+      "minute": 19
     },
     "M001": {
       "homeGoals": 2,
@@ -5009,83 +5017,90 @@
     },
     {
       "rank": 129,
+      "name": "Sebastian Berhalter",
+      "teamCode": "USA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 130,
       "name": "Seko Fofana",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 130,
+      "rank": 131,
       "name": "Seung Ho Paik",
       "teamCode": "KOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 131,
+      "rank": 132,
       "name": "Shogo Taniguchi",
       "teamCode": "JPN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 132,
+      "rank": 133,
       "name": "Thalente Mbatha",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 133,
+      "rank": 134,
       "name": "Timothy Castagne",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "Tomás Araújo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 136,
+      "rank": 137,
       "name": "Viktor Gyökeres",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 137,
+      "rank": 138,
       "name": "Y. Barcenas",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 138,
+      "rank": 139,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 139,
+      "rank": 140,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 140,
+      "rank": 141,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
