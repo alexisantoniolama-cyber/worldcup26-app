@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T21:00:09.152844Z",
+  "updatedAt": "2026-06-26T21:53:43.129175Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,82 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M066": {
-      "homeGoals": 5,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 2,
-      "homeRed": 0,
-      "awayYellow": 2,
-      "awayRed": 1,
-      "scorers": [
-        {
-          "name": "H. Diarra",
-          "teamCode": "SEN",
-          "detail": "Normal Goal",
-          "minute": 4
-        },
-        {
-          "name": "I. Sarr",
-          "teamCode": "SEN",
-          "detail": "Normal Goal",
-          "minute": 56
-        },
-        {
-          "name": "P. Gueye",
-          "teamCode": "SEN",
-          "detail": "Normal Goal",
-          "minute": 59
-        },
-        {
-          "name": "P. Gueye",
-          "teamCode": "SEN",
-          "detail": "Normal Goal",
-          "minute": 71
-        },
-        {
-          "name": "I. Ndiaye",
-          "teamCode": "SEN",
-          "detail": "Normal Goal",
-          "minute": 82
-        }
-      ],
-      "bookings": [
-        {
-          "name": "R. Sulaka",
-          "teamCode": "IRQ",
-          "detail": "Red Card",
-          "minute": 13
-        },
-        {
-          "name": "A. Seck",
-          "teamCode": "SEN",
-          "detail": "Yellow Card",
-          "minute": 18
-        },
-        {
-          "name": "A. Al Ammari",
-          "teamCode": "IRQ",
-          "detail": "Yellow Card",
-          "minute": 75
-        },
-        {
-          "name": "P. Gueye",
-          "teamCode": "SEN",
-          "detail": "Yellow Card",
-          "minute": 81
-        },
-        {
-          "name": "M. Doski",
-          "teamCode": "IRQ",
-          "detail": "Yellow Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2835,6 +2759,79 @@
           "teamCode": "PAR",
           "detail": "Yellow Card",
           "minute": 77
+        }
+      ]
+    },
+    "M066": {
+      "homeGoals": 5,
+      "awayGoals": 0,
+      "finished": true,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 2,
+      "awayRed": 1,
+      "scorers": [
+        {
+          "name": "H. Diarra",
+          "teamCode": "SEN",
+          "detail": "Normal Goal",
+          "minute": 4
+        },
+        {
+          "name": "I. Sarr",
+          "teamCode": "SEN",
+          "detail": "Normal Goal",
+          "minute": 56
+        },
+        {
+          "name": "P. Gueye",
+          "teamCode": "SEN",
+          "detail": "Normal Goal",
+          "minute": 59
+        },
+        {
+          "name": "P. Gueye",
+          "teamCode": "SEN",
+          "detail": "Normal Goal",
+          "minute": 71
+        },
+        {
+          "name": "I. Ndiaye",
+          "teamCode": "SEN",
+          "detail": "Normal Goal",
+          "minute": 82
+        }
+      ],
+      "bookings": [
+        {
+          "name": "R. Sulaka",
+          "teamCode": "IRQ",
+          "detail": "Red Card",
+          "minute": 13
+        },
+        {
+          "name": "A. Seck",
+          "teamCode": "SEN",
+          "detail": "Yellow Card",
+          "minute": 18
+        },
+        {
+          "name": "A. Al Ammari",
+          "teamCode": "IRQ",
+          "detail": "Yellow Card",
+          "minute": 75
+        },
+        {
+          "name": "P. Gueye",
+          "teamCode": "SEN",
+          "detail": "Yellow Card",
+          "minute": 81
+        },
+        {
+          "name": "M. Doski",
+          "teamCode": "IRQ",
+          "detail": "Yellow Card",
+          "minute": 90
         }
       ]
     },
