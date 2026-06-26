@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-26T00:55:30.157708Z",
+  "updatedAt": "2026-06-26T00:58:33.073619Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -2612,45 +2612,10 @@
         }
       ]
     },
-    "M060": {
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "finished": true,
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 0,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "Ellyes Skhiri",
-          "teamCode": "NED",
-          "detail": "Own Goal",
-          "minute": 3
-        },
-        {
-          "name": "Brian Brobbey",
-          "teamCode": "NED",
-          "detail": "Normal Goal",
-          "minute": 7
-        },
-        {
-          "name": "Hazem Mastouri",
-          "teamCode": "TUN",
-          "detail": "Normal Goal",
-          "minute": 54
-        },
-        {
-          "name": "Jan Paul van Hecke",
-          "teamCode": "NED",
-          "detail": "Normal Goal",
-          "minute": 62
-        }
-      ]
-    },
     "M059": {
       "homeGoals": 1,
       "awayGoals": 1,
-      "finished": false,
+      "finished": true,
       "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 2,
@@ -2688,10 +2653,42 @@
           "detail": "Yellow Card",
           "minute": 85
         }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
+      ]
+    },
+    "M060": {
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "finished": true,
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "Ellyes Skhiri",
+          "teamCode": "NED",
+          "detail": "Own Goal",
+          "minute": 3
+        },
+        {
+          "name": "Brian Brobbey",
+          "teamCode": "NED",
+          "detail": "Normal Goal",
+          "minute": 7
+        },
+        {
+          "name": "Hazem Mastouri",
+          "teamCode": "TUN",
+          "detail": "Normal Goal",
+          "minute": 54
+        },
+        {
+          "name": "Jan Paul van Hecke",
+          "teamCode": "NED",
+          "detail": "Normal Goal",
+          "minute": 62
+        }
+      ]
     }
   },
   "bracket": {
