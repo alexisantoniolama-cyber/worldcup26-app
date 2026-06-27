@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T01:26:17.301351Z",
+  "updatedAt": "2026-06-27T01:29:19.344666Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,72 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M064": {
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "finished": false,
-      "homeYellow": 2,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "A. Baena",
-          "teamCode": "ESP",
-          "detail": "Normal Goal",
-          "minute": 42
-        }
-      ],
-      "bookings": [
-        {
-          "name": "A. Baena",
-          "teamCode": "ESP",
-          "detail": "Yellow Card",
-          "minute": 46
-        },
-        {
-          "name": "J. Sanabria",
-          "teamCode": "URU",
-          "detail": "Yellow Card",
-          "minute": 54
-        },
-        {
-          "name": "G. Varela",
-          "teamCode": "URU",
-          "detail": "Yellow Card",
-          "minute": 58
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 61
-    },
-    "M063": {
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "bookings": [
-        {
-          "name": "S. Abdulhamid",
-          "teamCode": "KSA",
-          "detail": "Yellow Card",
-          "minute": 4
-        },
-        {
-          "name": "W. Pina",
-          "teamCode": "CPV",
-          "detail": "Yellow Card",
-          "minute": 9
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 62
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2961,6 +2895,72 @@
           "minute": 74
         }
       ]
+    },
+    "M064": {
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "finished": false,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "Alejandro Baena Rodríguez",
+          "teamCode": "ESP",
+          "detail": "Normal Goal",
+          "minute": 42
+        }
+      ],
+      "bookings": [
+        {
+          "name": "Alejandro Baena Rodríguez",
+          "teamCode": "ESP",
+          "detail": "Yellow Card",
+          "minute": 46
+        },
+        {
+          "name": "Juan Sanabria",
+          "teamCode": "URU",
+          "detail": "Yellow Card",
+          "minute": 54
+        },
+        {
+          "name": "Guillermo Varela",
+          "teamCode": "URU",
+          "detail": "Yellow Card",
+          "minute": 58
+        }
+      ],
+      "live": true,
+      "statusShort": "2H",
+      "minute": 65
+    },
+    "M063": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "finished": false,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "bookings": [
+        {
+          "name": "Saud Abdulhamid",
+          "teamCode": "KSA",
+          "detail": "Yellow Card",
+          "minute": 4
+        },
+        {
+          "name": "Wagner Pina",
+          "teamCode": "CPV",
+          "detail": "Yellow Card",
+          "minute": 9
+        }
+      ],
+      "live": true,
+      "statusShort": "2H",
+      "minute": 66
     }
   },
   "bracket": {
@@ -3641,17 +3641,6 @@
     },
     {
       "rank": 57,
-      "name": "A. Baena",
-      "teamCode": "ESP",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 1,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 58,
       "name": "A. Budimir",
       "teamCode": "CRO",
       "club": "",
@@ -3662,7 +3651,7 @@
       "matches": 0
     },
     {
-      "rank": 59,
+      "rank": 58,
       "name": "A. Canobbio",
       "teamCode": "URU",
       "club": "",
@@ -3673,7 +3662,7 @@
       "matches": 0
     },
     {
-      "rank": 60,
+      "rank": 59,
       "name": "A. Diallo",
       "teamCode": "CIV",
       "club": "",
@@ -3684,7 +3673,7 @@
       "matches": 0
     },
     {
-      "rank": 61,
+      "rank": 60,
       "name": "A. Elanga",
       "teamCode": "SWE",
       "club": "",
@@ -3695,7 +3684,7 @@
       "matches": 0
     },
     {
-      "rank": 62,
+      "rank": 61,
       "name": "A. Fayzullaev",
       "teamCode": "UZB",
       "club": "",
@@ -3706,7 +3695,7 @@
       "matches": 0
     },
     {
-      "rank": 63,
+      "rank": 62,
       "name": "A. Fidalgo",
       "teamCode": "MEX",
       "club": "",
@@ -3717,7 +3706,7 @@
       "matches": 0
     },
     {
-      "rank": 64,
+      "rank": 63,
       "name": "A. Gouiri",
       "teamCode": "ALG",
       "club": "",
@@ -3728,7 +3717,7 @@
       "matches": 0
     },
     {
-      "rank": 65,
+      "rank": 64,
       "name": "A. Hussein",
       "teamCode": "IRQ",
       "club": "",
@@ -3739,9 +3728,20 @@
       "matches": 0
     },
     {
-      "rank": 66,
+      "rank": 65,
       "name": "A. Olwan",
       "teamCode": "JOR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 66,
+      "name": "Alejandro Baena Rodríguez",
+      "teamCode": "ESP",
       "club": "",
       "league": "",
       "position": "",
@@ -4566,78 +4566,78 @@
     },
     {
       "rank": 15,
-      "name": "A. Baena",
-      "teamCode": "ESP",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "rank": 16,
       "name": "A. Fathi",
       "teamCode": "QAT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 17,
+      "rank": 16,
       "name": "A. Modiba",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 18,
+      "rank": 17,
       "name": "A. Seck",
       "teamCode": "SEN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 19,
+      "rank": 18,
       "name": "A. Tchouameni",
       "teamCode": "FRA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 20,
+      "rank": 19,
       "name": "Aaron Hickey",
       "teamCode": "SCO",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 21,
+      "rank": 20,
       "name": "Abdukodir Khusanov",
       "teamCode": "UZB",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 22,
+      "rank": 21,
       "name": "Abdulelah Al-Amri",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 23,
+      "rank": 22,
       "name": "Ahmed Fathi",
       "teamCode": "QAT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 24,
+      "rank": 23,
       "name": "Ahmed Fatouh",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 25,
+      "rank": 24,
       "name": "Alan Franco",
       "teamCode": "ECU",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 25,
+      "name": "Alejandro Baena Rodríguez",
+      "teamCode": "ESP",
       "yellow": 1,
       "red": 0
     },
@@ -4951,36 +4951,36 @@
     },
     {
       "rank": 70,
-      "name": "G. Varela",
-      "teamCode": "URU",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "rank": 71,
       "name": "G. Xhaka",
       "teamCode": "SUI",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 72,
+      "rank": 71,
       "name": "Gabriel Gudmundsson",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 73,
+      "rank": 72,
       "name": "Gi-Hyuk Lee",
       "teamCode": "KOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 74,
+      "rank": 73,
       "name": "Gonzalo Plata",
       "teamCode": "ECU",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 74,
+      "name": "Guillermo Varela",
+      "teamCode": "URU",
       "yellow": 1,
       "red": 0
     },
@@ -5056,78 +5056,78 @@
     },
     {
       "rank": 85,
-      "name": "J. Sanabria",
-      "teamCode": "URU",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "rank": 86,
       "name": "Jackson Irvine",
       "teamCode": "AUS",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 87,
+      "rank": 86,
       "name": "Jackson Porozo",
       "teamCode": "ECU",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 88,
+      "rank": 87,
       "name": "Jacob Italiano",
       "teamCode": "AUS",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 89,
+      "rank": 88,
       "name": "Jassem Gaber Abdulsallam",
       "teamCode": "QAT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 90,
+      "rank": 89,
       "name": "Jean-Ricner Bellegarde",
       "teamCode": "HAI",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 91,
+      "rank": 90,
       "name": "Johan Mojica",
       "teamCode": "COL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 92,
+      "rank": 91,
       "name": "Jordan Bos",
       "teamCode": "AUS",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 93,
+      "rank": 92,
       "name": "Jordy Alcivar",
       "teamCode": "ECU",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 94,
+      "rank": 93,
       "name": "Jovo Lukić",
       "teamCode": "BIH",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 95,
+      "rank": 94,
       "name": "Juan Cáceres",
       "teamCode": "PAR",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 95,
+      "name": "Juan Sanabria",
+      "teamCode": "URU",
       "yellow": 1,
       "red": 0
     },
@@ -5420,36 +5420,36 @@
     },
     {
       "rank": 137,
-      "name": "S. Abdulhamid",
-      "teamCode": "KSA",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "rank": 138,
       "name": "S. Posch",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 139,
+      "rank": 138,
       "name": "Saeid Ezatolahi",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 140,
+      "rank": 139,
       "name": "Salem Al-Dawsari",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 141,
+      "rank": 140,
       "name": "Sarpreet Singh",
       "teamCode": "NZL",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 141,
+      "name": "Saud Abdulhamid",
+      "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
@@ -5518,7 +5518,7 @@
     },
     {
       "rank": 151,
-      "name": "W. Pina",
+      "name": "Wagner Pina",
       "teamCode": "CPV",
       "yellow": 1,
       "red": 0
