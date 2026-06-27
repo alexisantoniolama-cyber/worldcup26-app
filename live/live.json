@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T04:57:35.454853Z",
+  "updatedAt": "2026-06-27T04:59:07.157706Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -78,6 +78,12 @@
           "teamCode": "IRN",
           "detail": "Normal Goal",
           "minute": 14
+        },
+        {
+          "name": "S. Khalilzadeh",
+          "teamCode": "IRN",
+          "detail": "Normal Goal",
+          "minute": 90
         }
       ],
       "bookings": [
@@ -116,70 +122,6 @@
           "teamCode": "EGY",
           "detail": "Yellow Card",
           "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
-    "M062": {
-      "homeGoals": 1,
-      "awayGoals": 5,
-      "finished": false,
-      "homeYellow": 2,
-      "homeRed": 0,
-      "awayYellow": 0,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "L. Trossard",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 28
-        },
-        {
-          "name": "L. Trossard",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 50
-        },
-        {
-          "name": "K. De Bruyne",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 66
-        },
-        {
-          "name": "E. Just",
-          "teamCode": "NZL",
-          "detail": "Normal Goal",
-          "minute": 84
-        },
-        {
-          "name": "R. Lukaku",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 86
-        },
-        {
-          "name": "A. Saelemaekers",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "M. Stamenic",
-          "teamCode": "NZL",
-          "detail": "Yellow Card",
-          "minute": 46
-        },
-        {
-          "name": "E. Just",
-          "teamCode": "NZL",
-          "detail": "Yellow Card",
-          "minute": 56
         }
       ],
       "live": true,
@@ -3113,6 +3055,67 @@
           "minute": 90
         }
       ]
+    },
+    "M062": {
+      "homeGoals": 1,
+      "awayGoals": 5,
+      "finished": true,
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "L. Trossard",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 28
+        },
+        {
+          "name": "L. Trossard",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 50
+        },
+        {
+          "name": "K. De Bruyne",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 66
+        },
+        {
+          "name": "E. Just",
+          "teamCode": "NZL",
+          "detail": "Normal Goal",
+          "minute": 84
+        },
+        {
+          "name": "R. Lukaku",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 86
+        },
+        {
+          "name": "A. Saelemaekers",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "M. Stamenic",
+          "teamCode": "NZL",
+          "detail": "Yellow Card",
+          "minute": 46
+        },
+        {
+          "name": "E. Just",
+          "teamCode": "NZL",
+          "detail": "Yellow Card",
+          "minute": 56
+        }
+      ]
     }
   },
   "bracket": {
@@ -4607,6 +4610,17 @@
     },
     {
       "rank": 131,
+      "name": "S. Khalilzadeh",
+      "teamCode": "IRN",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 132,
       "name": "T. Aasgaard",
       "teamCode": "NOR",
       "club": "",
@@ -4617,7 +4631,7 @@
       "matches": 0
     },
     {
-      "rank": 132,
+      "rank": 133,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -4628,7 +4642,7 @@
       "matches": 0
     },
     {
-      "rank": 133,
+      "rank": 134,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -4639,7 +4653,7 @@
       "matches": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -4650,7 +4664,7 @@
       "matches": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -4661,7 +4675,7 @@
       "matches": 0
     },
     {
-      "rank": 136,
+      "rank": 137,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
@@ -4672,7 +4686,7 @@
       "matches": 0
     },
     {
-      "rank": 137,
+      "rank": 138,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
