@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T04:46:55.268444Z",
+  "updatedAt": "2026-06-27T04:48:26.807197Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -114,11 +114,11 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 83
+      "minute": 84
     },
     "M062": {
       "homeGoals": 1,
-      "awayGoals": 3,
+      "awayGoals": 4,
       "finished": false,
       "homeYellow": 2,
       "homeRed": 0,
@@ -148,6 +148,12 @@
           "teamCode": "NZL",
           "detail": "Normal Goal",
           "minute": 84
+        },
+        {
+          "name": "R. Lukaku",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 86
         }
       ],
       "bookings": [
@@ -166,7 +172,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 85
+      "minute": 86
     },
     "M001": {
       "homeGoals": 2,
@@ -4556,6 +4562,17 @@
     },
     {
       "rank": 128,
+      "name": "R. Lukaku",
+      "teamCode": "BEL",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 129,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -4566,7 +4583,7 @@
       "matches": 0
     },
     {
-      "rank": 129,
+      "rank": 130,
       "name": "T. Aasgaard",
       "teamCode": "NOR",
       "club": "",
@@ -4577,7 +4594,7 @@
       "matches": 0
     },
     {
-      "rank": 130,
+      "rank": 131,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -4588,7 +4605,7 @@
       "matches": 0
     },
     {
-      "rank": 131,
+      "rank": 132,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -4599,7 +4616,7 @@
       "matches": 0
     },
     {
-      "rank": 132,
+      "rank": 133,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -4610,7 +4627,7 @@
       "matches": 0
     },
     {
-      "rank": 133,
+      "rank": 134,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -4621,7 +4638,7 @@
       "matches": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
@@ -4632,7 +4649,7 @@
       "matches": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
