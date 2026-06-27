@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T03:41:06.186484Z",
+  "updatedAt": "2026-06-27T03:42:38.473632Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -56,7 +56,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "finished": false,
-      "homeYellow": 1,
+      "homeYellow": 2,
       "homeRed": 0,
       "awayYellow": 1,
       "awayRed": 0,
@@ -92,11 +92,17 @@
           "teamCode": "EGY",
           "detail": "Yellow Card",
           "minute": 20
+        },
+        {
+          "name": "Y. Ibrahim",
+          "teamCode": "EGY",
+          "detail": "Yellow Card",
+          "minute": 42
         }
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 40
+      "minute": 42
     },
     "M062": {
       "homeGoals": 0,
@@ -116,7 +122,7 @@
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 40
+      "minute": 41
     },
     "M001": {
       "homeGoals": 2,
@@ -5691,20 +5697,27 @@
     },
     {
       "rank": 159,
+      "name": "Y. Ibrahim",
+      "teamCode": "EGY",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 160,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 160,
+      "rank": 161,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 161,
+      "rank": 162,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
