@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T22:30:51.396570Z",
+  "updatedAt": "2026-06-27T22:32:23.308073Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,74 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M071": {
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 0,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "P. Sucic",
-          "teamCode": "CRO",
-          "detail": "Normal Goal",
-          "minute": 31
-        }
-      ],
-      "bookings": [
-        {
-          "name": "I. Perisic",
-          "teamCode": "CRO",
-          "detail": "Yellow Card",
-          "minute": 68
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 70
-    },
-    "M070": {
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "J. Bellingham",
-          "teamCode": "ENG",
-          "detail": "Normal Goal",
-          "minute": 62
-        },
-        {
-          "name": "H. Kane",
-          "teamCode": "ENG",
-          "detail": "Normal Goal",
-          "minute": 67
-        }
-      ],
-      "bookings": [
-        {
-          "name": "J. Fajardo",
-          "teamCode": "PAN",
-          "detail": "Yellow Card",
-          "minute": 53
-        },
-        {
-          "name": "J. Quansah",
-          "teamCode": "ENG",
-          "detail": "Yellow Card",
-          "minute": 60
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 72
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3181,6 +3113,74 @@
           "minute": 56
         }
       ]
+    },
+    "M071": {
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "finished": false,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "P. Sucic",
+          "teamCode": "CRO",
+          "detail": "Normal Goal",
+          "minute": 31
+        }
+      ],
+      "bookings": [
+        {
+          "name": "I. Perisic",
+          "teamCode": "CRO",
+          "detail": "Yellow Card",
+          "minute": 68
+        }
+      ],
+      "live": true,
+      "statusShort": "2H",
+      "minute": 71
+    },
+    "M070": {
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "finished": false,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "J. Bellingham",
+          "teamCode": "ENG",
+          "detail": "Normal Goal",
+          "minute": 62
+        },
+        {
+          "name": "H. Kane",
+          "teamCode": "ENG",
+          "detail": "Normal Goal",
+          "minute": 67
+        }
+      ],
+      "bookings": [
+        {
+          "name": "J. Fajardo",
+          "teamCode": "PAN",
+          "detail": "Yellow Card",
+          "minute": 53
+        },
+        {
+          "name": "J. Quansah",
+          "teamCode": "ENG",
+          "detail": "Yellow Card",
+          "minute": 60
+        }
+      ],
+      "live": true,
+      "statusShort": "2H",
+      "minute": 74
     }
   },
   "bracket": {
