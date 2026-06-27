@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T02:02:52.783326Z",
+  "updatedAt": "2026-06-27T02:59:31.844189Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -3029,7 +3029,7 @@
     },
     "R32_14": {
       "homeCode": "ARG",
-      "awayCode": "URU"
+      "awayCode": "CPV"
     },
     "R32_15": {
       "homeCode": "COL"
