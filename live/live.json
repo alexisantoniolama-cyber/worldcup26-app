@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T04:45:23.791584Z",
+  "updatedAt": "2026-06-27T04:46:55.268444Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -114,10 +114,10 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 81
+      "minute": 83
     },
     "M062": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 3,
       "finished": false,
       "homeYellow": 2,
@@ -142,6 +142,12 @@
           "teamCode": "BEL",
           "detail": "Normal Goal",
           "minute": 66
+        },
+        {
+          "name": "E. Just",
+          "teamCode": "NZL",
+          "detail": "Normal Goal",
+          "minute": 84
         }
       ],
       "bookings": [
@@ -160,7 +166,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 83
+      "minute": 85
     },
     "M001": {
       "homeGoals": 2,
@@ -3219,6 +3225,17 @@
     },
     {
       "rank": 7,
+      "name": "E. Just",
+      "teamCode": "NZL",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 8,
       "name": "I. Saibari",
       "teamCode": "MAR",
       "club": "",
@@ -3229,7 +3246,7 @@
       "matches": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "J. David",
       "teamCode": "CAN",
       "club": "",
@@ -3240,7 +3257,7 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "M. Cunha",
       "teamCode": "BRA",
       "club": "",
@@ -3251,7 +3268,7 @@
       "matches": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "O. Dembele",
       "teamCode": "FRA",
       "club": "",
@@ -3262,7 +3279,7 @@
       "matches": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "K. Mbappe",
       "teamCode": "FRA",
       "club": "",
@@ -3273,7 +3290,7 @@
       "matches": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "A. Ueda",
       "teamCode": "JPN",
       "club": "",
@@ -3284,7 +3301,7 @@
       "matches": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "C. Gakpo",
       "teamCode": "NED",
       "club": "",
@@ -3295,7 +3312,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -3306,7 +3323,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "M. Araujo",
       "teamCode": "URU",
       "club": "",
@@ -3317,7 +3334,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "M. Oyarzabal",
       "teamCode": "ESP",
       "club": "",
@@ -3328,7 +3345,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "P. Gueye",
       "teamCode": "SEN",
       "club": "",
@@ -3339,7 +3356,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "R. Rezaeian",
       "teamCode": "IRN",
       "club": "",
@@ -3350,7 +3367,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "R. Vargas",
       "teamCode": "SUI",
       "club": "",
@@ -3361,7 +3378,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "B. Brobbey",
       "teamCode": "NED",
       "club": "",
@@ -3372,7 +3389,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -3383,7 +3400,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "C. Ronaldo",
       "teamCode": "POR",
       "club": "",
@@ -3394,7 +3411,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "D. Kamada",
       "teamCode": "JPN",
       "club": "",
@@ -3405,20 +3422,9 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "D. Munoz",
       "teamCode": "COL",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 25,
-      "name": "E. Just",
-      "teamCode": "NZL",
       "club": "",
       "league": "",
       "position": "",
