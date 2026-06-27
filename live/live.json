@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T23:40:02.063350Z",
+  "updatedAt": "2026-06-27T23:41:33.600272Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -62,19 +62,27 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 9
+      "minute": 10
     },
     "M069": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "finished": false,
       "homeYellow": 0,
       "homeRed": 0,
       "awayYellow": 0,
       "awayRed": 0,
+      "scorers": [
+        {
+          "name": "E. Shomurodov",
+          "teamCode": "UZB",
+          "detail": "Normal Goal",
+          "minute": 10
+        }
+      ],
       "live": true,
       "statusShort": "1H",
-      "minute": 9
+      "minute": 10
     },
     "M001": {
       "homeGoals": 2,
@@ -4189,6 +4197,17 @@
     },
     {
       "rank": 83,
+      "name": "E. Shomurodov",
+      "teamCode": "UZB",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 84,
       "name": "F. Kessie",
       "teamCode": "CIV",
       "club": "",
@@ -4199,7 +4218,7 @@
       "matches": 0
     },
     {
-      "rank": 84,
+      "rank": 85,
       "name": "F. Surman",
       "teamCode": "NZL",
       "club": "",
@@ -4210,7 +4229,7 @@
       "matches": 0
     },
     {
-      "rank": 85,
+      "rank": 86,
       "name": "G. Reyna",
       "teamCode": "USA",
       "club": "",
@@ -4221,7 +4240,7 @@
       "matches": 0
     },
     {
-      "rank": 86,
+      "rank": 87,
       "name": "G. Xhaka",
       "teamCode": "SUI",
       "club": "",
@@ -4232,7 +4251,7 @@
       "matches": 0
     },
     {
-      "rank": 87,
+      "rank": 88,
       "name": "G. Yassine",
       "teamCode": "MAR",
       "club": "",
@@ -4243,7 +4262,7 @@
       "matches": 0
     },
     {
-      "rank": 88,
+      "rank": 89,
       "name": "Gonzalo Plata",
       "teamCode": "ECU",
       "club": "",
@@ -4254,7 +4273,7 @@
       "matches": 0
     },
     {
-      "rank": 89,
+      "rank": 90,
       "name": "H. Al Haydos",
       "teamCode": "QAT",
       "club": "",
@@ -4265,7 +4284,7 @@
       "matches": 0
     },
     {
-      "rank": 90,
+      "rank": 91,
       "name": "H. Diarra",
       "teamCode": "SEN",
       "club": "",
@@ -4276,7 +4295,7 @@
       "matches": 0
     },
     {
-      "rank": 91,
+      "rank": 92,
       "name": "H. Varela",
       "teamCode": "CPV",
       "club": "",
@@ -4287,7 +4306,7 @@
       "matches": 0
     },
     {
-      "rank": 92,
+      "rank": 93,
       "name": "Hazem Mastouri",
       "teamCode": "TUN",
       "club": "",
@@ -4298,7 +4317,7 @@
       "matches": 0
     },
     {
-      "rank": 93,
+      "rank": 94,
       "name": "I. Mbaye",
       "teamCode": "SEN",
       "club": "",
@@ -4309,7 +4328,7 @@
       "matches": 0
     },
     {
-      "rank": 94,
+      "rank": 95,
       "name": "J. Campaz",
       "teamCode": "COL",
       "club": "",
@@ -4320,7 +4339,7 @@
       "matches": 0
     },
     {
-      "rank": 95,
+      "rank": 96,
       "name": "J. Ito",
       "teamCode": "JPN",
       "club": "",
@@ -4331,7 +4350,7 @@
       "matches": 0
     },
     {
-      "rank": 96,
+      "rank": 97,
       "name": "J. Lukic",
       "teamCode": "BIH",
       "club": "",
@@ -4342,7 +4361,7 @@
       "matches": 0
     },
     {
-      "rank": 97,
+      "rank": 98,
       "name": "J. McGinn",
       "teamCode": "SCO",
       "club": "",
@@ -4353,7 +4372,7 @@
       "matches": 0
     },
     {
-      "rank": 98,
+      "rank": 99,
       "name": "J. Musiala",
       "teamCode": "GER",
       "club": "",
@@ -4364,7 +4383,7 @@
       "matches": 0
     },
     {
-      "rank": 99,
+      "rank": 100,
       "name": "J. Neves",
       "teamCode": "POR",
       "club": "",
@@ -4375,7 +4394,7 @@
       "matches": 0
     },
     {
-      "rank": 100,
+      "rank": 101,
       "name": "Jan Paul van Hecke",
       "teamCode": "NED",
       "club": "",
@@ -4386,7 +4405,7 @@
       "matches": 0
     },
     {
-      "rank": 101,
+      "rank": 102,
       "name": "K. Alajbegovic",
       "teamCode": "BIH",
       "club": "",
@@ -4397,7 +4416,7 @@
       "matches": 0
     },
     {
-      "rank": 102,
+      "rank": 103,
       "name": "K. De Bruyne",
       "teamCode": "BEL",
       "club": "",
@@ -4408,7 +4427,7 @@
       "matches": 0
     },
     {
-      "rank": 103,
+      "rank": 104,
       "name": "K. Lenini",
       "teamCode": "CPV",
       "club": "",
@@ -4419,7 +4438,7 @@
       "matches": 0
     },
     {
-      "rank": 104,
+      "rank": 105,
       "name": "Kaan Ayhan",
       "teamCode": "TUR",
       "club": "",
@@ -4430,7 +4449,7 @@
       "matches": 0
     },
     {
-      "rank": 105,
+      "rank": 106,
       "name": "L. Comenencia",
       "teamCode": "CUR",
       "club": "",
@@ -4441,7 +4460,7 @@
       "matches": 0
     },
     {
-      "rank": 106,
+      "rank": 107,
       "name": "L. Krejci",
       "teamCode": "CZE",
       "club": "",
@@ -4452,7 +4471,7 @@
       "matches": 0
     },
     {
-      "rank": 107,
+      "rank": 108,
       "name": "L. Ostigard",
       "teamCode": "NOR",
       "club": "",
@@ -4463,7 +4482,7 @@
       "matches": 0
     },
     {
-      "rank": 108,
+      "rank": 109,
       "name": "Lamine Yamal",
       "teamCode": "ESP",
       "club": "",
@@ -4474,7 +4493,7 @@
       "matches": 0
     },
     {
-      "rank": 109,
+      "rank": 110,
       "name": "Leroy Sané",
       "teamCode": "GER",
       "club": "",
@@ -4485,7 +4504,7 @@
       "matches": 0
     },
     {
-      "rank": 110,
+      "rank": 111,
       "name": "M. Arnautovic",
       "teamCode": "AUT",
       "club": "",
@@ -4496,7 +4515,7 @@
       "matches": 0
     },
     {
-      "rank": 111,
+      "rank": 112,
       "name": "M. Baturina",
       "teamCode": "CRO",
       "club": "",
@@ -4507,7 +4526,7 @@
       "matches": 0
     },
     {
-      "rank": 112,
+      "rank": 113,
       "name": "M. Chavez Garcia",
       "teamCode": "MEX",
       "club": "",
@@ -4518,7 +4537,7 @@
       "matches": 0
     },
     {
-      "rank": 113,
+      "rank": 114,
       "name": "M. Galarza",
       "teamCode": "PAR",
       "club": "",
@@ -4529,7 +4548,7 @@
       "matches": 0
     },
     {
-      "rank": 114,
+      "rank": 115,
       "name": "M. Mohebi",
       "teamCode": "IRN",
       "club": "",
@@ -4540,7 +4559,7 @@
       "matches": 0
     },
     {
-      "rank": 115,
+      "rank": 116,
       "name": "M. Pedersen",
       "teamCode": "NOR",
       "club": "",
@@ -4551,7 +4570,7 @@
       "matches": 0
     },
     {
-      "rank": 116,
+      "rank": 117,
       "name": "M. Rashford",
       "teamCode": "ENG",
       "club": "",
@@ -4562,7 +4581,7 @@
       "matches": 0
     },
     {
-      "rank": 117,
+      "rank": 118,
       "name": "M. Saber",
       "teamCode": "EGY",
       "club": "",
@@ -4573,7 +4592,7 @@
       "matches": 0
     },
     {
-      "rank": 118,
+      "rank": 119,
       "name": "M. Sadilek",
       "teamCode": "CZE",
       "club": "",
@@ -4584,7 +4603,7 @@
       "matches": 0
     },
     {
-      "rank": 119,
+      "rank": 120,
       "name": "M. Svanberg",
       "teamCode": "SWE",
       "club": "",
@@ -4595,7 +4614,7 @@
       "matches": 0
     },
     {
-      "rank": 120,
+      "rank": 121,
       "name": "Mauricio",
       "teamCode": "PAR",
       "club": "",
@@ -4606,7 +4625,7 @@
       "matches": 0
     },
     {
-      "rank": 121,
+      "rank": 122,
       "name": "N. Al Rashdan",
       "teamCode": "JOR",
       "club": "",
@@ -4617,7 +4636,7 @@
       "matches": 0
     },
     {
-      "rank": 122,
+      "rank": 123,
       "name": "N. Benbouali",
       "teamCode": "ALG",
       "club": "",
@@ -4628,7 +4647,7 @@
       "matches": 0
     },
     {
-      "rank": 123,
+      "rank": 124,
       "name": "N. Irankunda",
       "teamCode": "AUS",
       "club": "",
@@ -4639,7 +4658,7 @@
       "matches": 0
     },
     {
-      "rank": 124,
+      "rank": 125,
       "name": "N. Mendes",
       "teamCode": "POR",
       "club": "",
@@ -4650,7 +4669,7 @@
       "matches": 0
     },
     {
-      "rank": 125,
+      "rank": 126,
       "name": "N. Schlotterbeck",
       "teamCode": "GER",
       "club": "",
@@ -4661,7 +4680,7 @@
       "matches": 0
     },
     {
-      "rank": 126,
+      "rank": 127,
       "name": "N. Vlasic",
       "teamCode": "CRO",
       "club": "",
@@ -4672,7 +4691,7 @@
       "matches": 0
     },
     {
-      "rank": 127,
+      "rank": 128,
       "name": "Nilson Angulo",
       "teamCode": "ECU",
       "club": "",
@@ -4683,7 +4702,7 @@
       "matches": 0
     },
     {
-      "rank": 128,
+      "rank": 129,
       "name": "O. Rekik",
       "teamCode": "TUN",
       "club": "",
@@ -4694,7 +4713,7 @@
       "matches": 0
     },
     {
-      "rank": 129,
+      "rank": 130,
       "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
@@ -4705,7 +4724,7 @@
       "matches": 0
     },
     {
-      "rank": 130,
+      "rank": 131,
       "name": "P. Musa",
       "teamCode": "CRO",
       "club": "",
@@ -4716,7 +4735,7 @@
       "matches": 0
     },
     {
-      "rank": 131,
+      "rank": 132,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -4727,7 +4746,7 @@
       "matches": 0
     },
     {
-      "rank": 132,
+      "rank": 133,
       "name": "R. Leao",
       "teamCode": "POR",
       "club": "",
@@ -4738,7 +4757,7 @@
       "matches": 0
     },
     {
-      "rank": 133,
+      "rank": 134,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -4749,7 +4768,7 @@
       "matches": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "T. Aasgaard",
       "teamCode": "NOR",
       "club": "",
@@ -4760,7 +4779,7 @@
       "matches": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -4771,7 +4790,7 @@
       "matches": 0
     },
     {
-      "rank": 136,
+      "rank": 137,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -4782,7 +4801,7 @@
       "matches": 0
     },
     {
-      "rank": 137,
+      "rank": 138,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -4793,7 +4812,7 @@
       "matches": 0
     },
     {
-      "rank": 138,
+      "rank": 139,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -4804,7 +4823,7 @@
       "matches": 0
     },
     {
-      "rank": 139,
+      "rank": 140,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
@@ -4815,7 +4834,7 @@
       "matches": 0
     },
     {
-      "rank": 140,
+      "rank": 141,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
