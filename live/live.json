@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T04:42:20.824673Z",
+  "updatedAt": "2026-06-27T04:43:52.354306Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,7 +58,7 @@
       "finished": false,
       "homeYellow": 2,
       "homeRed": 0,
-      "awayYellow": 2,
+      "awayYellow": 3,
       "awayRed": 0,
       "scorers": [
         {
@@ -104,11 +104,17 @@
           "teamCode": "IRN",
           "detail": "Yellow Card",
           "minute": 43
+        },
+        {
+          "name": "S. Ezatolahi",
+          "teamCode": "IRN",
+          "detail": "Yellow Card",
+          "minute": 80
         }
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 78
+      "minute": 80
     },
     "M062": {
       "homeGoals": 0,
@@ -154,7 +160,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 80
+      "minute": 82
     },
     "M001": {
       "homeGoals": 2,
@@ -5656,132 +5662,139 @@
     },
     {
       "rank": 147,
+      "name": "S. Ezatolahi",
+      "teamCode": "IRN",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 148,
       "name": "S. Posch",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 148,
+      "rank": 149,
       "name": "Saeid Ezatolahi",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 149,
+      "rank": 150,
       "name": "Salem Al-Dawsari",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 150,
+      "rank": 151,
       "name": "Sarpreet Singh",
       "teamCode": "NZL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 151,
+      "rank": 152,
       "name": "Sebastian Berhalter",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 152,
+      "rank": 153,
       "name": "Seko Fofana",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 153,
+      "rank": 154,
       "name": "Seung Ho Paik",
       "teamCode": "KOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 154,
+      "rank": 155,
       "name": "Shogo Taniguchi",
       "teamCode": "JPN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 155,
+      "rank": 156,
       "name": "Thalente Mbatha",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 156,
+      "rank": 157,
       "name": "Timothy Castagne",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 157,
+      "rank": 158,
       "name": "Tomás Araújo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 158,
+      "rank": 159,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 159,
+      "rank": 160,
       "name": "Viktor Gyökeres",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 160,
+      "rank": 161,
       "name": "W. Pina",
       "teamCode": "CPV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 161,
+      "rank": 162,
       "name": "Y. Barcenas",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "Y. Ibrahim",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 163,
+      "rank": 164,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 164,
+      "rank": 165,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 165,
+      "rank": 166,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
