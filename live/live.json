@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T22:26:15.575547Z",
+  "updatedAt": "2026-06-27T22:27:47.478953Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -70,7 +70,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 65
+      "minute": 67
     },
     "M070": {
       "homeGoals": 0,
@@ -86,6 +86,12 @@
           "teamCode": "ENG",
           "detail": "Normal Goal",
           "minute": 62
+        },
+        {
+          "name": "H. Kane",
+          "teamCode": "ENG",
+          "detail": "Normal Goal",
+          "minute": 67
         }
       ],
       "bookings": [
@@ -104,7 +110,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 67
+      "minute": 69
     },
     "M001": {
       "homeGoals": 2,
@@ -3308,6 +3314,17 @@
     },
     {
       "rank": 8,
+      "name": "H. Kane",
+      "teamCode": "ENG",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 9,
       "name": "I. Saibari",
       "teamCode": "MAR",
       "club": "",
@@ -3318,7 +3335,7 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "J. David",
       "teamCode": "CAN",
       "club": "",
@@ -3329,7 +3346,7 @@
       "matches": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "M. Cunha",
       "teamCode": "BRA",
       "club": "",
@@ -3340,7 +3357,7 @@
       "matches": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "O. Dembele",
       "teamCode": "FRA",
       "club": "",
@@ -3351,7 +3368,7 @@
       "matches": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "K. Mbappe",
       "teamCode": "FRA",
       "club": "",
@@ -3362,7 +3379,7 @@
       "matches": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "A. Ueda",
       "teamCode": "JPN",
       "club": "",
@@ -3373,7 +3390,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "C. Gakpo",
       "teamCode": "NED",
       "club": "",
@@ -3384,7 +3401,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -3395,7 +3412,18 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
+      "name": "J. Bellingham",
+      "teamCode": "ENG",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 2,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 18,
       "name": "M. Araujo",
       "teamCode": "URU",
       "club": "",
@@ -3406,7 +3434,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "M. Oyarzabal",
       "teamCode": "ESP",
       "club": "",
@@ -3417,7 +3445,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "P. Gueye",
       "teamCode": "SEN",
       "club": "",
@@ -3428,7 +3456,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "R. Rezaeian",
       "teamCode": "IRN",
       "club": "",
@@ -3439,7 +3467,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "R. Vargas",
       "teamCode": "SUI",
       "club": "",
@@ -3450,7 +3478,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "B. Brobbey",
       "teamCode": "NED",
       "club": "",
@@ -3461,7 +3489,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -3472,7 +3500,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "C. Ronaldo",
       "teamCode": "POR",
       "club": "",
@@ -3483,7 +3511,7 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "D. Kamada",
       "teamCode": "JPN",
       "club": "",
@@ -3494,7 +3522,7 @@
       "matches": 0
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "D. Munoz",
       "teamCode": "COL",
       "club": "",
@@ -3505,7 +3533,7 @@
       "matches": 0
     },
     {
-      "rank": 26,
+      "rank": 28,
       "name": "E. Mahmic",
       "teamCode": "BIH",
       "club": "",
@@ -3516,31 +3544,9 @@
       "matches": 0
     },
     {
-      "rank": 27,
+      "rank": 29,
       "name": "F. Balogun",
       "teamCode": "USA",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 28,
-      "name": "H. Kane",
-      "teamCode": "ENG",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 29,
-      "name": "J. Bellingham",
-      "teamCode": "ENG",
       "club": "",
       "league": "",
       "position": "",
