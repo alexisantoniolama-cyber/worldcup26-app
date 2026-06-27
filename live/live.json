@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T03:11:51.063664Z",
+  "updatedAt": "2026-06-27T03:13:23.674880Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -71,12 +71,12 @@
           "name": "M. Taremi",
           "teamCode": "IRN",
           "detail": "Missed Penalty",
-          "minute": 9
+          "minute": 11
         }
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 11
+      "minute": 13
     },
     "M062": {
       "homeGoals": 0,
@@ -88,7 +88,7 @@
       "awayRed": 0,
       "live": true,
       "statusShort": "1H",
-      "minute": 11
+      "minute": 12
     },
     "M001": {
       "homeGoals": 2,
