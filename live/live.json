@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T02:01:21.425439Z",
+  "updatedAt": "2026-06-27T02:02:52.783326Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,58 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M064": {
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "finished": false,
-      "homeYellow": 3,
-      "homeRed": 1,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "A. Baena",
-          "teamCode": "ESP",
-          "detail": "Normal Goal",
-          "minute": 42
-        }
-      ],
-      "bookings": [
-        {
-          "name": "A. Baena",
-          "teamCode": "ESP",
-          "detail": "Yellow Card",
-          "minute": 46
-        },
-        {
-          "name": "J. Sanabria",
-          "teamCode": "URU",
-          "detail": "Yellow Card",
-          "minute": 54
-        },
-        {
-          "name": "G. Varela",
-          "teamCode": "URU",
-          "detail": "Yellow Card",
-          "minute": 58
-        },
-        {
-          "name": "N. de la Cruz",
-          "teamCode": "URU",
-          "detail": "Yellow Card",
-          "minute": 90
-        },
-        {
-          "name": "A. Canobbio",
-          "teamCode": "URU",
-          "detail": "Red Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2945,6 +2893,55 @@
           "teamCode": "FRA",
           "detail": "Yellow Card",
           "minute": 74
+        }
+      ]
+    },
+    "M064": {
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "finished": true,
+      "homeYellow": 3,
+      "homeRed": 1,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "A. Baena",
+          "teamCode": "ESP",
+          "detail": "Normal Goal",
+          "minute": 42
+        }
+      ],
+      "bookings": [
+        {
+          "name": "A. Baena",
+          "teamCode": "ESP",
+          "detail": "Yellow Card",
+          "minute": 46
+        },
+        {
+          "name": "J. Sanabria",
+          "teamCode": "URU",
+          "detail": "Yellow Card",
+          "minute": 54
+        },
+        {
+          "name": "G. Varela",
+          "teamCode": "URU",
+          "detail": "Yellow Card",
+          "minute": 58
+        },
+        {
+          "name": "N. de la Cruz",
+          "teamCode": "URU",
+          "detail": "Yellow Card",
+          "minute": 90
+        },
+        {
+          "name": "A. Canobbio",
+          "teamCode": "URU",
+          "detail": "Red Card",
+          "minute": 90
         }
       ]
     },
