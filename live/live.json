@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-27T01:59:49.845155Z",
+  "updatedAt": "2026-06-27T02:01:21.425439Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -97,44 +97,6 @@
           "name": "A. Canobbio",
           "teamCode": "URU",
           "detail": "Red Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
-    "M063": {
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 3,
-      "awayRed": 0,
-      "bookings": [
-        {
-          "name": "S. Abdulhamid",
-          "teamCode": "KSA",
-          "detail": "Yellow Card",
-          "minute": 4
-        },
-        {
-          "name": "W. Pina",
-          "teamCode": "CPV",
-          "detail": "Yellow Card",
-          "minute": 9
-        },
-        {
-          "name": "N. Al Dawsari",
-          "teamCode": "KSA",
-          "detail": "Yellow Card",
-          "minute": 67
-        },
-        {
-          "name": "F. Al Buraikan",
-          "teamCode": "KSA",
-          "detail": "Yellow Card",
           "minute": 90
         }
       ],
@@ -2983,6 +2945,41 @@
           "teamCode": "FRA",
           "detail": "Yellow Card",
           "minute": 74
+        }
+      ]
+    },
+    "M063": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 3,
+      "awayRed": 0,
+      "bookings": [
+        {
+          "name": "S. Abdulhamid",
+          "teamCode": "KSA",
+          "detail": "Yellow Card",
+          "minute": 4
+        },
+        {
+          "name": "W. Pina",
+          "teamCode": "CPV",
+          "detail": "Yellow Card",
+          "minute": 9
+        },
+        {
+          "name": "N. Al Dawsari",
+          "teamCode": "KSA",
+          "detail": "Yellow Card",
+          "minute": 67
+        },
+        {
+          "name": "F. Al Buraikan",
+          "teamCode": "KSA",
+          "detail": "Yellow Card",
+          "minute": 90
         }
       ]
     }
