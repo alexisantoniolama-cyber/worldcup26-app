@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-28T01:29:18.854031Z",
+  "updatedAt": "2026-06-28T01:32:21.671940Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,76 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M069": {
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "finished": false,
-      "homeYellow": 3,
-      "homeRed": 0,
-      "awayYellow": 2,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "E. Shomurodov",
-          "teamCode": "UZB",
-          "detail": "Normal Goal",
-          "minute": 10
-        },
-        {
-          "name": "Y. Wissa",
-          "teamCode": "COD",
-          "detail": "Penalty",
-          "minute": 68
-        },
-        {
-          "name": "F. Mayele",
-          "teamCode": "COD",
-          "detail": "Normal Goal",
-          "minute": 78
-        },
-        {
-          "name": "Y. Wissa",
-          "teamCode": "COD",
-          "detail": "Normal Goal",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "N. Sadiki",
-          "teamCode": "COD",
-          "detail": "Yellow Card",
-          "minute": 21
-        },
-        {
-          "name": "A. Khusanov",
-          "teamCode": "UZB",
-          "detail": "Yellow Card",
-          "minute": 43
-        },
-        {
-          "name": "N. Mbuku",
-          "teamCode": "COD",
-          "detail": "Yellow Card",
-          "minute": 45
-        },
-        {
-          "name": "S. Nasrullaev",
-          "teamCode": "UZB",
-          "detail": "Yellow Card",
-          "minute": 48
-        },
-        {
-          "name": "S. Moutoussamy",
-          "teamCode": "COD",
-          "detail": "Yellow Card",
-          "minute": 62
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3284,6 +3214,73 @@
           "teamCode": "COL",
           "detail": "Yellow Card",
           "minute": 86
+        }
+      ]
+    },
+    "M069": {
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "finished": true,
+      "homeYellow": 3,
+      "homeRed": 0,
+      "awayYellow": 2,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "E. Shomurodov",
+          "teamCode": "UZB",
+          "detail": "Normal Goal",
+          "minute": 10
+        },
+        {
+          "name": "Y. Wissa",
+          "teamCode": "COD",
+          "detail": "Penalty",
+          "minute": 68
+        },
+        {
+          "name": "F. Mayele",
+          "teamCode": "COD",
+          "detail": "Normal Goal",
+          "minute": 78
+        },
+        {
+          "name": "Y. Wissa",
+          "teamCode": "COD",
+          "detail": "Normal Goal",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "N. Sadiki",
+          "teamCode": "COD",
+          "detail": "Yellow Card",
+          "minute": 21
+        },
+        {
+          "name": "A. Khusanov",
+          "teamCode": "UZB",
+          "detail": "Yellow Card",
+          "minute": 43
+        },
+        {
+          "name": "N. Mbuku",
+          "teamCode": "COD",
+          "detail": "Yellow Card",
+          "minute": 45
+        },
+        {
+          "name": "S. Nasrullaev",
+          "teamCode": "UZB",
+          "detail": "Yellow Card",
+          "minute": 48
+        },
+        {
+          "name": "S. Moutoussamy",
+          "teamCode": "COD",
+          "detail": "Yellow Card",
+          "minute": 62
         }
       ]
     }
