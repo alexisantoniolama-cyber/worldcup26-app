@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-28T01:24:44.911722Z",
+  "updatedAt": "2026-06-28T01:29:18.854031Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,26 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "M068": {
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "finished": false,
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 0,
-      "awayRed": 0,
-      "bookings": [
-        {
-          "name": "G. Puerta",
-          "teamCode": "COL",
-          "detail": "Yellow Card",
-          "minute": 86
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M069": {
       "homeGoals": 3,
       "awayGoals": 1,
@@ -3287,6 +3267,23 @@
           "teamCode": "PAN",
           "detail": "Yellow Card",
           "minute": 84
+        }
+      ]
+    },
+    "M068": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "finished": true,
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "bookings": [
+        {
+          "name": "G. Puerta",
+          "teamCode": "COL",
+          "detail": "Yellow Card",
+          "minute": 86
         }
       ]
     }
