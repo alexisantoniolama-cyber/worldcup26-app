@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-28T01:23:12.784047Z",
+  "updatedAt": "2026-06-28T01:24:44.911722Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -73,7 +73,7 @@
       "minute": 90
     },
     "M069": {
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 1,
       "finished": false,
       "homeYellow": 3,
@@ -98,6 +98,12 @@
           "teamCode": "COD",
           "detail": "Normal Goal",
           "minute": 78
+        },
+        {
+          "name": "Y. Wissa",
+          "teamCode": "COD",
+          "detail": "Normal Goal",
+          "minute": 90
         }
       ],
       "bookings": [
@@ -3479,6 +3485,17 @@
     },
     {
       "rank": 13,
+      "name": "Y. Wissa",
+      "teamCode": "COD",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 14,
       "name": "K. Mbappe",
       "teamCode": "FRA",
       "club": "",
@@ -3489,7 +3506,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "A. Ueda",
       "teamCode": "JPN",
       "club": "",
@@ -3500,7 +3517,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "C. Gakpo",
       "teamCode": "NED",
       "club": "",
@@ -3511,7 +3528,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -3522,7 +3539,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "J. Bellingham",
       "teamCode": "ENG",
       "club": "",
@@ -3533,7 +3550,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "M. Araujo",
       "teamCode": "URU",
       "club": "",
@@ -3544,7 +3561,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "M. Oyarzabal",
       "teamCode": "ESP",
       "club": "",
@@ -3555,7 +3572,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "P. Gueye",
       "teamCode": "SEN",
       "club": "",
@@ -3566,7 +3583,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "R. Rezaeian",
       "teamCode": "IRN",
       "club": "",
@@ -3577,7 +3594,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "R. Vargas",
       "teamCode": "SUI",
       "club": "",
@@ -3588,7 +3605,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "B. Brobbey",
       "teamCode": "NED",
       "club": "",
@@ -3599,7 +3616,7 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "C. Larin",
       "teamCode": "CAN",
       "club": "",
@@ -3610,7 +3627,7 @@
       "matches": 0
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "C. Ronaldo",
       "teamCode": "POR",
       "club": "",
@@ -3621,7 +3638,7 @@
       "matches": 0
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "D. Kamada",
       "teamCode": "JPN",
       "club": "",
@@ -3632,7 +3649,7 @@
       "matches": 0
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "D. Munoz",
       "teamCode": "COL",
       "club": "",
@@ -3643,7 +3660,7 @@
       "matches": 0
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "E. Mahmic",
       "teamCode": "BIH",
       "club": "",
@@ -3654,7 +3671,7 @@
       "matches": 0
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "F. Balogun",
       "teamCode": "USA",
       "club": "",
@@ -3665,7 +3682,7 @@
       "matches": 0
     },
     {
-      "rank": 30,
+      "rank": 31,
       "name": "J. Quinones",
       "teamCode": "MEX",
       "club": "",
@@ -3676,7 +3693,7 @@
       "matches": 0
     },
     {
-      "rank": 31,
+      "rank": 32,
       "name": "K. Havertz",
       "teamCode": "GER",
       "club": "",
@@ -3687,7 +3704,7 @@
       "matches": 0
     },
     {
-      "rank": 32,
+      "rank": 33,
       "name": "Kylian Mbappé",
       "teamCode": "FRA",
       "club": "",
@@ -3698,7 +3715,7 @@
       "matches": 0
     },
     {
-      "rank": 33,
+      "rank": 34,
       "name": "L. Trossard",
       "teamCode": "BEL",
       "club": "",
@@ -3709,7 +3726,7 @@
       "matches": 0
     },
     {
-      "rank": 34,
+      "rank": 35,
       "name": "Nicolas Pépé",
       "teamCode": "CIV",
       "club": "",
@@ -3720,20 +3737,9 @@
       "matches": 0
     },
     {
-      "rank": 35,
+      "rank": 36,
       "name": "Y. Ayari",
       "teamCode": "SWE",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 36,
-      "name": "Y. Wissa",
-      "teamCode": "COD",
       "club": "",
       "league": "",
       "position": "",
