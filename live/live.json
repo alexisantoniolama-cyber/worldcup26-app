@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-29T17:15:21.449924Z",
+  "updatedAt": "2026-06-29T17:16:53.088302Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -73,12 +73,12 @@
           "name": "Casemiro",
           "teamCode": "BRA",
           "detail": "Yellow Card",
-          "minute": 15
+          "minute": 14
         }
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 15
+      "minute": 17
     },
     "M001": {
       "homeGoals": 2,
