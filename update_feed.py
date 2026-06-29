@@ -215,18 +215,44 @@ def resolve_group_label(label, group_qual):
     return (group_qual.get(m.group(2).upper()) or {}).get(int(m.group(1)))
 
 
-def build_bracket(my_matches, group_qual):
-    """Cupos de llave resueltos desde la tabla: id -> {homeCode, awayCode} para
-    los lados '1°/2° Grupo X' de grupos ya terminados. Los cupos de mejores
-    terceros ('3° (...)') quedan sin resolver hasta que la API publique el
-    sorteo (ahí los llena build_ko_fixture_to_slot con los equipos reales)."""
+# Etiqueta de avance de llave -> id de cupo del que sale el equipo.
+# Ej: "Ganador R32-4" -> ganador del cupo R32_04; "Perdedor Semi-1" -> SF_01.
+ADVANCE_RE = re.compile(r"(Ganador|Perdedor)\s+(R32|8vos|Cuartos|Semi)-(\d+)", re.IGNORECASE)
+_ROUND_PREFIX_TO_ID = {"r32": "R32", "8vos": "R16", "cuartos": "QF", "semi": "SF"}
+
+
+def resolve_advance_label(label, ko_result):
+    """'Ganador R32-4' -> código del equipo que GANÓ el cupo R32_04 (o el que
+    PERDIÓ, para el 3er puesto), si ese partido ya terminó. ko_result mapea
+    id de cupo -> {'winner': code, 'loser': code}."""
+    m = ADVANCE_RE.search(label or "")
+    if not m:
+        return None
+    kind, rnd, num = m.group(1).lower(), m.group(2).lower(), int(m.group(3))
+    slot_id = "%s_%02d" % (_ROUND_PREFIX_TO_ID[rnd], num)
+    res = ko_result.get(slot_id)
+    if not res:
+        return None
+    return res.get("winner") if kind == "ganador" else res.get("loser")
+
+
+def build_bracket(my_matches, group_qual, ko_result):
+    """Cupos de llave resueltos: id -> {homeCode, awayCode}.
+      - Lados '1°/2° Grupo X' desde la tabla (grupos ya terminados).
+      - Lados 'Ganador/Perdedor <ronda>-N' desde el ganador/perdedor real del
+        cupo anterior (avance inmediato, apenas termina cada llave; NO espera a
+        que la API publique el fixture de la ronda siguiente).
+    Los cupos de mejores terceros ('3° (...)') quedan sin resolver hasta que la
+    API publique el sorteo (los llena build_ko_fixture_to_slot)."""
     out = {}
     for m in my_matches:
         if isinstance(m.get("homeCode"), str) and isinstance(m.get("awayCode"), str):
             continue  # partido de grupos (ya tiene equipos)
         slot = {}
-        hc = resolve_group_label(m.get("homeLabel"), group_qual)
-        ac = resolve_group_label(m.get("awayLabel"), group_qual)
+        hc = (resolve_group_label(m.get("homeLabel"), group_qual)
+              or resolve_advance_label(m.get("homeLabel"), ko_result))
+        ac = (resolve_group_label(m.get("awayLabel"), group_qual)
+              or resolve_advance_label(m.get("awayLabel"), ko_result))
         if hc:
             slot["homeCode"] = hc
         if ac:
@@ -423,6 +449,7 @@ def main():
     events_by_fid, reqs = collect_events(key, played) if played else ({}, 0)
 
     results = {}
+    ko_result = {}  # id de cupo de llave -> {'winner': code, 'loser': code}
     mapped = unmapped = live_count = 0
     for f in fixtures:
         fx = f.get("fixture") or {}
@@ -461,6 +488,24 @@ def main():
             # Equipos reales que avanzaron (la app los pinta en el cuadro).
             entry["homeCode"] = hc if home_is_api_home else ac
             entry["awayCode"] = ac if home_is_api_home else hc
+            # Ganador/perdedor de la llave (para propagar a la ronda siguiente).
+            # Se usa el flag winner de la API (respeta prórroga y penales); si no
+            # viene, se cae al marcador. Solo con el partido TERMINADO.
+            if is_done:
+                home_win = (teams.get("home") or {}).get("winner")
+                away_win = (teams.get("away") or {}).get("winner")
+                if home_win is True:
+                    win, lose = hc, ac
+                elif away_win is True:
+                    win, lose = ac, hc
+                elif hg > ag:
+                    win, lose = hc, ac
+                elif ag > hg:
+                    win, lose = ac, hc
+                else:
+                    win = lose = None
+                if win:
+                    ko_result[m["id"]] = {"winner": win, "loser": lose}
         evs = events_by_fid.get(str(fx.get("id")), [])
         hy, hr, ay, ar = cards_by_team(evs, hname, aname)
         if not home_is_api_home:
@@ -493,7 +538,7 @@ def main():
         print("AVISO standings:", e)
         standings = []
     group_qual, incompletos = build_group_qualifiers(standings)
-    bracket = build_bracket(my_matches, group_qual)
+    bracket = build_bracket(my_matches, group_qual, ko_result)
     # La proyección es PROVISIONAL si algún grupo que aporta al cuadro sigue en
     # curso (sus posiciones pueden cambiar en la última fecha). Cuando todos los
     # grupos terminan, queda confirmada (la app saca la etiqueta "proyección").
