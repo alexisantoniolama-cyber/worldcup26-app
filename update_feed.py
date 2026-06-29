@@ -250,8 +250,25 @@ def filter_events(raw):
             "player": (e.get("player") or {}).get("name") or "",
             "assist": (e.get("assist") or {}).get("name") or "",
             "minute": (e.get("time") or {}).get("elapsed"),
+            # "Penalty Shootout" marca los penales de la TANDA (no suman al goleador).
+            "comments": e.get("comments") or "",
         })
     return out
+
+
+def _is_shootout(e):
+    """Penal de la tanda definitoria (no cuenta como gol del jugador)."""
+    return "shootout" in (e.get("comments") or "").lower()
+
+
+def is_goal_shown(e):
+    """Gol que se MUESTRA en el detalle del partido. Incluye autogol (la app lo
+    marca con (ag)), pero excluye el penal ERRADO y los penales de la tanda
+    definitoria, que API-Football entrega como type=Goal pero NO son gol en el
+    marcador."""
+    return (e.get("type") == "Goal"
+            and e.get("detail") != "Missed Penalty"
+            and not _is_shootout(e))
 
 
 def collect_events(key, played):
@@ -323,7 +340,7 @@ def match_events(evs):
         minute = e.get("minute")
         if isinstance(minute, int):
             item["minute"] = minute
-        if e.get("type") == "Goal":
+        if is_goal_shown(e):
             scorers.append(item)
         elif e.get("type") == "Card":
             bookings.append(item)
@@ -341,7 +358,7 @@ def build_scorers_and_bookings(events_by_fid):
     for evs in events_by_fid.values():
         for e in evs:
             tm = e["team"]
-            if e["type"] == "Goal" and e["detail"] != "Own Goal":
+            if is_goal_shown(e) and e["detail"] != "Own Goal":
                 p = e["player"]
                 if p:
                     goals[p] += 1
