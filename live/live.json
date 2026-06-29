@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-29T19:53:45.979755Z",
+  "updatedAt": "2026-06-29T20:22:16.455300Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -3529,6 +3529,12 @@
     "R32_16": {
       "homeCode": "AUS",
       "awayCode": "EGY"
+    },
+    "R16_02": {
+      "homeCode": "CAN"
+    },
+    "R16_03": {
+      "homeCode": "BRA"
     }
   },
   "bracketProvisional": false,
