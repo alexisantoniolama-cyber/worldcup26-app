@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-29T22:55:58.520125Z",
+  "updatedAt": "2026-06-29T22:57:30.601489Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,7 +58,7 @@
       "finished": false,
       "homeCode": "GER",
       "awayCode": "PAR",
-      "homeYellow": 1,
+      "homeYellow": 2,
       "homeRed": 0,
       "awayYellow": 2,
       "awayRed": 0,
@@ -94,11 +94,17 @@
           "teamCode": "PAR",
           "detail": "Yellow Card",
           "minute": 105
+        },
+        {
+          "name": "K. Havertz",
+          "teamCode": "GER",
+          "detail": "Yellow Card",
+          "minute": 106
         }
       ],
       "live": true,
       "statusShort": "ET",
-      "minute": 114
+      "minute": 94
     },
     "M001": {
       "homeGoals": 2,
@@ -6054,545 +6060,552 @@
     },
     {
       "rank": 114,
+      "name": "K. Havertz",
+      "teamCode": "GER",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 115,
       "name": "K. Laimer",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 115,
+      "rank": 116,
       "name": "K. Peprah",
       "teamCode": "GHA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 116,
+      "rank": 117,
       "name": "K. Sano",
       "teamCode": "JPN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 117,
+      "rank": 118,
       "name": "Kang-in Lee",
       "teamCode": "KOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 118,
+      "rank": 119,
       "name": "Kenny McLean",
       "teamCode": "SCO",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 119,
+      "rank": 120,
       "name": "L. Millar",
       "teamCode": "CAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 120,
+      "rank": 121,
       "name": "L. Paredes",
       "teamCode": "ARG",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 121,
+      "rank": 122,
       "name": "Ladislav Krejčí",
       "teamCode": "CZE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 122,
+      "rank": 123,
       "name": "Leandro Bacuna",
       "teamCode": "CUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 123,
+      "rank": 124,
       "name": "Livano Comenencia",
       "teamCode": "CUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 124,
+      "rank": 125,
       "name": "Luc De Fougerolles",
       "teamCode": "CAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 125,
+      "rank": 126,
       "name": "Lucas Bergvall",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 126,
+      "rank": 127,
       "name": "M. Abu Taha",
       "teamCode": "JOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 127,
+      "rank": 128,
       "name": "M. Arnautovic",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 128,
+      "rank": 129,
       "name": "M. Doski",
       "teamCode": "IRQ",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 129,
+      "rank": 130,
       "name": "M. Lasheen",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 130,
+      "rank": 131,
       "name": "M. Saber",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 131,
+      "rank": 132,
       "name": "M. Stamenic",
       "teamCode": "NZL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 132,
+      "rank": 133,
       "name": "Mahmud Abunada",
       "teamCode": "QAT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 133,
+      "rank": 134,
       "name": "Marcel Sabitzer",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "Marwan Attia",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "Mathías Olivera",
       "teamCode": "URU",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 136,
+      "rank": 137,
       "name": "Matías Galarza",
       "teamCode": "PAR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 137,
+      "rank": 138,
       "name": "Maxim De Cuyper",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 138,
+      "rank": 139,
       "name": "Memphis Depay",
       "teamCode": "NED",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 139,
+      "rank": 140,
       "name": "Micky van de Ven",
       "teamCode": "NED",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 140,
+      "rank": 141,
       "name": "Mohamed Kanno",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 141,
+      "rank": 142,
       "name": "Mohanad Lasheen",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 142,
+      "rank": 143,
       "name": "N. Al Dawsari",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 143,
+      "rank": 144,
       "name": "N. Mbuku",
       "teamCode": "COD",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 144,
+      "rank": 145,
       "name": "N. Sadiki",
       "teamCode": "COD",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 145,
+      "rank": 146,
       "name": "N. Saliba",
       "teamCode": "CAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 146,
+      "rank": 147,
       "name": "N. Sigur",
       "teamCode": "CAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 147,
+      "rank": 148,
       "name": "N. de la Cruz",
       "teamCode": "URU",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 148,
+      "rank": 149,
       "name": "Nico Elvedi",
       "teamCode": "SUI",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 149,
+      "rank": 150,
       "name": "Nicolas Pépé",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 150,
+      "rank": 151,
       "name": "Nikola Katić",
       "teamCode": "BIH",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 151,
+      "rank": 152,
       "name": "Nkosinathi Sibisi",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 152,
+      "rank": 153,
       "name": "Nélson Semedo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 153,
+      "rank": 154,
       "name": "O. Khamrobekov",
       "teamCode": "UZB",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 154,
+      "rank": 155,
       "name": "P. Berg",
       "teamCode": "NOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 155,
+      "rank": 156,
       "name": "P. Gueye",
       "teamCode": "SEN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 156,
+      "rank": 157,
       "name": "P. Sucic",
       "teamCode": "CRO",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 157,
+      "rank": 158,
       "name": "Pedri",
       "teamCode": "ESP",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 158,
+      "rank": 159,
       "name": "Piero Hincapié",
       "teamCode": "ECU",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 159,
+      "rank": 160,
       "name": "R. Christie",
       "teamCode": "SCO",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 160,
+      "rank": 161,
       "name": "R. Veiga",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 161,
+      "rank": 162,
       "name": "R. Zerrouki",
       "teamCode": "ALG",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "Rani Khedira",
       "teamCode": "TUN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 163,
+      "rank": 164,
       "name": "Rodrigo Bentancur",
       "teamCode": "URU",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 164,
+      "rank": 165,
       "name": "Roger Ibañez",
       "teamCode": "BRA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 165,
+      "rank": 166,
       "name": "Romelu Lukaku",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 166,
+      "rank": 167,
       "name": "S. Abdulhamid",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 167,
+      "rank": 168,
       "name": "S. Ezatolahi",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 168,
+      "rank": 169,
       "name": "S. Khalilzadeh",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 169,
+      "rank": 170,
       "name": "S. Moutoussamy",
       "teamCode": "COD",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 170,
+      "rank": 171,
       "name": "S. Nasrullaev",
       "teamCode": "UZB",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 171,
+      "rank": 172,
       "name": "S. Posch",
       "teamCode": "AUT",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 172,
+      "rank": 173,
       "name": "Saeid Ezatolahi",
       "teamCode": "IRN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 173,
+      "rank": 174,
       "name": "Salem Al-Dawsari",
       "teamCode": "KSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 174,
+      "rank": 175,
       "name": "Sarpreet Singh",
       "teamCode": "NZL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 175,
+      "rank": 176,
       "name": "Sebastian Berhalter",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 176,
+      "rank": 177,
       "name": "Seko Fofana",
       "teamCode": "CIV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 177,
+      "rank": 178,
       "name": "Seung Ho Paik",
       "teamCode": "KOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 178,
+      "rank": 179,
       "name": "Shararh",
       "teamCode": "JOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 179,
+      "rank": 180,
       "name": "Shogo Taniguchi",
       "teamCode": "JPN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 180,
+      "rank": 181,
       "name": "Thalente Mbatha",
       "teamCode": "RSA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 181,
+      "rank": 182,
       "name": "Timothy Castagne",
       "teamCode": "BEL",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 182,
+      "rank": 183,
       "name": "Tomás Araújo",
       "teamCode": "POR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 183,
+      "rank": 184,
       "name": "Tyler Adams",
       "teamCode": "USA",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 184,
+      "rank": 185,
       "name": "Viktor Gyökeres",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 185,
+      "rank": 186,
       "name": "W. Pina",
       "teamCode": "CPV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 186,
+      "rank": 187,
       "name": "Y. Al Arab",
       "teamCode": "JOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 187,
+      "rank": 188,
       "name": "Y. Barcenas",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 188,
+      "rank": 189,
       "name": "Y. Ibrahim",
       "teamCode": "EGY",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 189,
+      "rank": 190,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 190,
+      "rank": 191,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 191,
+      "rank": 192,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
