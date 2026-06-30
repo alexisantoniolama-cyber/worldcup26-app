@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-30T18:49:35.240279Z",
+  "updatedAt": "2026-06-30T19:44:47.852597Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,48 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R32_06": {
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "finished": false,
-      "homeCode": "CIV",
-      "awayCode": "NOR",
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "A. Nusa",
-          "teamCode": "NOR",
-          "detail": "Normal Goal",
-          "minute": 39
-        },
-        {
-          "name": "A. Diallo",
-          "teamCode": "CIV",
-          "detail": "Normal Goal",
-          "minute": 74
-        },
-        {
-          "name": "E. Haaland",
-          "teamCode": "NOR",
-          "detail": "Normal Goal",
-          "minute": 86
-        }
-      ],
-      "bookings": [
-        {
-          "name": "A. Nusa",
-          "teamCode": "NOR",
-          "detail": "Yellow Card",
-          "minute": 45
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3609,6 +3567,45 @@
           "minute": 47
         }
       ]
+    },
+    "R32_06": {
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "finished": true,
+      "homeCode": "CIV",
+      "awayCode": "NOR",
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "A. Nusa",
+          "teamCode": "NOR",
+          "detail": "Normal Goal",
+          "minute": 39
+        },
+        {
+          "name": "A. Diallo",
+          "teamCode": "CIV",
+          "detail": "Normal Goal",
+          "minute": 74
+        },
+        {
+          "name": "E. Haaland",
+          "teamCode": "NOR",
+          "detail": "Normal Goal",
+          "minute": 86
+        }
+      ],
+      "bookings": [
+        {
+          "name": "A. Nusa",
+          "teamCode": "NOR",
+          "detail": "Yellow Card",
+          "minute": 45
+        }
+      ]
     }
   },
   "bracket": {
@@ -3676,7 +3673,8 @@
       "awayCode": "MAR"
     },
     "R16_03": {
-      "homeCode": "BRA"
+      "homeCode": "BRA",
+      "awayCode": "NOR"
     }
   },
   "bracketProvisional": false,
