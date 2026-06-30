@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-30T02:52:53.770150Z",
+  "updatedAt": "2026-06-30T02:54:25.177227Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,6 +52,42 @@
     "NZL": 86
   },
   "results": {
+    "R32_03": {
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "finished": false,
+      "homeCode": "NED",
+      "awayCode": "MAR",
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "C. Gakpo",
+          "teamCode": "NED",
+          "detail": "Normal Goal",
+          "minute": 72
+        },
+        {
+          "name": "I. Diop",
+          "teamCode": "MAR",
+          "detail": "Normal Goal",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "I. Diop",
+          "teamCode": "MAR",
+          "detail": "Yellow Card",
+          "minute": 47
+        }
+      ],
+      "live": true,
+      "statusShort": "2H",
+      "minute": 90
+    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3534,42 +3570,6 @@
           "minute": 117
         }
       ]
-    },
-    "R32_03": {
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "NED",
-      "awayCode": "MAR",
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "C. Gakpo",
-          "teamCode": "NED",
-          "detail": "Normal Goal",
-          "minute": 72
-        },
-        {
-          "name": "I. Diop",
-          "teamCode": "MAR",
-          "detail": "Normal Goal",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "I. Diop",
-          "teamCode": "MAR",
-          "detail": "Yellow Card",
-          "minute": 47
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
     }
   },
   "bracket": {
