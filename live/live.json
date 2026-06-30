@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-30T18:44:58.152674Z",
+  "updatedAt": "2026-06-30T18:46:30.291269Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "R32_06": {
       "homeGoals": 1,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "finished": false,
       "homeCode": "CIV",
       "awayCode": "NOR",
@@ -74,6 +74,12 @@
           "teamCode": "CIV",
           "detail": "Normal Goal",
           "minute": 74
+        },
+        {
+          "name": "E. Haaland",
+          "teamCode": "NOR",
+          "detail": "Normal Goal",
+          "minute": 86
         }
       ],
       "bookings": [
@@ -86,7 +92,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 85
+      "minute": 87
     },
     "M001": {
       "homeGoals": 2,
@@ -3688,6 +3694,17 @@
     },
     {
       "rank": 2,
+      "name": "E. Haaland",
+      "teamCode": "NOR",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 5,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 3,
       "name": "Vinicius Junior",
       "teamCode": "BRA",
       "club": "",
@@ -3695,17 +3712,6 @@
       "position": "",
       "goals": 4,
       "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 3,
-      "name": "E. Haaland",
-      "teamCode": "NOR",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 4,
-      "assists": 0,
       "matches": 0
     },
     {
