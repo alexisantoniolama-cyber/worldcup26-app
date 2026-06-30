@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-06-29T23:15:53.044226Z",
+  "updatedAt": "2026-06-30T00:08:00.647893Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -3475,7 +3475,7 @@
     "R32_02": {
       "homeGoals": 1,
       "awayGoals": 1,
-      "finished": false,
+      "finished": true,
       "homeCode": "GER",
       "awayCode": "PAR",
       "homeYellow": 3,
@@ -3533,9 +3533,7 @@
           "detail": "Yellow Card",
           "minute": 117
         }
-      ],
-      "live": true,
-      "statusShort": "P"
+      ]
     }
   },
   "bracket": {
@@ -3594,6 +3592,9 @@
     "R32_16": {
       "homeCode": "AUS",
       "awayCode": "EGY"
+    },
+    "R16_01": {
+      "homeCode": "PAR"
     },
     "R16_02": {
       "homeCode": "CAN"
