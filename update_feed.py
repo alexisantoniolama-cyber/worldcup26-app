@@ -416,6 +416,25 @@ def match_events(evs):
     return scorers, bookings
 
 
+def shootout_kicks(evs):
+    """Penales de la TANDA definitoria de UN partido, en orden de ejecución.
+
+    Devuelve lista [{name, teamCode, scored}] (scored=False si erró) o [] si no
+    hubo tanda. API-Football entrega cada penal de la tanda como type=Goal con
+    comments="Penalty Shootout"; detail="Penalty" (convirtió) o "Missed Penalty"
+    (falló). El orden de la lista respeta el orden de ejecución."""
+    out = []
+    for e in evs:
+        if not _is_shootout(e) or e.get("type") != "Goal":
+            continue
+        out.append({
+            "name": e.get("player") or "",
+            "teamCode": code_for(e.get("team", "")) or "",
+            "scored": e.get("detail") != "Missed Penalty",
+        })
+    return out
+
+
 def build_scorers_and_bookings(events_by_fid):
     goals = defaultdict(int)
     assists = defaultdict(int)
@@ -559,6 +578,18 @@ def main():
             entry["scorers"] = sc
         if bk:
             entry["bookings"] = bk
+        # Definición por penales (solo eliminatoria terminada en tanda). El
+        # marcador (homeGoals/awayGoals) queda como terminó el tiempo reglamentario
+        # + prórroga; la tanda va aparte para que la app muestre quién ganó y quién
+        # convirtió/erró cada penal.
+        if is_ko and is_done:
+            kicks = shootout_kicks(evs)
+            if kicks:
+                entry["penScorers"] = kicks
+                entry["penHome"] = sum(
+                    1 for k in kicks if k["scored"] and k["teamCode"] == entry["homeCode"])
+                entry["penAway"] = sum(
+                    1 for k in kicks if k["scored"] and k["teamCode"] == entry["awayCode"])
         if is_live:
             entry["live"] = True
             entry["statusShort"] = status

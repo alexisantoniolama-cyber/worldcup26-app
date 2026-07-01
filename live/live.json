@@ -3533,7 +3533,71 @@
           "detail": "Yellow Card",
           "minute": 117
         }
-      ]
+      ],
+      "penScorers": [
+        {
+          "name": "K. Havertz",
+          "teamCode": "GER",
+          "scored": false
+        },
+        {
+          "name": "Mauricio",
+          "teamCode": "PAR",
+          "scored": true
+        },
+        {
+          "name": "J. Kimmich",
+          "teamCode": "GER",
+          "scored": true
+        },
+        {
+          "name": "G. Gomez",
+          "teamCode": "PAR",
+          "scored": true
+        },
+        {
+          "name": "J. Musiala",
+          "teamCode": "GER",
+          "scored": true
+        },
+        {
+          "name": "M. Galarza",
+          "teamCode": "PAR",
+          "scored": true
+        },
+        {
+          "name": "N. Woltemade",
+          "teamCode": "GER",
+          "scored": false
+        },
+        {
+          "name": "A. Sanabria",
+          "teamCode": "PAR",
+          "scored": false
+        },
+        {
+          "name": "N. Amiri",
+          "teamCode": "GER",
+          "scored": true
+        },
+        {
+          "name": "Fabian Balbuena",
+          "teamCode": "PAR",
+          "scored": false
+        },
+        {
+          "name": "J. Tah",
+          "teamCode": "GER",
+          "scored": false
+        },
+        {
+          "name": "J. Canale",
+          "teamCode": "PAR",
+          "scored": true
+        }
+      ],
+      "penHome": 3,
+      "penAway": 4
     },
     "R32_03": {
       "homeGoals": 1,
