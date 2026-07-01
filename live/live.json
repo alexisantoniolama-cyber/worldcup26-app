@@ -3645,7 +3645,8 @@
       "awayCode": "CAN"
     },
     "R32_02": {
-      "homeCode": "GER"
+      "homeCode": "GER",
+      "awayCode": "PAR"
     },
     "R32_03": {
       "homeCode": "NED",
@@ -3656,23 +3657,28 @@
       "awayCode": "JPN"
     },
     "R32_05": {
-      "homeCode": "FRA"
+      "homeCode": "FRA",
+      "awayCode": "SWE"
     },
     "R32_06": {
       "homeCode": "CIV",
       "awayCode": "NOR"
     },
     "R32_07": {
-      "homeCode": "MEX"
+      "homeCode": "MEX",
+      "awayCode": "ECU"
     },
     "R32_08": {
-      "homeCode": "ENG"
+      "homeCode": "ENG",
+      "awayCode": "COD"
     },
     "R32_09": {
-      "homeCode": "USA"
+      "homeCode": "USA",
+      "awayCode": "BIH"
     },
     "R32_10": {
-      "homeCode": "BEL"
+      "homeCode": "BEL",
+      "awayCode": "SEN"
     },
     "R32_11": {
       "homeCode": "POR",
@@ -3683,14 +3689,16 @@
       "awayCode": "AUT"
     },
     "R32_13": {
-      "homeCode": "SUI"
+      "homeCode": "SUI",
+      "awayCode": "ALG"
     },
     "R32_14": {
       "homeCode": "ARG",
       "awayCode": "CPV"
     },
     "R32_15": {
-      "homeCode": "COL"
+      "homeCode": "COL",
+      "awayCode": "GHA"
     },
     "R32_16": {
       "homeCode": "AUS",

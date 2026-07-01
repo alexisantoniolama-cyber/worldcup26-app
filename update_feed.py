@@ -236,14 +236,41 @@ def resolve_advance_label(label, ko_result):
     return res.get("winner") if kind == "ganador" else res.get("loser")
 
 
+# Asignación de los MEJORES TERCEROS a su cupo de Ronda de 32, según la tabla
+# oficial FIFA 2026. Depende de QUÉ 8 grupos clasifican con su tercero. Terminada
+# la fase de grupos, los 8 mejores terceros salieron de los grupos B,D,E,F,I,J,K,L,
+# y la tabla FIFA para esa combinación asigna (cupo -> letra del grupo del tercero):
+#   1E(R32_02)->3D  1I(R32_05)->3F  1A(R32_07)->3E  1L(R32_08)->3K
+#   1D(R32_09)->3B  1G(R32_10)->3I  1B(R32_13)->3J  1K(R32_15)->3L
+# Guardamos solo la LETRA del grupo; el equipo concreto se lee de la tabla en vivo
+# (group_qual[letra][3]), así no hardcodeamos códigos de equipo. Se aplica solo si
+# ese grupo ya terminó y la letra es válida para el cupo (según su etiqueta '3° (...)').
+THIRD_PLACE_SLOT_GROUP = {
+    "R32_02": "D", "R32_05": "F", "R32_07": "E", "R32_08": "K",
+    "R32_09": "B", "R32_10": "I", "R32_13": "J", "R32_15": "L",
+}
+
+# Letras de grupo elegibles para un cupo de tercero, p.ej. '2° (...)' no; '3° (C/E/F/H/I)' -> {C,E,F,H,I}
+_THIRD_ELIGIBLE_RE = re.compile(r"3\D*\(([A-L/\s]+)\)")
+
+
+def _third_eligible_groups(label):
+    m = _THIRD_ELIGIBLE_RE.search(label or "")
+    if not m:
+        return None
+    return {g.strip().upper() for g in m.group(1).split("/") if g.strip()}
+
+
 def build_bracket(my_matches, group_qual, ko_result):
     """Cupos de llave resueltos: id -> {homeCode, awayCode}.
       - Lados '1°/2° Grupo X' desde la tabla (grupos ya terminados).
       - Lados 'Ganador/Perdedor <ronda>-N' desde el ganador/perdedor real del
         cupo anterior (avance inmediato, apenas termina cada llave; NO espera a
         que la API publique el fixture de la ronda siguiente).
-    Los cupos de mejores terceros ('3° (...)') quedan sin resolver hasta que la
-    API publique el sorteo (los llena build_ko_fixture_to_slot)."""
+      - Lados de MEJOR TERCERO ('3° (...)') desde la asignación oficial FIFA
+        (THIRD_PLACE_SLOT_GROUP), leyendo el 3° de cada grupo de la tabla en vivo.
+        Antes esto esperaba a que la API publicara el sorteo, y los partidos
+        aparecían con un solo equipo."""
     out = {}
     for m in my_matches:
         if isinstance(m.get("homeCode"), str) and isinstance(m.get("awayCode"), str):
@@ -253,6 +280,8 @@ def build_bracket(my_matches, group_qual, ko_result):
               or resolve_advance_label(m.get("homeLabel"), ko_result))
         ac = (resolve_group_label(m.get("awayLabel"), group_qual)
               or resolve_advance_label(m.get("awayLabel"), ko_result))
+        if ac is None:
+            ac = resolve_best_third(m, group_qual)
         if hc:
             slot["homeCode"] = hc
         if ac:
@@ -260,6 +289,18 @@ def build_bracket(my_matches, group_qual, ko_result):
         if slot:
             out[m["id"]] = slot
     return out
+
+
+def resolve_best_third(m, group_qual):
+    """Código del mejor tercero que ocupa el cupo de este partido (o None si el
+    grupo asignado aún no terminó o la letra no es válida para el cupo)."""
+    letter = THIRD_PLACE_SLOT_GROUP.get(m.get("id"))
+    if not letter:
+        return None
+    eligible = _third_eligible_groups(m.get("awayLabel"))
+    if eligible is not None and letter not in eligible:
+        return None  # etiqueta y tabla FIFA no concuerdan -> no arriesgar
+    return (group_qual.get(letter) or {}).get(3)
 
 
 def filter_events(raw):
