@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-01T04:01:08.954717Z",
+  "updatedAt": "2026-07-01T04:02:40.319188Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,60 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R32_07": {
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "MEX",
-      "awayCode": "ECU",
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 3,
-      "awayRed": 1,
-      "scorers": [
-        {
-          "name": "J. Quinones",
-          "teamCode": "MEX",
-          "detail": "Normal Goal",
-          "minute": 22
-        },
-        {
-          "name": "R. Jimenez",
-          "teamCode": "MEX",
-          "detail": "Normal Goal",
-          "minute": 31
-        }
-      ],
-      "bookings": [
-        {
-          "name": "A. Franco",
-          "teamCode": "ECU",
-          "detail": "Yellow Card",
-          "minute": 45
-        },
-        {
-          "name": "K. Paez",
-          "teamCode": "ECU",
-          "detail": "Yellow Card",
-          "minute": 90
-        },
-        {
-          "name": "P. Hincapie",
-          "teamCode": "ECU",
-          "detail": "Red Card",
-          "minute": 90
-        },
-        {
-          "name": "M. Caicedo",
-          "teamCode": "ECU",
-          "detail": "Yellow Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3755,6 +3701,57 @@
           "minute": 74
         }
       ]
+    },
+    "R32_07": {
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "finished": true,
+      "homeCode": "MEX",
+      "awayCode": "ECU",
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 3,
+      "awayRed": 1,
+      "scorers": [
+        {
+          "name": "J. Quinones",
+          "teamCode": "MEX",
+          "detail": "Normal Goal",
+          "minute": 22
+        },
+        {
+          "name": "R. Jimenez",
+          "teamCode": "MEX",
+          "detail": "Normal Goal",
+          "minute": 31
+        }
+      ],
+      "bookings": [
+        {
+          "name": "A. Franco",
+          "teamCode": "ECU",
+          "detail": "Yellow Card",
+          "minute": 45
+        },
+        {
+          "name": "K. Paez",
+          "teamCode": "ECU",
+          "detail": "Yellow Card",
+          "minute": 90
+        },
+        {
+          "name": "P. Hincapie",
+          "teamCode": "ECU",
+          "detail": "Red Card",
+          "minute": 90
+        },
+        {
+          "name": "M. Caicedo",
+          "teamCode": "ECU",
+          "detail": "Yellow Card",
+          "minute": 90
+        }
+      ]
     }
   },
   "bracket": {
@@ -3833,6 +3830,9 @@
     "R16_03": {
       "homeCode": "BRA",
       "awayCode": "NOR"
+    },
+    "R16_04": {
+      "homeCode": "MEX"
     }
   },
   "bracketProvisional": false,
