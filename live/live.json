@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-01T17:37:30.037945Z",
+  "updatedAt": "2026-07-01T17:39:03.009677Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "R32_08": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "finished": false,
       "homeCode": "ENG",
@@ -68,6 +68,12 @@
           "teamCode": "COD",
           "detail": "Normal Goal",
           "minute": 7
+        },
+        {
+          "name": "H. Kane",
+          "teamCode": "ENG",
+          "detail": "Normal Goal",
+          "minute": 75
         }
       ],
       "bookings": [
@@ -86,7 +92,7 @@
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 74
+      "minute": 76
     },
     "M001": {
       "homeGoals": 2,
@@ -3919,6 +3925,17 @@
     },
     {
       "rank": 5,
+      "name": "H. Kane",
+      "teamCode": "ENG",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 4,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 6,
       "name": "D. Undav",
       "teamCode": "GER",
       "club": "",
@@ -3929,7 +3946,7 @@
       "matches": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "C. Gakpo",
       "teamCode": "NED",
       "club": "",
@@ -3940,7 +3957,7 @@
       "matches": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "I. Sarr",
       "teamCode": "SEN",
       "club": "",
@@ -3951,7 +3968,7 @@
       "matches": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "J. Manzambi",
       "teamCode": "SUI",
       "club": "",
@@ -3962,7 +3979,7 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "J. Quinones",
       "teamCode": "MEX",
       "club": "",
@@ -3973,7 +3990,7 @@
       "matches": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "O. Dembele",
       "teamCode": "FRA",
       "club": "",
@@ -3984,20 +4001,9 @@
       "matches": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "E. Just",
       "teamCode": "NZL",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 3,
-      "assists": 0,
-      "matches": 0
-    },
-    {
-      "rank": 12,
-      "name": "H. Kane",
-      "teamCode": "ENG",
       "club": "",
       "league": "",
       "position": "",
