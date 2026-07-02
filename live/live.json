@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-02T20:53:14.307103Z",
+  "updatedAt": "2026-07-02T20:59:17.727492Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,48 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R32_12": {
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "ESP",
-      "awayCode": "AUT",
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "M. Oyarzabal",
-          "teamCode": "ESP",
-          "detail": "Normal Goal",
-          "minute": 36
-        },
-        {
-          "name": "P. Porro",
-          "teamCode": "ESP",
-          "detail": "Normal Goal",
-          "minute": 66
-        },
-        {
-          "name": "M. Oyarzabal",
-          "teamCode": "ESP",
-          "detail": "Normal Goal",
-          "minute": 89
-        }
-      ],
-      "bookings": [
-        {
-          "name": "S. Posch",
-          "teamCode": "AUT",
-          "detail": "Yellow Card",
-          "minute": 83
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3947,6 +3905,45 @@
           "minute": 80
         }
       ]
+    },
+    "R32_12": {
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "finished": true,
+      "homeCode": "ESP",
+      "awayCode": "AUT",
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "M. Oyarzabal",
+          "teamCode": "ESP",
+          "detail": "Normal Goal",
+          "minute": 36
+        },
+        {
+          "name": "P. Porro",
+          "teamCode": "ESP",
+          "detail": "Normal Goal",
+          "minute": 66
+        },
+        {
+          "name": "M. Oyarzabal",
+          "teamCode": "ESP",
+          "detail": "Normal Goal",
+          "minute": 89
+        }
+      ],
+      "bookings": [
+        {
+          "name": "S. Posch",
+          "teamCode": "AUT",
+          "detail": "Yellow Card",
+          "minute": 83
+        }
+      ]
     }
   },
   "bracket": {
@@ -4029,6 +4026,9 @@
     "R16_04": {
       "homeCode": "MEX",
       "awayCode": "ENG"
+    },
+    "R16_05": {
+      "awayCode": "ESP"
     },
     "R16_06": {
       "homeCode": "USA",
