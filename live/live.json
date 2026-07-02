@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-02T01:55:53.023573Z",
+  "updatedAt": "2026-07-02T02:08:00.323407Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,54 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R32_09": {
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "USA",
-      "awayCode": "BIH",
-      "homeYellow": 0,
-      "homeRed": 1,
-      "awayYellow": 2,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "F. Balogun",
-          "teamCode": "USA",
-          "detail": "Normal Goal",
-          "minute": 45
-        },
-        {
-          "name": "M. Tillman",
-          "teamCode": "USA",
-          "detail": "Normal Goal",
-          "minute": 82
-        }
-      ],
-      "bookings": [
-        {
-          "name": "F. Balogun",
-          "teamCode": "USA",
-          "detail": "Red Card",
-          "minute": 64
-        },
-        {
-          "name": "S. Barbarez",
-          "teamCode": "BIH",
-          "detail": "Yellow Card",
-          "minute": 80
-        },
-        {
-          "name": "S. Radeljic",
-          "teamCode": "BIH",
-          "detail": "Yellow Card",
-          "minute": 80
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3908,6 +3860,51 @@
           "minute": 90
         }
       ]
+    },
+    "R32_09": {
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "finished": true,
+      "homeCode": "USA",
+      "awayCode": "BIH",
+      "homeYellow": 0,
+      "homeRed": 1,
+      "awayYellow": 2,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "F. Balogun",
+          "teamCode": "USA",
+          "detail": "Normal Goal",
+          "minute": 45
+        },
+        {
+          "name": "M. Tillman",
+          "teamCode": "USA",
+          "detail": "Normal Goal",
+          "minute": 82
+        }
+      ],
+      "bookings": [
+        {
+          "name": "F. Balogun",
+          "teamCode": "USA",
+          "detail": "Red Card",
+          "minute": 64
+        },
+        {
+          "name": "S. Barbarez",
+          "teamCode": "BIH",
+          "detail": "Yellow Card",
+          "minute": 80
+        },
+        {
+          "name": "S. Radeljic",
+          "teamCode": "BIH",
+          "detail": "Yellow Card",
+          "minute": 80
+        }
+      ]
     }
   },
   "bracket": {
@@ -3992,6 +3989,7 @@
       "awayCode": "ENG"
     },
     "R16_06": {
+      "homeCode": "USA",
       "awayCode": "BEL"
     }
   },
