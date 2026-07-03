@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-03T01:05:58.559936Z",
+  "updatedAt": "2026-07-03T01:10:32.674553Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,60 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R32_11": {
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "finished": false,
-      "homeCode": "POR",
-      "awayCode": "CRO",
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 2,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "I. Perisic",
-          "teamCode": "CRO",
-          "detail": "Normal Goal",
-          "minute": 53
-        },
-        {
-          "name": "C. Ronaldo",
-          "teamCode": "POR",
-          "detail": "Penalty",
-          "minute": 68
-        },
-        {
-          "name": "G. Ramos",
-          "teamCode": "POR",
-          "detail": "Normal Goal",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "R. Dias",
-          "teamCode": "POR",
-          "detail": "Yellow Card",
-          "minute": 17
-        },
-        {
-          "name": "L. Modric",
-          "teamCode": "CRO",
-          "detail": "Yellow Card",
-          "minute": 59
-        },
-        {
-          "name": "I. Perisic",
-          "teamCode": "CRO",
-          "detail": "Yellow Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 46
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3998,6 +3944,57 @@
           "minute": 83
         }
       ]
+    },
+    "R32_11": {
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "finished": true,
+      "homeCode": "POR",
+      "awayCode": "CRO",
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 2,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "I. Perisic",
+          "teamCode": "CRO",
+          "detail": "Normal Goal",
+          "minute": 53
+        },
+        {
+          "name": "C. Ronaldo",
+          "teamCode": "POR",
+          "detail": "Penalty",
+          "minute": 68
+        },
+        {
+          "name": "G. Ramos",
+          "teamCode": "POR",
+          "detail": "Normal Goal",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "R. Dias",
+          "teamCode": "POR",
+          "detail": "Yellow Card",
+          "minute": 17
+        },
+        {
+          "name": "L. Modric",
+          "teamCode": "CRO",
+          "detail": "Yellow Card",
+          "minute": 59
+        },
+        {
+          "name": "I. Perisic",
+          "teamCode": "CRO",
+          "detail": "Yellow Card",
+          "minute": 90
+        }
+      ]
     }
   },
   "bracket": {
@@ -4082,6 +4079,7 @@
       "awayCode": "ENG"
     },
     "R16_05": {
+      "homeCode": "POR",
       "awayCode": "ESP"
     },
     "R16_06": {
