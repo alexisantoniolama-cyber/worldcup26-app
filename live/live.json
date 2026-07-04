@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-04T03:08:23.041985Z",
+  "updatedAt": "2026-07-04T03:09:54.955208Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,6 +52,48 @@
     "NZL": 86
   },
   "results": {
+    "R32_15": {
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "finished": false,
+      "homeCode": "COL",
+      "awayCode": "GHA",
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 2,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "J. Arias",
+          "teamCode": "COL",
+          "detail": "Normal Goal",
+          "minute": 14
+        }
+      ],
+      "bookings": [
+        {
+          "name": "J. Arias",
+          "teamCode": "COL",
+          "detail": "Yellow Card",
+          "minute": 12
+        },
+        {
+          "name": "C. Yirenkyi",
+          "teamCode": "GHA",
+          "detail": "Yellow Card",
+          "minute": 49
+        },
+        {
+          "name": "I. Fatawu",
+          "teamCode": "GHA",
+          "detail": "Yellow Card",
+          "minute": 66
+        }
+      ],
+      "live": true,
+      "statusShort": "2H",
+      "minute": 76
+    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4130,48 +4172,6 @@
           "minute": 115
         }
       ]
-    },
-    "R32_15": {
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "COL",
-      "awayCode": "GHA",
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 2,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "J. Arias",
-          "teamCode": "COL",
-          "detail": "Normal Goal",
-          "minute": 14
-        }
-      ],
-      "bookings": [
-        {
-          "name": "J. Arias",
-          "teamCode": "COL",
-          "detail": "Yellow Card",
-          "minute": 12
-        },
-        {
-          "name": "C. Yirenkyi",
-          "teamCode": "GHA",
-          "detail": "Yellow Card",
-          "minute": 49
-        },
-        {
-          "name": "I. Fatawu",
-          "teamCode": "GHA",
-          "detail": "Yellow Card",
-          "minute": 66
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 75
     }
   },
   "bracket": {
