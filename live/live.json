@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-04T19:04:00.046703Z",
+  "updatedAt": "2026-07-04T19:55:50.721948Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,90 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R16_02": {
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "finished": false,
-      "homeCode": "CAN",
-      "awayCode": "MAR",
-      "homeYellow": 4,
-      "homeRed": 0,
-      "awayYellow": 4,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "A. Ounahi",
-          "teamCode": "MAR",
-          "detail": "Normal Goal",
-          "minute": 50
-        },
-        {
-          "name": "A. Ounahi",
-          "teamCode": "MAR",
-          "detail": "Normal Goal",
-          "minute": 82
-        },
-        {
-          "name": "S. Rahimi",
-          "teamCode": "MAR",
-          "detail": "Normal Goal",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "R. Halhal",
-          "teamCode": "MAR",
-          "detail": "Yellow Card",
-          "minute": 20
-        },
-        {
-          "name": "A. Hakimi",
-          "teamCode": "MAR",
-          "detail": "Yellow Card",
-          "minute": 40
-        },
-        {
-          "name": "R. Laryea",
-          "teamCode": "CAN",
-          "detail": "Yellow Card",
-          "minute": 40
-        },
-        {
-          "name": "J. David",
-          "teamCode": "CAN",
-          "detail": "Yellow Card",
-          "minute": 43
-        },
-        {
-          "name": "A. Ounahi",
-          "teamCode": "MAR",
-          "detail": "Yellow Card",
-          "minute": 45
-        },
-        {
-          "name": "B. El Khannouss",
-          "teamCode": "MAR",
-          "detail": "Yellow Card",
-          "minute": 45
-        },
-        {
-          "name": "L. De Fougerolles",
-          "teamCode": "CAN",
-          "detail": "Yellow Card",
-          "minute": 49
-        },
-        {
-          "name": "C. Larin",
-          "teamCode": "CAN",
-          "detail": "Yellow Card",
-          "minute": 67
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4265,6 +4181,87 @@
           "minute": 78
         }
       ]
+    },
+    "R16_02": {
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "finished": true,
+      "homeCode": "CAN",
+      "awayCode": "MAR",
+      "homeYellow": 4,
+      "homeRed": 0,
+      "awayYellow": 4,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "A. Ounahi",
+          "teamCode": "MAR",
+          "detail": "Normal Goal",
+          "minute": 50
+        },
+        {
+          "name": "A. Ounahi",
+          "teamCode": "MAR",
+          "detail": "Normal Goal",
+          "minute": 82
+        },
+        {
+          "name": "S. Rahimi",
+          "teamCode": "MAR",
+          "detail": "Normal Goal",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "R. Halhal",
+          "teamCode": "MAR",
+          "detail": "Yellow Card",
+          "minute": 20
+        },
+        {
+          "name": "A. Hakimi",
+          "teamCode": "MAR",
+          "detail": "Yellow Card",
+          "minute": 40
+        },
+        {
+          "name": "R. Laryea",
+          "teamCode": "CAN",
+          "detail": "Yellow Card",
+          "minute": 40
+        },
+        {
+          "name": "J. David",
+          "teamCode": "CAN",
+          "detail": "Yellow Card",
+          "minute": 43
+        },
+        {
+          "name": "A. Ounahi",
+          "teamCode": "MAR",
+          "detail": "Yellow Card",
+          "minute": 45
+        },
+        {
+          "name": "B. El Khannouss",
+          "teamCode": "MAR",
+          "detail": "Yellow Card",
+          "minute": 45
+        },
+        {
+          "name": "L. De Fougerolles",
+          "teamCode": "CAN",
+          "detail": "Yellow Card",
+          "minute": 49
+        },
+        {
+          "name": "C. Larin",
+          "teamCode": "CAN",
+          "detail": "Yellow Card",
+          "minute": 67
+        }
+      ]
     }
   },
   "bracket": {
@@ -4363,6 +4360,9 @@
     "R16_08": {
       "homeCode": "SUI",
       "awayCode": "COL"
+    },
+    "QF_01": {
+      "awayCode": "MAR"
     }
   },
   "bracketProvisional": false,
