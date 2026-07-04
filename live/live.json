@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-04T03:23:43.446850Z",
+  "updatedAt": "2026-07-04T03:32:48.533327Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,60 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R32_15": {
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "COL",
-      "awayCode": "GHA",
-      "homeYellow": 2,
-      "homeRed": 0,
-      "awayYellow": 3,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "J. Arias",
-          "teamCode": "COL",
-          "detail": "Normal Goal",
-          "minute": 14
-        }
-      ],
-      "bookings": [
-        {
-          "name": "J. Arias",
-          "teamCode": "COL",
-          "detail": "Yellow Card",
-          "minute": 12
-        },
-        {
-          "name": "C. Yirenkyi",
-          "teamCode": "GHA",
-          "detail": "Yellow Card",
-          "minute": 49
-        },
-        {
-          "name": "I. Fatawu",
-          "teamCode": "GHA",
-          "detail": "Yellow Card",
-          "minute": 66
-        },
-        {
-          "name": "A. Seidu",
-          "teamCode": "GHA",
-          "detail": "Yellow Card",
-          "minute": 76
-        },
-        {
-          "name": "R. Rios",
-          "teamCode": "COL",
-          "detail": "Yellow Card",
-          "minute": 78
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4184,6 +4130,57 @@
           "minute": 115
         }
       ]
+    },
+    "R32_15": {
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "finished": true,
+      "homeCode": "COL",
+      "awayCode": "GHA",
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 3,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "J. Arias",
+          "teamCode": "COL",
+          "detail": "Normal Goal",
+          "minute": 14
+        }
+      ],
+      "bookings": [
+        {
+          "name": "J. Arias",
+          "teamCode": "COL",
+          "detail": "Yellow Card",
+          "minute": 12
+        },
+        {
+          "name": "C. Yirenkyi",
+          "teamCode": "GHA",
+          "detail": "Yellow Card",
+          "minute": 49
+        },
+        {
+          "name": "I. Fatawu",
+          "teamCode": "GHA",
+          "detail": "Yellow Card",
+          "minute": 66
+        },
+        {
+          "name": "A. Seidu",
+          "teamCode": "GHA",
+          "detail": "Yellow Card",
+          "minute": 76
+        },
+        {
+          "name": "R. Rios",
+          "teamCode": "COL",
+          "detail": "Yellow Card",
+          "minute": 78
+        }
+      ]
     }
   },
   "bracket": {
@@ -4280,7 +4277,8 @@
       "awayCode": "EGY"
     },
     "R16_08": {
-      "homeCode": "SUI"
+      "homeCode": "SUI",
+      "awayCode": "COL"
     }
   },
   "bracketProvisional": false,
