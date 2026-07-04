@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-04T18:32:04.957737Z",
+  "updatedAt": "2026-07-04T18:33:36.401075Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -117,12 +117,12 @@
           "name": "C. Larin",
           "teamCode": "CAN",
           "detail": "Yellow Card",
-          "minute": 68
+          "minute": 67
         }
       ],
       "live": true,
       "statusShort": "2H",
-      "minute": 68
+      "minute": 70
     },
     "M001": {
       "homeGoals": 2,
