@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-04T23:01:08.855055Z",
+  "updatedAt": "2026-07-04T23:05:42.011088Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,48 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R16_01": {
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "finished": false,
-      "homeCode": "PAR",
-      "awayCode": "FRA",
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 3,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "K. Mbappe",
-          "teamCode": "FRA",
-          "detail": "Penalty",
-          "minute": 70
-        }
-      ],
-      "bookings": [
-        {
-          "name": "B. Barcola",
-          "teamCode": "FRA",
-          "detail": "Yellow Card",
-          "minute": 19
-        },
-        {
-          "name": "M. Kone",
-          "teamCode": "FRA",
-          "detail": "Yellow Card",
-          "minute": 81
-        },
-        {
-          "name": "M. Olise",
-          "teamCode": "FRA",
-          "detail": "Yellow Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4304,6 +4262,45 @@
           "minute": 67
         }
       ]
+    },
+    "R16_01": {
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "finished": true,
+      "homeCode": "PAR",
+      "awayCode": "FRA",
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 3,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "K. Mbappe",
+          "teamCode": "FRA",
+          "detail": "Penalty",
+          "minute": 70
+        }
+      ],
+      "bookings": [
+        {
+          "name": "B. Barcola",
+          "teamCode": "FRA",
+          "detail": "Yellow Card",
+          "minute": 19
+        },
+        {
+          "name": "M. Kone",
+          "teamCode": "FRA",
+          "detail": "Yellow Card",
+          "minute": 81
+        },
+        {
+          "name": "M. Olise",
+          "teamCode": "FRA",
+          "detail": "Yellow Card",
+          "minute": 90
+        }
+      ]
     }
   },
   "bracket": {
@@ -4404,6 +4401,7 @@
       "awayCode": "COL"
     },
     "QF_01": {
+      "homeCode": "FRA",
       "awayCode": "MAR"
     }
   },
