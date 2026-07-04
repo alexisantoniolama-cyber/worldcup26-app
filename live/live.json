@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-04T00:16:38.431709Z",
+  "updatedAt": "2026-07-04T00:18:09.895037Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "R32_14": {
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "finished": false,
       "homeCode": "ARG",
       "awayCode": "CPV",
@@ -80,6 +80,12 @@
           "teamCode": "ARG",
           "detail": "Normal Goal",
           "minute": 92
+        },
+        {
+          "name": "S. Lopes Cabral",
+          "teamCode": "CPV",
+          "detail": "Normal Goal",
+          "minute": 103
         }
       ],
       "bookings": [
@@ -92,7 +98,7 @@
       ],
       "live": true,
       "statusShort": "ET",
-      "minute": 102
+      "minute": 104
     },
     "M001": {
       "homeGoals": 2,
@@ -5933,6 +5939,17 @@
     },
     {
       "rank": 157,
+      "name": "S. Lopes Cabral",
+      "teamCode": "CPV",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 158,
       "name": "T. Aasgaard",
       "teamCode": "NOR",
       "club": "",
@@ -5943,7 +5960,7 @@
       "matches": 0
     },
     {
-      "rank": 158,
+      "rank": 159,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -5954,7 +5971,7 @@
       "matches": 0
     },
     {
-      "rank": 159,
+      "rank": 160,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -5965,7 +5982,7 @@
       "matches": 0
     },
     {
-      "rank": 160,
+      "rank": 161,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -5976,7 +5993,7 @@
       "matches": 0
     },
     {
-      "rank": 161,
+      "rank": 162,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -5987,7 +6004,7 @@
       "matches": 0
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
