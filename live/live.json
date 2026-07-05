@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-05T21:59:54.184782Z",
+  "updatedAt": "2026-07-05T22:02:56.114815Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -53,7 +53,7 @@
   },
   "results": {
     "R16_03": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 2,
       "finished": false,
       "homeCode": "BRA",
@@ -73,6 +73,12 @@
           "name": "E. Haaland",
           "teamCode": "NOR",
           "detail": "Normal Goal",
+          "minute": 90
+        },
+        {
+          "name": "Neymar",
+          "teamCode": "BRA",
+          "detail": "Penalty",
           "minute": 90
         }
       ],
@@ -6084,6 +6090,17 @@
     },
     {
       "rank": 150,
+      "name": "Neymar",
+      "teamCode": "BRA",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 151,
       "name": "Nilson Angulo",
       "teamCode": "ECU",
       "club": "",
@@ -6094,7 +6111,7 @@
       "matches": 0
     },
     {
-      "rank": 151,
+      "rank": 152,
       "name": "O. Rekik",
       "teamCode": "TUN",
       "club": "",
@@ -6105,7 +6122,7 @@
       "matches": 0
     },
     {
-      "rank": 152,
+      "rank": 153,
       "name": "Oh Hyeon-Gyu",
       "teamCode": "KOR",
       "club": "",
@@ -6116,7 +6133,7 @@
       "matches": 0
     },
     {
-      "rank": 153,
+      "rank": 154,
       "name": "P. Musa",
       "teamCode": "CRO",
       "club": "",
@@ -6127,7 +6144,7 @@
       "matches": 0
     },
     {
-      "rank": 154,
+      "rank": 155,
       "name": "P. Porro",
       "teamCode": "ESP",
       "club": "",
@@ -6138,7 +6155,7 @@
       "matches": 0
     },
     {
-      "rank": 155,
+      "rank": 156,
       "name": "R. Belghali",
       "teamCode": "ALG",
       "club": "",
@@ -6149,7 +6166,7 @@
       "matches": 0
     },
     {
-      "rank": 156,
+      "rank": 157,
       "name": "R. Schmid",
       "teamCode": "AUT",
       "club": "",
@@ -6160,7 +6177,7 @@
       "matches": 0
     },
     {
-      "rank": 157,
+      "rank": 158,
       "name": "S. Eustaquio",
       "teamCode": "CAN",
       "club": "",
@@ -6171,7 +6188,7 @@
       "matches": 0
     },
     {
-      "rank": 158,
+      "rank": 159,
       "name": "S. Kalajdzic",
       "teamCode": "AUT",
       "club": "",
@@ -6182,7 +6199,7 @@
       "matches": 0
     },
     {
-      "rank": 159,
+      "rank": 160,
       "name": "S. Lopes Cabral",
       "teamCode": "CPV",
       "club": "",
@@ -6193,7 +6210,7 @@
       "matches": 0
     },
     {
-      "rank": 160,
+      "rank": 161,
       "name": "T. Aasgaard",
       "teamCode": "NOR",
       "club": "",
@@ -6204,7 +6221,7 @@
       "matches": 0
     },
     {
-      "rank": 161,
+      "rank": 162,
       "name": "T. Maseko",
       "teamCode": "RSA",
       "club": "",
@@ -6215,7 +6232,7 @@
       "matches": 0
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "T. Mokoena",
       "teamCode": "RSA",
       "club": "",
@@ -6226,7 +6243,7 @@
       "matches": 0
     },
     {
-      "rank": 163,
+      "rank": 164,
       "name": "Trezeguet",
       "teamCode": "EGY",
       "club": "",
@@ -6237,7 +6254,7 @@
       "matches": 0
     },
     {
-      "rank": 164,
+      "rank": 165,
       "name": "V. van Dijk",
       "teamCode": "NED",
       "club": "",
@@ -6248,7 +6265,7 @@
       "matches": 0
     },
     {
-      "rank": 165,
+      "rank": 166,
       "name": "W. Isidor",
       "teamCode": "HAI",
       "club": "",
