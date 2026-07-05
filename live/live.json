@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-05T22:02:56.114815Z",
+  "updatedAt": "2026-07-05T22:05:58.309312Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,48 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R16_03": {
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "finished": false,
-      "homeCode": "BRA",
-      "awayCode": "NOR",
-      "homeYellow": 1,
-      "homeRed": 0,
-      "awayYellow": 0,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "E. Haaland",
-          "teamCode": "NOR",
-          "detail": "Normal Goal",
-          "minute": 79
-        },
-        {
-          "name": "E. Haaland",
-          "teamCode": "NOR",
-          "detail": "Normal Goal",
-          "minute": 90
-        },
-        {
-          "name": "Neymar",
-          "teamCode": "BRA",
-          "detail": "Penalty",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "Neymar",
-          "teamCode": "BRA",
-          "detail": "Yellow Card",
-          "minute": 90
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4343,6 +4301,45 @@
           "minute": 90
         }
       ]
+    },
+    "R16_03": {
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "finished": true,
+      "homeCode": "BRA",
+      "awayCode": "NOR",
+      "homeYellow": 1,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "E. Haaland",
+          "teamCode": "NOR",
+          "detail": "Normal Goal",
+          "minute": 79
+        },
+        {
+          "name": "E. Haaland",
+          "teamCode": "NOR",
+          "detail": "Normal Goal",
+          "minute": 90
+        },
+        {
+          "name": "Neymar",
+          "teamCode": "BRA",
+          "detail": "Penalty",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "Neymar",
+          "teamCode": "BRA",
+          "detail": "Yellow Card",
+          "minute": 90
+        }
+      ]
     }
   },
   "bracket": {
@@ -4445,6 +4442,9 @@
     "QF_01": {
       "homeCode": "FRA",
       "awayCode": "MAR"
+    },
+    "QF_03": {
+      "homeCode": "NOR"
     }
   },
   "bracketProvisional": false,
