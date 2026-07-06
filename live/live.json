@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-06T01:36:28.281248Z",
+  "updatedAt": "2026-07-06T01:37:59.596705Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "R16_04": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "finished": false,
       "homeCode": "MEX",
       "awayCode": "ENG",
@@ -62,6 +62,14 @@
       "homeRed": 0,
       "awayYellow": 1,
       "awayRed": 0,
+      "scorers": [
+        {
+          "name": "J. Bellingham",
+          "teamCode": "ENG",
+          "detail": "Normal Goal",
+          "minute": 36
+        }
+      ],
       "bookings": [
         {
           "name": "D. Rice",
@@ -72,7 +80,7 @@
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 36
+      "minute": 38
     },
     "M001": {
       "homeGoals": 2,
@@ -4583,6 +4591,17 @@
     },
     {
       "rank": 11,
+      "name": "J. Bellingham",
+      "teamCode": "ENG",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 12,
       "name": "J. Quinones",
       "teamCode": "MEX",
       "club": "",
@@ -4593,7 +4612,7 @@
       "matches": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "O. Dembele",
       "teamCode": "FRA",
       "club": "",
@@ -4604,7 +4623,7 @@
       "matches": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "C. Ronaldo",
       "teamCode": "POR",
       "club": "",
@@ -4615,7 +4634,7 @@
       "matches": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "E. Just",
       "teamCode": "NZL",
       "club": "",
@@ -4626,7 +4645,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "F. Balogun",
       "teamCode": "USA",
       "club": "",
@@ -4637,7 +4656,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "I. Saibari",
       "teamCode": "MAR",
       "club": "",
@@ -4648,7 +4667,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "J. David",
       "teamCode": "CAN",
       "club": "",
@@ -4659,7 +4678,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "K. Havertz",
       "teamCode": "GER",
       "club": "",
@@ -4670,7 +4689,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "M. Cunha",
       "teamCode": "BRA",
       "club": "",
@@ -4681,7 +4700,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
@@ -4692,7 +4711,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "B. Embolo",
       "teamCode": "SUI",
       "club": "",
@@ -4703,7 +4722,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -4714,7 +4733,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "A. Ueda",
       "teamCode": "JPN",
       "club": "",
@@ -4725,20 +4744,9 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "B. Barcola",
       "teamCode": "FRA",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 25,
-      "name": "J. Bellingham",
-      "teamCode": "ENG",
       "club": "",
       "league": "",
       "position": "",
