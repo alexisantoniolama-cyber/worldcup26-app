@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-06T01:37:59.596705Z",
+  "updatedAt": "2026-07-06T01:39:31.031339Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "R16_04": {
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "finished": false,
       "homeCode": "MEX",
       "awayCode": "ENG",
@@ -68,6 +68,12 @@
           "teamCode": "ENG",
           "detail": "Normal Goal",
           "minute": 36
+        },
+        {
+          "name": "J. Bellingham",
+          "teamCode": "ENG",
+          "detail": "Normal Goal",
+          "minute": 38
         }
       ],
       "bookings": [
@@ -80,7 +86,7 @@
       ],
       "live": true,
       "statusShort": "1H",
-      "minute": 38
+      "minute": 40
     },
     "M001": {
       "homeGoals": 2,
@@ -4520,7 +4526,7 @@
       "league": "",
       "position": "",
       "goals": 5,
-      "assists": 0,
+      "assists": 1,
       "matches": 0
     },
     {
@@ -4536,6 +4542,17 @@
     },
     {
       "rank": 6,
+      "name": "J. Bellingham",
+      "teamCode": "ENG",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 4,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 7,
       "name": "M. Oyarzabal",
       "teamCode": "ESP",
       "club": "",
@@ -4546,7 +4563,7 @@
       "matches": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Vinicius Junior",
       "teamCode": "BRA",
       "club": "",
@@ -4557,7 +4574,7 @@
       "matches": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "D. Undav",
       "teamCode": "GER",
       "club": "",
@@ -4568,7 +4585,7 @@
       "matches": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "J. Manzambi",
       "teamCode": "SUI",
       "club": "",
@@ -4579,20 +4596,9 @@
       "matches": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "C. Gakpo",
       "teamCode": "NED",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 3,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 11,
-      "name": "J. Bellingham",
-      "teamCode": "ENG",
       "club": "",
       "league": "",
       "position": "",
