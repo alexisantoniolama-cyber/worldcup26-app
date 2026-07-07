@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-07T01:57:16.973476Z",
+  "updatedAt": "2026-07-07T01:58:48.772310Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -5224,6 +5224,17 @@
     },
     {
       "rank": 54,
+      "name": "H. Vanaken",
+      "teamCode": "BEL",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 2,
+      "matches": 0
+    },
+    {
+      "rank": 55,
       "name": "I. Ndiaye",
       "teamCode": "SEN",
       "club": "",
@@ -5234,7 +5245,7 @@
       "matches": 0
     },
     {
-      "rank": 55,
+      "rank": 56,
       "name": "J. Enciso",
       "teamCode": "PAR",
       "club": "",
@@ -5245,7 +5256,7 @@
       "matches": 0
     },
     {
-      "rank": 56,
+      "rank": 57,
       "name": "M. Salah",
       "teamCode": "EGY",
       "club": "",
@@ -5256,7 +5267,7 @@
       "matches": 0
     },
     {
-      "rank": 57,
+      "rank": 58,
       "name": "N. Saliba",
       "teamCode": "CAN",
       "club": "",
@@ -5267,7 +5278,7 @@
       "matches": 0
     },
     {
-      "rank": 58,
+      "rank": 59,
       "name": "A. Baena",
       "teamCode": "ESP",
       "club": "",
@@ -5278,7 +5289,7 @@
       "matches": 0
     },
     {
-      "rank": 59,
+      "rank": 60,
       "name": "A. Freeman",
       "teamCode": "USA",
       "club": "",
@@ -5289,7 +5300,7 @@
       "matches": 0
     },
     {
-      "rank": 60,
+      "rank": 61,
       "name": "Baris Alper Yilmaz",
       "teamCode": "TUR",
       "club": "",
@@ -5300,20 +5311,9 @@
       "matches": 0
     },
     {
-      "rank": 61,
+      "rank": 62,
       "name": "F. Nmecha",
       "teamCode": "GER",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 1,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 62,
-      "name": "H. Vanaken",
-      "teamCode": "BEL",
       "club": "",
       "league": "",
       "position": "",
