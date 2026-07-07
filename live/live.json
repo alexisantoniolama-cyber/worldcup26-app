@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-07T16:12:27.009091Z",
+  "updatedAt": "2026-07-07T17:05:29.164568Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "R16_07": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "finished": false,
       "homeCode": "ARG",
       "awayCode": "EGY",
@@ -62,9 +62,17 @@
       "homeRed": 0,
       "awayYellow": 0,
       "awayRed": 0,
+      "scorers": [
+        {
+          "name": "Yasser Ibrahim Hanafi",
+          "teamCode": "EGY",
+          "detail": "Normal Goal",
+          "minute": 15
+        }
+      ],
       "live": true,
-      "statusShort": "1H",
-      "minute": 11
+      "statusShort": "HT",
+      "minute": 45
     },
     "M001": {
       "homeGoals": 2,
@@ -6503,6 +6511,17 @@
       "rank": 169,
       "name": "W. Isidor",
       "teamCode": "HAI",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 1,
+      "assists": 0,
+      "matches": 0
+    },
+    {
+      "rank": 170,
+      "name": "Yasser Ibrahim Hanafi",
+      "teamCode": "EGY",
       "club": "",
       "league": "",
       "position": "",
