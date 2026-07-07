@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-07T01:54:14.668889Z",
+  "updatedAt": "2026-07-07T01:57:16.973476Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -54,7 +54,7 @@
   "results": {
     "R16_06": {
       "homeGoals": 1,
-      "awayGoals": 3,
+      "awayGoals": 4,
       "finished": false,
       "homeCode": "USA",
       "awayCode": "BEL",
@@ -86,6 +86,12 @@
           "teamCode": "BEL",
           "detail": "Normal Goal",
           "minute": 57
+        },
+        {
+          "name": "R. Lukaku",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 90
         }
       ],
       "bookings": [
@@ -4778,6 +4784,17 @@
     },
     {
       "rank": 14,
+      "name": "R. Lukaku",
+      "teamCode": "BEL",
+      "club": "",
+      "league": "",
+      "position": "",
+      "goals": 3,
+      "assists": 1,
+      "matches": 0
+    },
+    {
+      "rank": 15,
       "name": "C. Ronaldo",
       "teamCode": "POR",
       "club": "",
@@ -4788,7 +4805,7 @@
       "matches": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "E. Just",
       "teamCode": "NZL",
       "club": "",
@@ -4799,7 +4816,7 @@
       "matches": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "F. Balogun",
       "teamCode": "USA",
       "club": "",
@@ -4810,7 +4827,7 @@
       "matches": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "I. Saibari",
       "teamCode": "MAR",
       "club": "",
@@ -4821,7 +4838,7 @@
       "matches": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "J. David",
       "teamCode": "CAN",
       "club": "",
@@ -4832,7 +4849,7 @@
       "matches": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "K. Havertz",
       "teamCode": "GER",
       "club": "",
@@ -4843,7 +4860,7 @@
       "matches": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "M. Cunha",
       "teamCode": "BRA",
       "club": "",
@@ -4854,7 +4871,7 @@
       "matches": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "R. Jimenez",
       "teamCode": "MEX",
       "club": "",
@@ -4865,7 +4882,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "Y. Wissa",
       "teamCode": "COD",
       "club": "",
@@ -4876,7 +4893,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "B. Embolo",
       "teamCode": "SUI",
       "club": "",
@@ -4887,7 +4904,7 @@
       "matches": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "C. Summerville",
       "teamCode": "NED",
       "club": "",
@@ -4898,7 +4915,7 @@
       "matches": 0
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "L. Trossard",
       "teamCode": "BEL",
       "club": "",
@@ -4909,7 +4926,7 @@
       "matches": 0
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "A. Ueda",
       "teamCode": "JPN",
       "club": "",
@@ -4920,7 +4937,7 @@
       "matches": 0
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "B. Barcola",
       "teamCode": "FRA",
       "club": "",
@@ -4931,7 +4948,7 @@
       "matches": 0
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "C. De Ketelaere",
       "teamCode": "BEL",
       "club": "",
@@ -4942,7 +4959,7 @@
       "matches": 0
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "L. Martinez",
       "teamCode": "ARG",
       "club": "",
@@ -4953,7 +4970,7 @@
       "matches": 0
     },
     {
-      "rank": 30,
+      "rank": 31,
       "name": "M. Araujo",
       "teamCode": "URU",
       "club": "",
@@ -4964,7 +4981,7 @@
       "matches": 0
     },
     {
-      "rank": 31,
+      "rank": 32,
       "name": "M. Tillman",
       "teamCode": "USA",
       "club": "",
@@ -4975,20 +4992,9 @@
       "matches": 0
     },
     {
-      "rank": 32,
+      "rank": 33,
       "name": "P. Gueye",
       "teamCode": "SEN",
-      "club": "",
-      "league": "",
-      "position": "",
-      "goals": 2,
-      "assists": 1,
-      "matches": 0
-    },
-    {
-      "rank": 33,
-      "name": "R. Lukaku",
-      "teamCode": "BEL",
       "club": "",
       "league": "",
       "position": "",
