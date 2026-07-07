@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-07T01:58:48.772310Z",
+  "updatedAt": "2026-07-07T02:00:23.485448Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,66 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "R16_06": {
-      "homeGoals": 1,
-      "awayGoals": 4,
-      "finished": false,
-      "homeCode": "USA",
-      "awayCode": "BEL",
-      "homeYellow": 2,
-      "homeRed": 0,
-      "awayYellow": 0,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "C. De Ketelaere",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 9
-        },
-        {
-          "name": "M. Tillman",
-          "teamCode": "USA",
-          "detail": "Normal Goal",
-          "minute": 31
-        },
-        {
-          "name": "C. De Ketelaere",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 33
-        },
-        {
-          "name": "H. Vanaken",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 57
-        },
-        {
-          "name": "R. Lukaku",
-          "teamCode": "BEL",
-          "detail": "Normal Goal",
-          "minute": 90
-        }
-      ],
-      "bookings": [
-        {
-          "name": "W. McKennie",
-          "teamCode": "USA",
-          "detail": "Yellow Card",
-          "minute": 35
-        },
-        {
-          "name": "M. Tillman",
-          "teamCode": "USA",
-          "detail": "Yellow Card",
-          "minute": 69
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4526,6 +4466,63 @@
           "minute": 90
         }
       ]
+    },
+    "R16_06": {
+      "homeGoals": 1,
+      "awayGoals": 4,
+      "finished": true,
+      "homeCode": "USA",
+      "awayCode": "BEL",
+      "homeYellow": 2,
+      "homeRed": 0,
+      "awayYellow": 0,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "C. De Ketelaere",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 9
+        },
+        {
+          "name": "M. Tillman",
+          "teamCode": "USA",
+          "detail": "Normal Goal",
+          "minute": 31
+        },
+        {
+          "name": "C. De Ketelaere",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 33
+        },
+        {
+          "name": "H. Vanaken",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 57
+        },
+        {
+          "name": "R. Lukaku",
+          "teamCode": "BEL",
+          "detail": "Normal Goal",
+          "minute": 90
+        }
+      ],
+      "bookings": [
+        {
+          "name": "W. McKennie",
+          "teamCode": "USA",
+          "detail": "Yellow Card",
+          "minute": 35
+        },
+        {
+          "name": "M. Tillman",
+          "teamCode": "USA",
+          "detail": "Yellow Card",
+          "minute": 69
+        }
+      ]
     }
   },
   "bracket": {
@@ -4630,7 +4627,8 @@
       "awayCode": "MAR"
     },
     "QF_02": {
-      "homeCode": "ESP"
+      "homeCode": "ESP",
+      "awayCode": "BEL"
     },
     "QF_03": {
       "homeCode": "NOR",
