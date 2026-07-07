@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-07T00:34:18.256160Z",
+  "updatedAt": "2026-07-07T00:35:50.425393Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -58,7 +58,7 @@
       "finished": false,
       "homeCode": "USA",
       "awayCode": "BEL",
-      "homeYellow": 0,
+      "homeYellow": 1,
       "homeRed": 0,
       "awayYellow": 0,
       "awayRed": 0,
@@ -82,9 +82,17 @@
           "minute": 33
         }
       ],
+      "bookings": [
+        {
+          "name": "W. McKennie",
+          "teamCode": "USA",
+          "detail": "Yellow Card",
+          "minute": 35
+        }
+      ],
       "live": true,
       "statusShort": "1H",
-      "minute": 34
+      "minute": 36
     },
     "M001": {
       "homeGoals": 2,
@@ -8089,41 +8097,48 @@
     },
     {
       "rank": 233,
+      "name": "W. McKennie",
+      "teamCode": "USA",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "rank": 234,
       "name": "W. Pina",
       "teamCode": "CPV",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 234,
+      "rank": 235,
       "name": "Y. Al Arab",
       "teamCode": "JOR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 235,
+      "rank": 236,
       "name": "Y. Barcenas",
       "teamCode": "PAN",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 236,
+      "rank": 237,
       "name": "Yasin Ayari",
       "teamCode": "SWE",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 237,
+      "rank": 238,
       "name": "Yunus Akgün",
       "teamCode": "TUR",
       "yellow": 1,
       "red": 0
     },
     {
-      "rank": 238,
+      "rank": 239,
       "name": "Zaid Tahseen",
       "teamCode": "IRQ",
       "yellow": 1,
