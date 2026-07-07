@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-07T22:41:53.067582Z",
+  "updatedAt": "2026-07-07T22:50:59.201182Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -4602,7 +4602,7 @@
     "R16_08": {
       "homeGoals": 0,
       "awayGoals": 0,
-      "finished": false,
+      "finished": true,
       "homeCode": "SUI",
       "awayCode": "COL",
       "homeYellow": 3,
@@ -4641,8 +4641,60 @@
           "minute": 105
         }
       ],
-      "live": true,
-      "statusShort": "P"
+      "penScorers": [
+        {
+          "name": "J. Quintero",
+          "teamCode": "COL",
+          "scored": true
+        },
+        {
+          "name": "G. Xhaka",
+          "teamCode": "SUI",
+          "scored": true
+        },
+        {
+          "name": "D. Sanchez",
+          "teamCode": "COL",
+          "scored": false
+        },
+        {
+          "name": "Z. Amdouni",
+          "teamCode": "SUI",
+          "scored": true
+        },
+        {
+          "name": "J. Campaz",
+          "teamCode": "COL",
+          "scored": true
+        },
+        {
+          "name": "M. Akanji",
+          "teamCode": "SUI",
+          "scored": false
+        },
+        {
+          "name": "C. Hernandez",
+          "teamCode": "COL",
+          "scored": false
+        },
+        {
+          "name": "C. Itten",
+          "teamCode": "SUI",
+          "scored": true
+        },
+        {
+          "name": "L. Diaz",
+          "teamCode": "COL",
+          "scored": true
+        },
+        {
+          "name": "",
+          "teamCode": "SUI",
+          "scored": true
+        }
+      ],
+      "penHome": 4,
+      "penAway": 3
     }
   },
   "bracket": {
@@ -4755,7 +4807,8 @@
       "awayCode": "ENG"
     },
     "QF_04": {
-      "homeCode": "ARG"
+      "homeCode": "ARG",
+      "awayCode": "SUI"
     }
   },
   "bracketProvisional": false,
