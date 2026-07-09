@@ -1,6 +1,6 @@
 {
   "_comment": "Feed EN VIVO del Mundial 2026. Generado por update_feed.py con API-Football.",
-  "updatedAt": "2026-07-09T21:57:18.332433Z",
+  "updatedAt": "2026-07-09T22:01:52.296835Z",
   "rankings": {
     "ARG": 1,
     "ESP": 2,
@@ -52,42 +52,6 @@
     "NZL": 86
   },
   "results": {
-    "QF_01": {
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "finished": false,
-      "homeCode": "FRA",
-      "awayCode": "MAR",
-      "homeYellow": 0,
-      "homeRed": 0,
-      "awayYellow": 1,
-      "awayRed": 0,
-      "scorers": [
-        {
-          "name": "K. Mbappe",
-          "teamCode": "FRA",
-          "detail": "Normal Goal",
-          "minute": 60
-        },
-        {
-          "name": "O. Dembele",
-          "teamCode": "FRA",
-          "detail": "Normal Goal",
-          "minute": 66
-        }
-      ],
-      "bookings": [
-        {
-          "name": "I. Diop",
-          "teamCode": "MAR",
-          "detail": "Yellow Card",
-          "minute": 63
-        }
-      ],
-      "live": true,
-      "statusShort": "2H",
-      "minute": 90
-    },
     "M001": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -4731,6 +4695,39 @@
       ],
       "penHome": 4,
       "penAway": 3
+    },
+    "QF_01": {
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "finished": true,
+      "homeCode": "FRA",
+      "awayCode": "MAR",
+      "homeYellow": 0,
+      "homeRed": 0,
+      "awayYellow": 1,
+      "awayRed": 0,
+      "scorers": [
+        {
+          "name": "K. Mbappe",
+          "teamCode": "FRA",
+          "detail": "Normal Goal",
+          "minute": 60
+        },
+        {
+          "name": "O. Dembele",
+          "teamCode": "FRA",
+          "detail": "Normal Goal",
+          "minute": 66
+        }
+      ],
+      "bookings": [
+        {
+          "name": "I. Diop",
+          "teamCode": "MAR",
+          "detail": "Yellow Card",
+          "minute": 63
+        }
+      ]
     }
   },
   "bracket": {
@@ -4845,6 +4842,9 @@
     "QF_04": {
       "homeCode": "ARG",
       "awayCode": "SUI"
+    },
+    "SF_01": {
+      "homeCode": "FRA"
     }
   },
   "bracketProvisional": false,
